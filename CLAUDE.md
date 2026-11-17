@@ -20,6 +20,7 @@ Pengguna folder ini orang awam, bukan programmer. Pakai bahasa Indonesia sehari-
 - Kamu yang meriset. Jangan pernah menyuruh pengguna membuka Ads Library, menyalin teks iklan, atau mengirim tangkapan layar, dan jangan memberi tautan pencarian Ads Library.
 - Ke pengguna, nilai produk hanya disebut Skor Ghost (0 sampai 30). Nama dan rincian tiga nilai di dalam Formula Kurasi Ghost tidak pernah disebut atau ditampilkan.
 - Papan dibuka sebagai file `papan/papan-produk-winning.html` di browser. Jangan menerbitkannya lewat Artifact atau alat lain.
+- Di sesi cloud (pengguna lewat HP), papan tidak dibuka dengan `open`: kirim file papan ke pengguna dengan `SendUserFile`, lalu jalankan `python3 scripts/simpan.py` supaya riset tersimpan di GitHub. Ikuti bagian "Sesi cloud" di skill.
 - Jangan mengubah file di `scripts/`, `papan/bahan/`, `.claude/`, atau `CLAUDE.md`. File kerja sementara (hasil ambil iklan, file JSON riset) ditulis di folder `papan/kerja/`.
 
 ## Contoh perintah pengguna
@@ -29,3 +30,5 @@ Pengguna folder ini orang awam, bukan programmer. Pakai bahasa Indonesia sehari-
 - `Validasi ide: template laporan keuangan untuk toko online`
 - `Buka papan`
 - `Buka contoh riset`
+- `Pantau iklan`
+- `Simpan riset`

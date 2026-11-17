@@ -20,6 +20,9 @@ Ghost Ads Spy adalah satu folder yang dibuka pengguna di Claude Code (tab Code d
 - `scripts/siapkan.py`: menyiapkan browser riset, sekali per komputer.
 - `scripts/ambil_iklan.py`: membuka Facebook Ads Library tanpa login dan membaca iklannya.
 - `scripts/buka_lp.py`: membuka halaman jualan pesaing dan membaca isinya.
+- `scripts/analisa.py`: merangkum semua hasil `ambil_iklan.py` menjadi satu peringkat pengiklan, kelompok per alamat jualan, frasa terbaik, dan perintah `buka_lp.py` yang siap jalan. Tanpa internet.
+- `scripts/pantau.py`: merekam iklan WINNING lalu, di hari lain, memeriksa apakah iklannya masih tayang.
+- `scripts/simpan.py`: menyimpan folder `papan/` ke GitHub. Wajib di sesi cloud (lihat bawah).
 - `scripts/buat_papan.py`: merakit Papan Produk Winning, dan halaman Contoh Riset Nyata.
 - `papan/`: tempat papan dan data riset pengguna disimpan. Papan pengguna adalah `papan/papan-produk-winning.html`.
 - `PANDUAN-MULAI.html`: Panduan Mulai untuk pengguna.
@@ -37,6 +40,7 @@ Kerjakan ini setiap kali skill dipakai di percakapan baru, termasuk saat penggun
 1. **Cek browser riset:** jalankan `python3 scripts/siapkan.py --cek`. Kalau jawabannya `SIAP`, lanjut. Kalau `BELUM SIAP`, katakan satu kalimat ("Saya siapkan dulu browser risetnya, sekali saja, 2 sampai 10 menit") lalu jalankan `python3 scripts/siapkan.py`. Skrip itu memasang semuanya sendiri di folder terpisah dan memakai Chrome atau Edge yang sudah ada di komputer. Tidak ada jendela browser yang muncul, dan tidak ada login Facebook.
 2. **Rakit papan:** jalankan `python3 scripts/buat_papan.py mulai`. Kalau belum ada riset, papan hanya berisi satu kotak petunjuk, tanpa produk apa pun. Kalau sudah ada riset lama di folder `papan/`, papan dirakit dari data itu.
 3. **Buka papan** di browser pengguna dengan perintah sistem, satu perintah saja: `open papan/papan-produk-winning.html` di Mac, `start "" papan\papan-produk-winning.html` di Windows, `xdg-open papan/papan-produk-winning.html` di Linux. Papan selalu dibuka sebagai file ini di browser. Jangan menerbitkannya lewat alat lain (Artifact, pratinjau, halaman web), walau alat itu tersedia.
+   **Kalau sesi berjalan di cloud** (pengguna memakai Claude di HP atau web; tandanya variabel `CLAUDE_CODE_REMOTE` bernilai `true`, atau tidak ada layar di mesin ini): jangan pakai perintah di atas, karena tidak ada browser di depan pengguna. Kirim file `papan/papan-produk-winning.html` ke pengguna dengan alat kirim file (`SendUserFile`, `display: render`) supaya terbuka di aplikasi Claude. Ini bukan Artifact. Lalu jalankan `python3 scripts/simpan.py` supaya riset tidak hilang saat sesi berakhir.
 4. Jangan pernah mengetik ulang isi HTML papan dengan tangan, dan jangan membuat papan versi sendiri. Papan selalu hasil skrip.
 5. Tulis di chat, pendek:
    - Papan masih kosong: papan sudah terbuka dan masih kosong, lalu minta pengguna mengetik di sini, di Claude Code, misalnya `Riset produk: niche pemilik bisnis online`. Sebutkan hasilnya muncul di papan dalam 10 sampai 30 menit. Jangan menawarkan ide apa pun sebelum riset, jangan menebak produk, dan jangan menampilkan contoh.
@@ -67,6 +71,15 @@ Ini terjadi kalau internet komputer mati, jaringan kantor atau kampus menutup Fa
 3. Beri jalan keluarnya: coba jaringan lain (misalnya hotspot HP), atau buka folder ini di Claude Code pada komputer sendiri seperti di `PANDUAN-MULAI.html`. Lalu tunggu pengguna.
 4. Papan dan riset lama tetap boleh ditampilkan.
 
+### Sesi cloud (pengguna lewat HP)
+
+Pengguna tanpa laptop memakai Claude Code di cloud. Bedanya:
+
+- Mesin cloud dihapus saat sesi berakhir. Riset hanya selamat kalau dikirim ke GitHub. Setiap kali riset, validasi, atau pantauan selesai, jalankan `python3 scripts/simpan.py`, lalu katakan satu kalimat bahwa hasilnya sudah tersimpan. Kalau skrip menjawab GAGAL karena izin GitHub, sampaikan terus terang dan beri tahu pengguna menyambungkan GitHub di claude.ai/connect-github.
+- Penyiapan browser berjalan lagi tiap sesi baru (2 sampai 10 menit). Itu normal, katakan sekali di awal.
+- Facebook harus diizinkan di pengaturan jaringan environment cloud pengguna. Kalau `siapkan.py` menjawab TIDAK TERBUKA (`ERR_TUNNEL_CONNECTION_FAILED`), itulah penyebabnya, bukan Facebook yang rusak. Beri tahu pengguna untuk menambahkan `www.facebook.com`, `facebook.com`, dan `static.xx.fbcdn.net` di pengaturan environment.
+- Halaman jualan pesaing butuh akses ke situs-situs lain. Kalau banyak yang BELUM TERBUKA karena jaringan, tawarkan melonggarkan jaringan environment, jangan menebak isinya.
+
 ## Membaca permintaan
 
 - **"Riset produk: ..."** atau kalimat bebas berisi niche (misal "niche ibu rumah tangga"): cari penawaran dan masalah di niche itu. Jalankan Tahap 1 lalu Tahap 2.
@@ -75,6 +88,8 @@ Ini terjadi kalau internet komputer mati, jaringan kantor atau kampus menutup Fa
 - **Kosong** ("cari produk apa saja"): tanya satu pertanyaan, yaitu untuk siapa atau di bidang apa. Kalau pengguna tidak punya jawaban, pilih sendiri 1 target yang umum di Indonesia dan sebutkan pilihanmu.
 
 - **"Buka papan"**: Langkah 0 saja.
+- **"Pantau iklan"** atau **"Cek iklan masih tayang"**: lihat Tahap 4.
+- **"Simpan riset"**: jalankan `python3 scripts/simpan.py` dan laporkan hasilnya.
 - **"Buka contoh riset"**: lihat bagian Contoh Riset Nyata.
 
 Jangan pernah memberi daftar ide dari tebakan sendiri, ide kilat, atau ide "sambil menunggu". Setiap produk yang kamu sebut ke pengguna harus berasal dari iklan yang benar-benar kamu baca lewat skrip pada riset itu.
@@ -102,7 +117,8 @@ Panduan memberi nilai ada di `referensi/menyusun-ide.md`.
 Baca `referensi/cara-riset.md` sebelum mulai. Intinya, semua kamu kerjakan sendiri lewat skrip:
 
 1. Jalankan `scripts/ambil_iklan.py` untuk Indonesia dengan minimal 5 frasa bahasa pembeli, dan untuk minimal satu negara lain dengan minimal 3 frasa.
-2. Baca hasilnya: pengiklan, tanggal mulai tayang, umur dalam hari, jumlah iklan terlihat, dan status WINNING, POTENSIAL, atau BARU.
+2. Baca hasilnya: pengiklan, tanggal mulai tayang, umur dalam hari, jumlah iklan terlihat, dan status WINNING, POTENSIAL, atau BARU. Skrip mencoba ulang sendiri kalau halaman Facebook terlambat terbuka.
+   Setelah semua frasa dan negara selesai, jalankan `python3 scripts/analisa.py papan/kerja/iklan-id.json papan/kerja/iklan-us.json --keluar papan/kerja/peringkat.json --csv papan/kerja/peringkat.csv`. Itu menggabungkan semua frasa menjadi satu peringkat (satu iklan dihitung sekali), menunjukkan alamat jualan yang dipakai banyak pengiklan sekaligus (tanda produk ramai), frasa mana yang paling berhasil, dan mencetak perintah `buka_lp.py` untuk alamat terbaik. Pakai peringkat itu, jangan menggabungkan dengan menghitung sendiri.
 3. Jalankan `scripts/buka_lp.py` untuk halaman tujuan penawaran terbaik. Catat harga, isi produk, dan bentuknya dari halaman itu, bukan dari teks iklan.
 4. Cek sumber di luar Meta: tren, keluhan komunitas, etalase seperti Gumroad dan Etsy.
 
@@ -118,6 +134,15 @@ Baca `referensi/menyusun-ide.md` dan `referensi/bentuk-data.md`.
 4. Baca keluaran skrip. Skrip yang menentukan kelompok "Paling disarankan" (hanya produk berbukti iklan WINNING, iklan 90 hari atau lebih didahulukan) dan mencetak urutannya. Kalau ada baris "BUKTI BELUM LENGKAP", lengkapi bukti produk itu seperti di `referensi/menyusun-ide.md`, lalu jalankan `tambah --timpa`.
 5. Buka papan terbaru dengan perintah sistem di Langkah 0 butir 3.
 6. Di chat tulis singkat: produk nomor 1 menurut skrip, umur iklan pesaingnya, Skor Ghost-nya, dan alasannya dalam satu kalimat, berapa produk yang masuk, dan ajakan membuka papan. Produk yang iklannya masih BARU atau POTENSIAL jangan disebut sebagai saran utama, walau skornya tinggi. Kalau skrip menulis belum ada yang disarankan, katakan itu terus terang. Sebutkan yang tidak bisa kamu cek dalam paling banyak 4 butir pendek; rinciannya sudah ada di papan. Halaman jualan yang menolak dibuka cukup ditulis "belum terbuka" di papan.
+
+## Tahap 4: pantau iklan
+
+Untuk melihat apakah iklan pesaing bertahan. Dipakai kalau pengguna meminta, atau saat membuka riset yang sudah beberapa hari.
+
+1. Setelah riset selesai: `python3 scripts/pantau.py rekam papan/kerja/iklan-id.json papan/kerja/iklan-us.json` (merekam iklan 14 hari atau lebih).
+2. Di hari lain: `python3 scripts/pantau.py cek` mencari ulang frasa yang sama. "MASIH TAYANG" pasti benar. "TIDAK TERLIHAT LAGI" belum tentu berhenti, bisa tergeser dari hasil yang termuat. Jangan menyebutnya bukti produk gagal.
+3. Laporkan di chat singkat: berapa iklan masih tayang, berapa tidak terlihat. Kalau umur iklan pembanding di papan sudah berubah, perbarui lewat `buat_papan.py tambah --timpa`.
+4. Jalankan `python3 scripts/simpan.py` di sesi cloud.
 
 ## Tahap 3: validasi ide
 

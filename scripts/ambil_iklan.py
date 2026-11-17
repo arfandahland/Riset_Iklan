@@ -27,6 +27,7 @@ import datetime
 import json
 import re
 import sys
+import time
 import urllib.parse
 from pathlib import Path
 
@@ -36,6 +37,7 @@ import peramban  # noqa: E402
 DASAR = "https://www.facebook.com/ads/library/"
 BULAN = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "mei": 5, "jun": 6, "jul": 7, "aug": 8, "agu": 8,
          "ags": 8, "sep": 9, "oct": 10, "okt": 10, "nov": 11, "dec": 12, "des": 12}
+DOMAIN_BISING = ("metastatus.com", "fbcdn.net")   # bukan tujuan jualan; Instagram dan WhatsApp tetap dicatat apa adanya
 POLA_MULAI = re.compile(r"(?:Started running on|Mulai ditayangkan pada)\s+([^\n]+)")
 POLA_ID = re.compile(r"(?:Library ID|ID Galeri):\s*(\d+)")
 POLA_SAMA = re.compile(r"(\d+)\s+(?:ads use this creative and text|iklan menggunakan materi iklan dan teks ini)")
@@ -95,6 +97,8 @@ def tujuan_asli(link):
         asli = urllib.parse.parse_qs(u.query).get("u", [""])[0]
         return asli or None
     if u.netloc.endswith("facebook.com") or u.netloc.endswith("fb.com") or not u.netloc:
+        return None
+    if any(u.netloc.endswith(d) for d in DOMAIN_BISING):
         return None
     return link
 
@@ -176,11 +180,11 @@ def ringkas_pengiklan(kartu):
     return hasil
 
 
-def ambil_satu(ctx, alamat, gulir, hari_ini):
+def ambil_satu(ctx, alamat, gulir, hari_ini, tunggu=7000):
     hal = ctx.new_page()
     try:
         hal.goto(alamat, wait_until="domcontentloaded", timeout=60000)
-        hal.wait_for_timeout(7000)
+        hal.wait_for_timeout(tunggu)
         for _ in range(gulir):
             hal.mouse.wheel(0, 3500)
             hal.wait_for_timeout(1800)
@@ -241,6 +245,18 @@ def main():
                 pesan = str(e).splitlines()[0][:200]
                 r = {"alamat": alamat, "jumlah_hasil": None, "kartu_terbaca": 0, "catatan": "gagal dibuka: " + pesan,
                      "pengiklan": [], "iklan": []}
+            if r["kartu_terbaca"] == 0 and any(x in (r["catatan"] or "") for x in ("tidak terbaca", "tidak ada iklan")):
+                # Facebook kadang lambat merakit halaman, atau sementara menjawab "tidak ada iklan" untuk pencarian yang ada
+                # hasilnya. Coba sekali lagi dengan jeda dan waktu tunggu dua kali lipat.
+                if jenis != "id":
+                    time.sleep(5)
+                try:
+                    r2 = ambil_satu(ctx, alamat, a.gulir if jenis != "id" else 0, hari_ini, tunggu=14000)
+                    if r2["kartu_terbaca"]:
+                        r = r2
+                        r["catatan"] = None
+                except Exception:
+                    pass
             r = {"jenis": jenis, "cari": isi, **r}
             hasil["pencarian"].append(r)
         browser.close()

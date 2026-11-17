@@ -158,6 +158,12 @@ h1 { font: 900 clamp(26px, 3.4vw, 40px)/1.1 var(--f); letter-spacing: -.035em; t
 .arti summary { cursor: pointer; padding: 12px 0; font-size: 12px; font-weight: 800; color: var(--mut); }
 .arti .daftar-titik { padding-bottom: 16px; font-size: 15px; }
 
+/* Saringan, favorit */
+.saring { gap: 6px; }
+.chip { border: 1px solid var(--line2); background: transparent; padding: 7px 13px; border-radius: 999px; font-weight: 700; font-size: 13px; color: var(--mut); min-height: 36px; }
+.chip[aria-pressed="true"] { background: rgba(239,68,68,.16); border-color: var(--red); color: var(--soft); }
+.fav-btn { margin-top: 10px; justify-self: start; }
+.bintang { color: var(--pot); }
 @media (max-width: 900px) {
   .meja { grid-template-columns: minmax(0, 1fr); }
   .rel { position: static; max-height: none; }
@@ -194,7 +200,9 @@ h1 { font: 900 clamp(26px, 3.4vw, 40px)/1.1 var(--f); letter-spacing: -.035em; t
       <select id="pilih-riset" aria-label="Pilih riset" hidden></select>
       <button class="tab" data-act="tab" data-nilai="ide" aria-pressed="true">Produk winning</button>
       <button class="tab" data-act="tab" data-nilai="bukti" aria-pressed="false">Bukti riset</button>
+      <button class="tab" data-act="csv" title="Simpan daftar produk sebagai file CSV">Unduh CSV</button>
     </div>
+    <div class="alat saring" id="saring" role="group" aria-label="Saring produk"></div>
   </header>
 
   <main id="utama"></main>
@@ -208,7 +216,7 @@ h1 { font: 900 clamp(26px, 3.4vw, 40px)/1.1 var(--f); letter-spacing: -.035em; t
       <li><span class="lencana l-POTENSIAL">POTENSIAL</span> aktif 14 sampai 29 hari, atau punya 10 iklan aktif atau lebih. <span class="lencana l-BARU">BARU</span> aktif di bawah 14 hari, belum terbukti.</li>
       <li><b>Vonis Validasi</b>: <span class="lencana l-LANJUT">LANJUT TES KECIL</span> layak dicoba dengan modal kecil. <span class="lencana l-PERLU">PERLU BUKTI</span> ada yang harus dicek dulu. <span class="lencana l-TAHAN">TAHAN</span> sebaiknya jangan dulu. Vonis adalah saran, keputusan tetap di tangan kamu.</li>
       <li>Harga dan klaim adalah tulisan di halaman pesaing, belum diverifikasi. Waktu di kalimat janji produk adalah target rancangan.</li>
-      <li>Semua hasil riset tersimpan di folder <b>papan</b> di dalam folder Ghost Ads Spy. Selama folder itu tidak dihapus, riset lama selalu muncul lagi.</li>
+      <li>Semua hasil riset tersimpan di folder <b>papan</b>. Kalau kamu memakai Claude di HP, minta Claude menyimpan hasilnya ke GitHub supaya riset lama muncul lagi di sesi berikutnya. Favorit tersimpan di browser yang kamu pakai membuka papan.</li>
     </ul>
   </details>
 
@@ -222,7 +230,7 @@ let DATA = { riset: [], ide: [] };
 try { DATA = JSON.parse(document.getElementById('data-riset').textContent); } catch (e) { DATA = { riset: [], ide: [] }; }
 DATA.riset = DATA.riset || []; DATA.ide = DATA.ide || [];
 const CONTOH = !!DATA._contoh;
-const S = { rid: 'semua', pilih: null, tampil: 'ide' };
+const S = { rid: 'semua', pilih: null, tampil: 'ide', saring: 'semua' };
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const aman = u => (/^https:\/\//.test(String(u)) ? esc(u) : '#');
@@ -231,13 +239,29 @@ function tgl(iso) {
   const [y, m, d] = String(iso).split('-').map(Number);
   return new Date(y, m - 1, d).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' });
 }
+/* Favorit tersimpan di browser ini saja (localStorage). Kalau browser menolak, papan tetap jalan tanpa favorit. */
+let FAV = [];
+try { FAV = JSON.parse(localStorage.getItem('gas-favorit') || '[]'); if (!Array.isArray(FAV)) FAV = []; } catch (e) { FAV = []; }
+const adaFav = id => FAV.includes(id);
+function ubahFav(id) {
+  FAV = adaFav(id) ? FAV.filter(x => x !== id) : [...FAV, id];
+  try { localStorage.setItem('gas-favorit', JSON.stringify(FAV)); } catch (e) { /* diabaikan */ }
+}
+const SARING = [['semua', 'Semua'], ['winning', 'Iklan winning'], ['valid', 'Sudah divalidasi'], ['fav', '★ Favorit']];
+function lolos(i) {
+  if (S.saring === 'winning') return !!buktiWinning(i);
+  if (S.saring === 'valid') return !!i.validasi;
+  if (S.saring === 'fav') return adaFav(i.id);
+  return true;
+}
 const dua = n => String(n).padStart(2, '0');
 const risetUrut = () => [...DATA.riset].sort((a, b) => String(b.tanggal).localeCompare(String(a.tanggal)));
 const risetAktif = () => (S.rid === 'semua' ? null : DATA.riset.find(r => r.id === S.rid) || null);
-function ideAktif() {
+function ideDasar() {
   const a = S.rid === 'semua' ? [...DATA.ide] : DATA.ide.filter(i => i.riset === S.rid);
   return a.sort((x, y) => (y.total - x.total) || (x.no - y.no));
 }
+const ideAktif = () => ideDasar().filter(lolos);
 /* Bukti WINNING terkuat = iklan tertua. Angka hari di daftar, judul, dan ringkasan selalu dari pesaing ini. */
 function buktiWinning(i) {
   return (i.pembanding || []).filter(x => x.status === 'WINNING' && x.hari != null).sort((a, b) => b.hari - a.hari)[0] || null;
@@ -261,6 +285,10 @@ const rekomSet = () => saranUrut().map(i => i.id);
 function urutPapan() { const atas = saranUrut(); const ids = atas.map(i => i.id); return [...atas, ...ideAktif().filter(i => !ids.includes(i.id))]; }
 /* Judul papan disusun dari data, supaya selalu menyebut produk nomor 1 yang sama dengan daftar */
 function judulPapan() {
+  const awal = S.saring; S.saring = 'semua';
+  try { return judulDasar(); } finally { S.saring = awal; }
+}
+function judulDasar() {
   const semua = ideAktif(); const top = saranUrut()[0];
   if (!top) return `${semua.length} produk ditemukan. Belum ada yang iklan pesaingnya tayang 30 hari atau lebih, jadi belum ada yang disarankan.`;
   const p = buktiWinning(top); const h = hargaRingkas(top, p);
@@ -302,7 +330,23 @@ function gambarKepala() {
   if (!sel.hidden) {
     sel.innerHTML = `<option value="semua">Semua riset</option>` + urut.map(x => `<option value="${esc(x.id)}" ${x.id === S.rid ? 'selected' : ''}>${esc(tgl(x.tanggal))} · ${esc(x.judul)}</option>`).join('');
   }
-  document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-pressed', String(t.dataset.nilai === S.tampil)));
+  document.querySelectorAll('.tab[data-act="tab"]').forEach(t => t.setAttribute('aria-pressed', String(t.dataset.nilai === S.tampil)));
+  const sg = $('saring');
+  sg.hidden = S.tampil !== 'ide';
+  sg.innerHTML = SARING.map(([k, n]) => `<button class="chip" data-act="saring" data-nilai="${k}" aria-pressed="${S.saring === k}">${n}${k === 'fav' && FAV.length ? ` (${FAV.length})` : ''}</button>`).join('');
+}
+function unduhCsv() {
+  const q = v => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+  const kolom = ['riset', 'nama', 'target', 'skor_ghost', 'umur_iklan_tertua_hari', 'status_iklan', 'harga', 'vonis', 'favorit', 'formula'];
+  const baris = ideDasar().map(i => {
+    const p = buktiUtama(i); const r = DATA.riset.find(x => x.id === i.riset);
+    return [r?.judul, i.nama, i.target, i.total, p ? p.hari : '', p?.status || '', hargaRingkas(i, p), i.validasi?.vonis || '', adaFav(i.id) ? 'ya' : '', i.formula].map(q).join(',');
+  });
+  const blob = new Blob(['\ufeff' + [kolom.map(q).join(','), ...baris].join('\r\n')], { type: 'text/csv;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = 'ghost-ads-spy-produk.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 }
 
 function baris(i, n) {
@@ -313,7 +357,7 @@ function baris(i, n) {
   return `<li><button class="baris" data-act="pilih" data-id="${esc(i.id)}" aria-current="${aktif}">
     <span class="no">${dua(n)}</span>
     <span><span class="baris-nama">${esc(i.nama)}</span>
-      <span class="baris-sub mono"><span>Skor ${esc(i.total)}/30</span>${p?.status ? `<span class="lencana l-${esc(p.status)}">${esc(p.status)}</span>` : ''}${v ? `<span class="lencana l-${kelasVonis(v)}">${esc(v)}</span>` : ''}</span></span>
+      <span class="baris-sub mono">${adaFav(i.id) ? '<span class="bintang" aria-label="Favorit">★</span>' : ''}<span>Skor ${esc(i.total)}/30</span>${p?.status ? `<span class="lencana l-${esc(p.status)}">${esc(p.status)}</span>` : ''}${v ? `<span class="lencana l-${kelasVonis(v)}">${esc(v)}</span>` : ''}</span></span>
     <span class="baris-umur">${umur}</span></button></li>`;
 }
 function gambarRel() {
@@ -374,6 +418,7 @@ function gambarBaca(i) {
     <div class="baca-kepala">
       <div class="tanda mono">${rek ? '<span class="lencana l-SARAN">Paling disarankan</span>' : ''}<span>${esc(r?.judul || '')}</span></div>
       <h2>${esc(i.nama)}</h2><p class="target">Untuk ${esc(i.target)}</p>
+      <button class="chip fav-btn" data-act="fav" data-id="${esc(i.id)}" aria-pressed="${adaFav(i.id)}">${adaFav(i.id) ? '★ Favorit' : '☆ Simpan ke favorit'}</button>
     </div>
     <p class="janji">${janji(i.formula)}</p>
     <div class="dtop">
@@ -420,6 +465,10 @@ function gambar() {
   if (!DATA.riset.length || !DATA.ide.length) { utama.innerHTML = gambarKosong(); return; }
   if (S.tampil === 'bukti') { utama.innerHTML = gambarBukti(); return; }
   const i = ideTerpilih();
+  if (!i) {
+    utama.innerHTML = `<section class="kosong"><h1>Belum ada produk di saringan ini</h1><p>${S.saring === 'fav' ? 'Buka satu produk lalu tekan Simpan ke favorit.' : 'Pilih saringan lain di atas.'}</p></section>`;
+    return;
+  }
   S.pilih = i.id;
   utama.innerHTML = `<div class="meja">${gambarRel()}${gambarBaca(i)}</div>`;
 }
@@ -428,6 +477,9 @@ document.addEventListener('click', ev => {
   if (!t) return;
   const act = t.dataset.act;
   if (act === 'tab') { S.tampil = t.dataset.nilai; gambar(); return; }
+  if (act === 'saring') { S.saring = t.dataset.nilai; S.pilih = null; gambar(); return; }
+  if (act === 'fav') { ubahFav(t.dataset.id); gambar(); return; }
+  if (act === 'csv') { unduhCsv(); return; }
   if (act === 'pilih') {
     ev.preventDefault();
     S.pilih = t.dataset.id; S.tampil = 'ide'; gambar();
