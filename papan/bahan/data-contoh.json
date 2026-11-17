@@ -1,0 +1,825 @@
+{
+ "riset": [
+  {
+   "id": "2026-11-12-bisnis-online",
+   "judul": "Niche pemilik bisnis online",
+   "tanggal": "2026-11-12",
+   "input": "Riset produk: niche pemilik bisnis online",
+   "ringkas": "9 produk untuk pemilik bisnis online. Studio Foto Produk paling kuat: pesaing beriklan 230 hari, harga Rp 99.000 sekali bayar.",
+   "cara_cek": "Browser: Ads Library Indonesia 15 frasa (5 frasa kosong), Amerika 4 frasa (2 frasa kosong). 10 halaman jualan dibuka, 8 terbaca.",
+   "pola": [
+    "Yang paling lama bertahan adalah alat yang langsung menghasilkan barang jadi dari satu foto produk: foto katalog, feed, dan banner. Harganya Rp 50.000 sampai Rp 99.000, sekali bayar.",
+    "Hampir semua penawaran baru memakai kalimat sekali bayar, tanpa langganan, dan bisa dari HP. Langganan bulanan hanya dipakai platform besar.",
+    "Keluhan yang paling sering dipakai di iklan adalah owner mengurus semuanya sendiri: pagi balas chat, siang bikin konten, malam rekap orderan.",
+    "Banyak penawaran soal balas chat dan caption baru tayang 1 sampai 13 hari. Artinya banyak penjual sedang mencoba sudut ini, tapi belum ada yang terbukti bertahan lama.",
+    "Jasa dan platform besar (jasa iklan, pembuat halaman jualan gratis, chatbot langganan) sudah tayang ratusan hari. Melawan mereka langsung berat, lebih aman mengambil satu pekerjaan kecil yang mereka tidak urus."
+   ],
+   "sinyal": [
+    "Berita 2026 banyak memuat keluhan penjual soal biaya marketplace yang naik sampai margin menipis, dan sebagian UMKM mulai pindah ke jualan mandiri. Ini mendukung alat hitung harga jual dan halaman jualan sendiri.",
+    "Panduan Etsy 2026 menyebut template Canva untuk media sosial, paket branding, dan spreadsheet pembukuan usaha kecil sebagai kategori digital yang laku. Sumbernya blog pemasaran, jadi hanya petunjuk arah.",
+    "Pencarian keluhan komunitas soal balas chat, konten, dan pembukuan tidak memberi hasil yang kuat. Keluhan itu baru terbukti dari teks iklan, belum dari komunitas.",
+    "Pindah pola: alat sekali klik untuk konten sebulan sedang diiklankan di Amerika (Holo, 8 iklan terlihat), di Indonesia belum terlihat versi sekali bayar yang khusus toko kecil.",
+    "Frasa toko online sepi, template konten jualan, laporan keuangan toko online, dan konten jualan otomatis tidak memunculkan iklan sama sekali."
+   ],
+   "catatan_baca": [
+    "Umur iklan dihitung sampai 12 November 2026, memakai iklan tertua yang terlihat dari tiap pengiklan.",
+    "Jumlah iklan adalah yang terlihat saat dibaca, bukan jumlah pasti semua iklan aktif.",
+    "Harga dan klaim adalah tulisan di halaman pesaing atau di iklan, belum diverifikasi.",
+    "Waktu di tiap kalimat ide adalah target rancangan, bukan hasil uji.",
+    "Beberapa halaman jualan (kebanyakan di lynk.id) menolak dibuka otomatis. Penawaran itu dicatat di Penawaran lain dan tidak dipakai sebagai bukti produk.",
+    "Sumber di luar Meta dibaca dari ringkasan hasil pencarian web, halamannya tidak dibuka satu per satu.",
+    "Skor dan saran adalah penilaian, bukan jaminan laku."
+   ],
+   "offer_lain": [
+    {
+     "nama": "Lab Agency, jasa pasang iklan FB dan IG",
+     "status": "WINNING",
+     "isi": "Jasa iklan terima beres, budget iklan mulai Rp 25.000 per hari menurut tulisan di iklan. 16 iklan terlihat dari dua halaman, tertua 220 hari.",
+     "iklan": "https://www.facebook.com/ads/library/?id=26258728170416516"
+    },
+    {
+     "nama": "Tersistem, sistem Depot Air",
+     "status": "WINNING",
+     "isi": "Sistem order dengan notifikasi WhatsApp otomatis untuk depot isi ulang. 1 iklan terlihat, 173 hari.",
+     "iklan": "https://www.facebook.com/ads/library/?id=983381851079560"
+    },
+    {
+     "nama": "agungngrh project, paket 800+ produk digital siap jual",
+     "status": "WINNING",
+     "isi": "Panduan jualan produk digital plus 800+ produk siap jual, Rp 29.000 menurut tulisan di iklan. 1 iklan terlihat, 185 hari.",
+     "iklan": "https://www.facebook.com/ads/library/?id=1312115637552520"
+    },
+    {
+     "nama": "Temu AI, branding dan media sosial pakai AI",
+     "status": "WINNING",
+     "isi": "Bedah strategi branding dan media sosial pakai AI. 1 iklan terlihat, 167 hari.",
+     "iklan": "https://www.facebook.com/ads/library/?id=1491284082677948"
+    },
+    {
+     "nama": "Formulir, pembuat halaman jualan dan form",
+     "status": "WINNING",
+     "isi": "Platform halaman jualan plus form order, gratis menurut tulisan di iklan. 4 iklan terlihat, 148 hari.",
+     "iklan": "https://www.facebook.com/ads/library/?id=953123151118990"
+    },
+    {
+     "nama": "Canva Pro Lite",
+     "status": "WINNING",
+     "isi": "Edit foto produk jadi estetik tanpa studio. 1 iklan terlihat, 30 hari.",
+     "iklan": "https://www.facebook.com/ads/library/?id=1088893900538037"
+    },
+    {
+     "nama": "Dusdusan, pendaftaran reseller",
+     "status": "WINNING",
+     "isi": "Program reseller tanpa stok, foto produk disediakan. 1 iklan terlihat, 1425 hari. Bukan produk digital.",
+     "iklan": "https://www.facebook.com/ads/library/?id=1177694142886035"
+    },
+    {
+     "nama": "ShineOn (Amerika), toko jadi seharga 10 dolar",
+     "status": "POTENSIAL",
+     "isi": "Toko online siap pakai berisi 25 produk, 10 dolar menurut tulisan di iklan. 2 iklan terlihat, 23 hari.",
+     "iklan": "https://www.facebook.com/ads/library/?id=2310368709800482"
+    },
+    {
+     "nama": "TemplateMonster (Amerika), langganan aset digital",
+     "status": "WINNING",
+     "isi": "Satu langganan untuk template web, toko online, presentasi, dan grafis. 1 iklan terlihat, 582 hari.",
+     "iklan": "https://www.facebook.com/ads/library/?id=1741160826829793"
+    },
+    {
+     "nama": "Lynk.id, AI Landing Page",
+     "isi": "Halaman jualan dibuat dengan bantuan AI dalam hitungan menit, terhubung ke checkout dan pixel. 5 iklan terlihat. Iklan tertua 30 hari. Halaman jualannya menolak dibuka, jadi tidak dipakai sebagai bukti.",
+     "status": "WINNING",
+     "iklan": "https://www.facebook.com/ads/library/?id=2355822265228834"
+    },
+    {
+     "nama": "KumpulData, kelas tim AI per divisi",
+     "isi": "Kelas membuat satu agen AI untuk tiap divisi yang bisa dipanggil lewat Telegram. 2 iklan terlihat. Iklan tertua 11 hari. Halaman jualannya menolak dibuka, jadi tidak dipakai sebagai bukti.",
+     "status": "BARU",
+     "iklan": "https://www.facebook.com/ads/library/?id=2113320785958300"
+    },
+    {
+     "nama": "67 Prompt AI untuk Konten Jualan UMKM (Best Digital Product)",
+     "isi": "67 prompt berbahasa Indonesia untuk caption, deskripsi produk, balasan chat, dan naskah video. Format PDF, DOCX, dan TXT. 1 iklan terlihat. Iklan tertua 13 hari. Halaman jualannya menolak dibuka, jadi tidak dipakai sebagai bukti.",
+     "status": "BARU",
+     "iklan": "https://www.facebook.com/ads/library/?id=4573247222912867"
+    },
+    {
+     "nama": "100 prompt harian (AI 2027 Jinbex)",
+     "isi": "100 prompt untuk 10 kebutuhan harian termasuk jualan online, format PDF. 1 iklan terlihat. Iklan tertua 2 hari. Halaman jualannya menolak dibuka, jadi tidak dipakai sebagai bukti.",
+     "status": "BARU",
+     "iklan": "https://www.facebook.com/ads/library/?id=2335241170605960"
+    },
+    {
+     "nama": "JST ERP Indonesia, fitur live",
+     "isi": "Software toko: penonton live mengetik kata kunci, sistem membaca dan mengirim link checkout otomatis. Sudut iklan: takut repot rekap orderan saat live. 1 iklan terlihat. Iklan tertua 67 hari. Halaman jualannya menolak dibuka, jadi tidak dipakai sebagai bukti.",
+     "status": "WINNING",
+     "iklan": "https://www.facebook.com/ads/library/?id=2003554293675073"
+    },
+    {
+     "nama": "Ayo Go Digital, kelas gratis lewat Zoom",
+     "isi": "Kelas gratis membuat caption, gambar, dan video jualan pakai AI dengan prompt siap pakai. 2 iklan terlihat. Iklan tertua 26 hari. Halaman jualannya menolak dibuka, jadi tidak dipakai sebagai bukti.",
+     "status": "POTENSIAL",
+     "iklan": "https://www.facebook.com/ads/library/?id=1813525116629128"
+    },
+    {
+     "nama": "Seller Studio AI (Barep.Wijanarko)",
+     "isi": "Upload foto produk, dalam hitungan menit jadi foto dan video konten. Sudut iklan: hemat biaya model, fotografer, dan studio, dan tanpa sewa model. Ada iklan khusus fashion muslim. 3 iklan terlihat. Iklan tertua 140 hari. Halaman jualannya menolak dibuka, jadi tidak dipakai sebagai bukti.",
+     "status": "WINNING",
+     "iklan": "https://www.facebook.com/ads/library/?id=2467319314017272"
+    }
+   ],
+   "sumber": [
+    "https://katadata.co.id/digital/e-commerce/6a0448d937533/biaya-di-marketplace-bisa-tembus-30-seller-umkm-keluhkan-margin-kian-tipis?page=2",
+    "https://ekonomi.bisnis.com/read/20260512/12/1972990/di-balik-fenomena-migrasi-umkm-dari-tiktok-shop-shopee-cs",
+    "https://www.growingyourcraft.com/blog/most-popular-digital-products-on-etsy"
+   ]
+  }
+ ],
+ "ide": [
+  {
+   "id": "2026-11-12-bisnis-online-feed-produk",
+   "riset": "2026-11-12-bisnis-online",
+   "nama": "Pembuat Feed Produk",
+   "target": "pemilik toko online kecil yang posting Instagram dan status WhatsApp sendiri tanpa desainer",
+   "formula": "Isi nama produk, harga, dan satu foto, dapat 9 desain feed senada dalam 2 menit, langsung bisa diposting.",
+   "malas": 9,
+   "instant": 9,
+   "applicable": 9,
+   "pembanding": [
+    {
+     "nama": "Auto Feeds (Content Scale Up)",
+     "id_lokal": true,
+     "isi": "Pembuat feed, banner, dan carousel otomatis tanpa skill desain. Sudut iklan: isi produk, generate, siap upload. 45 iklan terlihat, paling banyak di riset ini.",
+     "hari": 20,
+     "status": "POTENSIAL",
+     "harga": "Rp 50.000 sekali bayar, disebut harga early access",
+     "harga_pendek": "Rp 50.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://autofeeds.id/"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1773542213926942"
+     ],
+     "catatan": "Baru 20 hari, tapi jumlah iklannya banyak."
+    },
+    {
+     "nama": "AICO Community",
+     "id_lokal": true,
+     "isi": "Panduan membuat banner promo, desain produk, dan caption pakai AI di Canva. 1 iklan terlihat.",
+     "hari": 48,
+     "status": "WINNING",
+     "harga": "Rp 100.000, harga coret Rp 150.000",
+     "harga_pendek": "Rp 100.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://store.aico-community.com/ipkb-aico-form2"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=839585645894997"
+     ],
+     "catatan": "Halaman jualannya menjual buku panduan AI untuk umum, bukan khusus desain feed."
+    }
+   ],
+   "bentuk": "Aplikasi web sederhana. Hasilnya gambar jadi, jadi pembeli tidak perlu belajar apa pun.",
+   "opsi": [
+    {
+     "nama": "Aplikasi web pembuat feed",
+     "isi": "Isi tiga kolom, pilih gaya, unduh 9 gambar."
+    },
+    {
+     "nama": "Paket template Canva per jenis toko",
+     "isi": "Lebih mudah dibuat, tapi pembeli masih harus mengedit satu per satu."
+    },
+    {
+     "nama": "Gabungan alat dan kalender promo",
+     "isi": "Alat feed ditambah jadwal posting sebulan yang sudah terisi momen jualan."
+    }
+   ],
+   "opsi_rekom": [
+    0
+   ],
+   "tambahan": "Paket desain promo tanggal kembar dan Lebaran.",
+   "ragu": "Pesaing utamanya baru tayang 20 hari, jadi belum terbukti bertahan lama. Harganya sudah sangat murah, sulit bersaing di harga. Kualitas desain otomatis belum dicek.",
+   "saran": "Layak dicoba kecil, tapi cari pembeda selain harga, misalnya khusus satu jenis toko.",
+   "total": 27,
+   "no": 1
+  },
+  {
+   "id": "2026-11-12-bisnis-online-balas-chat",
+   "riset": "2026-11-12-bisnis-online",
+   "nama": "Asisten Balas Chat",
+   "target": "penjual online yang membalas chat WhatsApp pembeli sendirian sambil mengurus produksi dan packing",
+   "formula": "Isi profil toko sekali lalu tempel chat pembeli, dapat 3 pilihan balasan dalam 1 menit, langsung bisa dikirim ke pembeli.",
+   "malas": 8,
+   "instant": 9,
+   "applicable": 9,
+   "pembanding": [
+    {
+     "nama": "Asisten Jualan Kak (Acot Digital)",
+     "id_lokal": true,
+     "isi": "Aplikasi kecil di HP: pembuat caption 3 gaya, balasan chat untuk 7 situasi pembeli, dan 30 template status WA. 2 iklan terlihat.",
+     "hari": 2,
+     "status": "BARU",
+     "harga": "Rp 79.000 sekali bayar, garansi 7 hari",
+     "harga_pendek": "Rp 79.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://digital-waringin.orderhero.id/page/asisten-jualan-kak"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1820296955669074"
+     ]
+    },
+    {
+     "nama": "Template Script WhatsApp (Tom MC Ifle)",
+     "id_lokal": true,
+     "isi": "100+ script chat WhatsApp siap salin untuk menjawab keberatan harga dan follow up, format PDF. 1 iklan terlihat.",
+     "hari": 1,
+     "status": "BARU",
+     "harga": "Rp 79.000. Di halaman juga tertulis Rp 800.000 dan Rp 400.000.",
+     "harga_pendek": "Rp 79.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://akses.topcoachindonesia.com/page/chat-closing"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1138494792225301"
+     ]
+    },
+    {
+     "nama": "Bablast, AI chatbot WhatsApp",
+     "id_lokal": true,
+     "isi": "Chatbot yang membalas pelanggan otomatis 24 jam lewat jalur resmi WhatsApp. 2 iklan terlihat.",
+     "hari": 1,
+     "status": "BARU",
+     "harga": "Mulai Rp 35.000 per bulan menurut tulisan di iklan",
+     "harga_pendek": "Rp 35.000 per bulan",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://www.bablast.id/"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1110163768293454"
+     ]
+    }
+   ],
+   "bentuk": "Aplikasi web sederhana yang dibuka di HP. Lebih ringan daripada chatbot, karena pembeli tidak perlu menyambungkan nomor WhatsApp.",
+   "opsi": [
+    {
+     "nama": "Aplikasi web tempel dan salin",
+     "isi": "Tempel chat pembeli, pilih balasan, salin."
+    },
+    {
+     "nama": "Buku script per situasi",
+     "isi": "PDF balasan untuk tanya harga, nego, komplain, dan follow up. Paling mudah dibuat."
+    },
+    {
+     "nama": "Gabungan aplikasi dan script follow up",
+     "isi": "Aplikasi balasan ditambah jadwal follow up hari ke 1, 3, dan 7."
+    }
+   ],
+   "opsi_rekom": [
+    2
+   ],
+   "tambahan": "Paket balasan khusus komplain dan retur.",
+   "ragu": "Semua pembandingnya baru tayang 1 sampai 2 hari, jadi belum ada bukti penawaran ini bertahan. AI gratis di HP bisa melakukan hal yang sama kalau pembeli mau repot. Keluhan capek balas chat memang ada di iklan berumur 173 hari, tapi itu untuk sistem depot air, bukan produk sejenis.",
+   "saran": "Validasi dulu, masalahnya nyata tapi bukti iklannya masih sangat baru.",
+   "total": 26,
+   "no": 2
+  },
+  {
+   "id": "2026-11-12-bisnis-online-halaman-jualan",
+   "riset": "2026-11-12-bisnis-online",
+   "nama": "Pembuat Halaman Jualan",
+   "target": "penjual di Instagram dan WhatsApp yang belum punya halaman jualan untuk satu produk andalannya",
+   "formula": "Isi nama produk, harga, 3 manfaat, dan foto, dapat satu halaman jualan lengkap dalam 10 menit, langsung bisa dibagikan sebagai satu link.",
+   "malas": 8,
+   "instant": 8,
+   "applicable": 8,
+   "pembanding": [
+    {
+     "nama": "Buat.id",
+     "id_lokal": true,
+     "isi": "Pembuat halaman jualan drag and drop yang cepat dibuka. Sudut iklan: fitur premium tanpa biaya. 3 iklan terlihat.",
+     "hari": 340,
+     "status": "WINNING",
+     "harga": "Gratis, tanpa biaya menurut halaman jualannya",
+     "harga_pendek": "Gratis",
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1393664882252943"
+     ],
+     "catatan": "Umur memakai iklan tertua yang terlihat.",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://www.buat.id/"
+      }
+     ]
+    },
+    {
+     "nama": "Mayar, AI website builder",
+     "id_lokal": true,
+     "isi": "Jelaskan produknya, halaman jualan jadi tanpa desain atau coding. 1 iklan terlihat.",
+     "hari": 2,
+     "status": "BARU",
+     "harga": "Harga tidak tertulis di halaman jualannya",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://mayar.id/ai-website-builder"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1491061196275623"
+     ]
+    }
+   ],
+   "bentuk": "Paket isi halaman jualan, bukan platform baru. Yang dijual adalah tulisan dan susunan halaman yang sudah jadi, lalu ditempel ke platform gratis yang sudah ada.",
+   "opsi": [
+    {
+     "nama": "Pembuat isi halaman jualan",
+     "isi": "Isi 5 kolom, keluar judul, manfaat, tanya jawab, dan ajakan beli yang siap ditempel."
+    },
+    {
+     "nama": "Template halaman per jenis produk",
+     "isi": "Template siap pakai untuk makanan, fashion, skincare, dan jasa."
+    },
+    {
+     "nama": "Jasa pasang dengan bantuan AI",
+     "isi": "Halaman dibuatkan sampai jadi, harga lebih tinggi."
+    }
+   ],
+   "opsi_rekom": [
+    0
+   ],
+   "tambahan": "Paket 20 judul iklan untuk produk yang sama.",
+   "ragu": "Platform besar memberi pembuat halaman secara gratis, jadi alat baru sulit bersaing. Ide ini hanya masuk akal kalau menjual isinya, bukan platformnya.",
+   "saran": "Validasi dulu, pesaingnya besar dan gratis.",
+   "total": 24,
+   "no": 6
+  },
+  {
+   "id": "2026-11-12-bisnis-online-konten-sebulan",
+   "riset": "2026-11-12-bisnis-online",
+   "nama": "Konten Toko Sebulan",
+   "target": "pemilik toko online yang postingannya bolong karena tidak sempat memikirkan konten tiap hari",
+   "formula": "Isi profil toko dan 3 produk andalan, dapat 30 caption beserta ide gambarnya dalam 10 menit, langsung bisa dijadwalkan untuk sebulan.",
+   "malas": 9,
+   "instant": 8,
+   "applicable": 7,
+   "pembanding": [
+    {
+     "nama": "Holo (Amerika)",
+     "id_lokal": false,
+     "isi": "Sekali klik untuk konten sebulan: iklan, postingan media sosial, dan email. 8 iklan terlihat dengan teks yang sama.",
+     "hari": 9,
+     "status": "BARU",
+     "harga": "Harga tidak tertulis, halamannya berupa kuis",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://tryholo.ai/quiz/marketing"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1441689698135333"
+     ]
+    }
+   ],
+   "bentuk": "Aplikasi web sederhana. Versi Indonesia yang sekali bayar dan khusus toko kecil belum terlihat di iklan yang terbaca.",
+   "opsi": [
+    {
+     "nama": "Aplikasi web kalender konten",
+     "isi": "Isi profil toko, keluar 30 konten yang sudah diberi tanggal."
+    },
+    {
+     "nama": "Kalender konten jadi per jenis toko",
+     "isi": "File siap pakai untuk kuliner, fashion, dan skincare. Tidak perlu aplikasi."
+    }
+   ],
+   "opsi_rekom": [
+    0
+   ],
+   "tambahan": "Paket konten momen besar seperti Ramadan dan tanggal kembar.",
+   "ragu": "Bukti utamanya dari luar negeri dan baru 9 hari. Hasilnya masih perlu disesuaikan dan gambarnya tetap harus dibuat sendiri. Di Indonesia ada kelas gratis yang mengajarkan hal mirip.",
+   "saran": "Validasi dulu, buktinya masih tipis dan sebagian dari luar negeri.",
+   "total": 24,
+   "no": 7
+  },
+  {
+   "id": "2026-11-12-bisnis-online-harga-jual",
+   "riset": "2026-11-12-bisnis-online",
+   "nama": "Kalkulator Harga Jual",
+   "target": "penjual di Shopee dan TikTok Shop yang merasa ramai order tapi untungnya tidak jelas",
+   "formula": "Isi modal barang, ongkos kemas, dan nama marketplace, dapat harga jual dan untung bersih per barang dalam 1 menit, langsung bisa dipasang sebagai harga baru.",
+   "malas": 8,
+   "instant": 9,
+   "applicable": 8,
+   "pembanding": [
+    {
+     "nama": "Paket Usaha Dapur Rumahan (Adversity Digital Solution)",
+     "id_lokal": true,
+     "isi": "30 resep jualan plus kalkulator HPP: isi harga bahan, keluar modal per porsi dan saran harga jual. 1 iklan terlihat.",
+     "hari": 6,
+     "status": "BARU",
+     "harga": "Rp 49.000 sekali bayar",
+     "harga_pendek": "Rp 49.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://ruangpixel.myscalev.com/paket-usaha-dapur"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=3299616086875729"
+     ],
+     "catatan": "Pembanding ini untuk usaha kuliner, bukan toko online umum."
+    }
+   ],
+   "bentuk": "Aplikasi web kecil atau Google Sheets. Nilai jualnya ada di daftar biaya marketplace yang sudah terisi, jadi pembeli tidak perlu mencari sendiri.",
+   "opsi": [
+    {
+     "nama": "Aplikasi web kalkulator",
+     "isi": "Pilih marketplace, isi modal, keluar harga jual dan untung bersih."
+    },
+    {
+     "nama": "Template Google Sheets",
+     "isi": "Lebih mudah dibuat dan bisa menghitung banyak barang sekaligus."
+    }
+   ],
+   "opsi_rekom": [
+    1
+   ],
+   "tambahan": "Lembar hitung promo dan diskon supaya tidak jual rugi.",
+   "ragu": "Ini ide baru tanpa bukti langsung. Pembandingnya untuk kuliner dan baru 6 hari. Dasarnya adalah berita keluhan penjual soal biaya marketplace yang naik. Biaya marketplace sering berubah, jadi isinya harus rajin diperbarui, dan kalkulator gratis mungkin sudah ada.",
+   "saran": "Validasi dulu, cek kalkulator gratis yang sudah ada sebelum membuat.",
+   "total": 25,
+   "no": 4
+  },
+  {
+   "id": "2026-11-12-bisnis-online-catatan-uang",
+   "riset": "2026-11-12-bisnis-online",
+   "nama": "Catatan Uang Usaha",
+   "target": "pemilik usaha online perorangan yang uang usaha dan uang pribadinya masih satu rekening",
+   "formula": "Isi uang masuk dan keluar hari ini, dapat laba bersih dan perkiraan pajak bulan ini dalam 10 menit, langsung bisa dipakai menentukan uang yang disisihkan.",
+   "malas": 6,
+   "instant": 7,
+   "applicable": 8,
+   "pembanding": [
+    {
+     "nama": "Money Planner Sheet (Shindy Asparina)",
+     "id_lokal": true,
+     "isi": "Template Google Sheets pembukuan usaha yang menghitung omzet, laba, dan perkiraan pajak 0,5 persen. Sudut iklan: takut kena pajak tapi tidak tahu harus menyisihkan berapa. 4 iklan terlihat.",
+     "hari": 21,
+     "status": "POTENSIAL",
+     "harga": "Rp 79.000 sekali bayar, disebut harga perkenalan sebelum naik ke Rp 199.000",
+     "harga_pendek": "Rp 79.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://kitstation.id/moneyplannerv2"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1454236266677643"
+     ]
+    },
+    {
+     "nama": "Kanafin, jasa pembukuan UMKM",
+     "id_lokal": true,
+     "isi": "Jasa pembukuan dan laporan keuangan bulanan. 2 iklan terlihat.",
+     "hari": 5,
+     "status": "BARU",
+     "harga": "Mulai Rp 2 juta per bulan menurut tulisan di iklan",
+     "harga_pendek": "Rp 2 juta per bulan",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://kanafin.co/"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1078216631907353"
+     ]
+    }
+   ],
+   "bentuk": "Template Google Sheets yang jalan di HP. Supaya lebih ringan dari pesaing, catatannya bisa diisi dengan menempel mutasi rekening.",
+   "opsi": [
+    {
+     "nama": "Template Google Sheets",
+     "isi": "Catat harian, laporan dan perkiraan pajak keluar sendiri."
+    },
+    {
+     "nama": "Aplikasi web tempel mutasi",
+     "isi": "Tempel mutasi rekening, transaksi terkelompok otomatis. Lebih ringan dipakai, lebih sulit dibuat."
+    }
+   ],
+   "opsi_rekom": [
+    0
+   ],
+   "tambahan": "Lembar pemisah gaji pemilik dan uang usaha.",
+   "ragu": "Pembeli tetap harus mencatat tiap hari, dan banyak yang berhenti di minggu kedua. Hitungan pajak harus benar dan ikut aturan terbaru, ini belum dicek. Aplikasi kasir gratis juga jadi pilihan pembeli.",
+   "saran": "Layak dicoba kecil kalau kamu paham pembukuan, sudut takut pajak sedang dipakai pesaing dengan 4 iklan.",
+   "total": 21,
+   "no": 8
+  },
+  {
+   "id": "2026-11-12-bisnis-online-tim-ai-toko",
+   "riset": "2026-11-12-bisnis-online",
+   "nama": "Tim AI Toko",
+   "target": "owner usaha kecil yang mengurus konten, chat, promo, dan catatan sendirian dan belum sanggup menggaji admin",
+   "formula": "Isi profil toko sekali, dapat 4 asisten AI berisi perintah yang sudah terisi nama toko dalam 15 menit, langsung bisa dipakai di AI gratis di HP.",
+   "malas": 7,
+   "instant": 7,
+   "applicable": 7,
+   "pembanding": [
+    {
+     "nama": "Juragan Pintar AI (Maya Anindita)",
+     "id_lokal": true,
+     "isi": "Aplikasi di HP yang melatih AI gratis untuk 4 pekerjaan admin, 15 menit sehari selama 28 hari. 2 iklan terlihat.",
+     "hari": 20,
+     "status": "POTENSIAL",
+     "harga": "Sekali bayar, angkanya tidak tertulis di halaman",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://bookvalley.id/jpa"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=4599306730327105"
+     ],
+     "catatan": "Status POTENSIAL dari umur 20 hari."
+    },
+    {
+     "nama": "Karyawan.ai, kelas offline per kota (Faizaledrus)",
+     "id_lokal": true,
+     "isi": "Kelas offline di beberapa kota dengan demo 25 karyawan AI. Sudut iklan: bisnismu cuma punya satu karyawan, yaitu kamu. 5 iklan terlihat.",
+     "hari": 1,
+     "status": "BARU",
+     "harga": "Rp 399.000 untuk tiket kelas, harga normal Rp 997.000",
+     "harga_pendek": "Rp 399.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://produk.karyawan.ai/kelas-offline-btm"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1195827172936622"
+     ]
+    }
+   ],
+   "bentuk": "Aplikasi web kecil yang langsung memberi perintah jadi di hari pertama. Pesaing memakai latihan 28 hari, jadi celahnya ada di hasil yang keluar hari itu juga.",
+   "opsi": [
+    {
+     "nama": "Aplikasi web isi sekali",
+     "isi": "Isi profil toko, keluar 4 set perintah siap salin."
+    },
+    {
+     "nama": "Kelas singkat",
+     "isi": "Video pendek cara melatih AI untuk usaha. Pembeli masih harus belajar."
+    }
+   ],
+   "opsi_rekom": [
+    0
+   ],
+   "tambahan": "Paket perintah khusus momen promo.",
+   "ragu": "Tiga pesaing memakai sudut yang sama dan dua di antaranya baru tayang. Pembeli tetap harus menyalin dan menempel ke AI. Harga pesaing utama tidak tertulis di halamannya.",
+   "saran": "Validasi dulu, sudutnya ramai tapi belum ada yang terbukti lama.",
+   "total": 21,
+   "no": 9
+  },
+  {
+   "id": "2026-11-12-bisnis-online-model-ai",
+   "riset": "2026-11-12-bisnis-online",
+   "nama": "Model AI Toko",
+   "target": "pemilik brand kecil yang butuh video ulasan produk tapi tidak mau tampil di kamera dan tidak sanggup membayar model",
+   "formula": "Isi satu foto produk dan pilih karakter, dapat satu video ulasan pendek dalam beberapa jam, langsung bisa dipakai sebagai konten iklan setelah dicek.",
+   "malas": 5,
+   "instant": 5,
+   "applicable": 6,
+   "pembanding": [
+    {
+     "nama": "Magic Director Studio (Dedy Tjipto)",
+     "id_lokal": true,
+     "isi": "Kelas dan alur kerja membuat satu karakter AI yang wajahnya konsisten untuk ulasan produk, afiliasi, dan podcast. 1 iklan terlihat.",
+     "hari": 45,
+     "status": "WINNING",
+     "harga": "Rp 199.000 sekali bayar",
+     "harga_pendek": "Rp 199.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://growwithdedy.com/magic-director-studio"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=1447225177275887"
+     ]
+    }
+   ],
+   "bentuk": "Paket karakter siap pakai ditambah panduan singkat. Pesaing menjual kelas, jadi celahnya ada di karakter yang sudah jadi.",
+   "opsi": [
+    {
+     "nama": "Paket karakter siap pakai",
+     "isi": "10 karakter yang sudah dikunci wajahnya, lengkap dengan perintah video per jenis produk."
+    },
+    {
+     "nama": "Kelas singkat",
+     "isi": "Mengikuti bentuk pesaing, tapi pembeli harus belajar dari nol."
+    }
+   ],
+   "opsi_rekom": [
+    0
+   ],
+   "tambahan": "Paket naskah video ulasan 30 detik.",
+   "ragu": "Pembeli tetap harus belajar alat video AI dan membayar kredit alat itu. Hasil pertama bisa makan waktu lama. Aturan iklan soal konten buatan AI belum dicek.",
+   "saran": "Tahan dulu kecuali kamu sudah mahir membuat video AI.",
+   "total": 16,
+   "no": 11
+  },
+  {
+   "id": "2026-11-12-bisnis-online-foto-produk",
+   "riset": "2026-11-12-bisnis-online",
+   "nama": "Studio Foto Produk",
+   "target": "penjual online satu jenis barang (fashion muslim, makanan, atau skincare) yang memotret produknya sendiri pakai HP",
+   "formula": "Isi satu foto produk dari HP, dapat 5 foto katalog bergaya studio dalam 3 menit, langsung bisa dipasang di marketplace dan status WhatsApp.",
+   "malas": 9,
+   "instant": 9,
+   "applicable": 8,
+   "pembanding": [
+    {
+     "nama": "Mantra Foto (Lupapola Digital)",
+     "id_lokal": true,
+     "isi": "Alat AI foto dengan 60+ fitur, termasuk photoshoot produk, model AI, dan foto makanan. Sudut iklan: cuma modal HP dari rumah, tidak perlu jago edit. 1 iklan terlihat.",
+     "hari": 230,
+     "status": "WINNING",
+     "harga": "Rp 99.000 sekali bayar. Di halaman juga tertulis Rp 499.000.",
+     "harga_pendek": "Rp 99.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://mantraa.id/mantra-foto"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=2164669247619986"
+     ],
+     "catatan": "Umur memakai iklan tertua yang terlihat."
+    },
+    {
+     "nama": "StudioFoto AI",
+     "id_lokal": true,
+     "isi": "Editor foto AI untuk UMKM dengan halaman berbeda untuk kuliner dan kemasan. Sudut iklan: bayar sekali, tanpa prompt, coba gratis pakai foto sendiri. 4 iklan terlihat.",
+     "hari": 32,
+     "status": "WINNING",
+     "harga": "Sekali bayar, angkanya tidak tertulis di halaman yang terbaca",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://studiofoto.ai/lp/coba/umkm"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=4616632288605768",
+      "https://www.facebook.com/ads/library/?id=2238795493632877"
+     ],
+     "catatan": "Ditemukan saat validasi."
+    },
+    {
+     "nama": "VoxGen",
+     "id_lokal": true,
+     "isi": "Satu alat untuk konten promosi: foto produk, foto makanan, model AI, poster, dan banner. Upload foto, pilih template, generate. 2 iklan terlihat.",
+     "hari": 19,
+     "status": "POTENSIAL",
+     "harga": "Rp 139.000 sekali bayar, harga coret Rp 1.499.000",
+     "harga_pendek": "Rp 139.000",
+     "lp": [
+      {
+       "label": "Buka halaman jualannya",
+       "url": "https://voxgen.space/"
+      }
+     ],
+     "iklan": [
+      "https://www.facebook.com/ads/library/?id=3619761934851220"
+     ],
+     "catatan": "Ditemukan saat validasi."
+    }
+   ],
+   "bentuk": "Aplikasi web sederhana khusus satu jenis toko. Pesaing menjual puluhan fitur campur aduk, jadi celahnya ada di alat yang sempit dan hasilnya pas untuk satu jenis barang.",
+   "opsi": [
+    {
+     "nama": "Aplikasi web khusus satu jenis toko",
+     "isi": "Misalnya khusus fashion muslim: upload foto baju, keluar foto katalog dengan model berhijab."
+    },
+    {
+     "nama": "Paket perintah AI siap salin",
+     "isi": "Kumpulan perintah foto produk untuk AI gratis, per jenis barang. Lebih murah dibuat, tapi pembeli masih harus menyalin dan mencoba."
+    },
+    {
+     "nama": "Gabungan alat dan template latar",
+     "isi": "Alat foto ditambah 50 latar siap pakai untuk momen promo."
+    }
+   ],
+   "opsi_rekom": [
+    0
+   ],
+   "tambahan": "Paket latar musiman (Ramadan, Lebaran, 12.12) sebagai tambahan saat checkout.",
+   "ragu": "Pesaingnya sudah empat dan murah, dan Canva serta aplikasi AI gratis juga bisa melakukan hal mirip. Biaya AI per foto belum dihitung, padahal semua pesaing menjual sekali bayar. Harga StudioFoto AI tidak tertulis di halamannya.",
+   "saran": "Hitung dulu biaya AI per foto, lalu coba kecil dengan satu jenis toko saja.",
+   "total": 26,
+   "validasi": {
+    "vonis": "PERLU BUKTI",
+    "alasan": "Orang jelas mau membayar untuk masalah ini, karena empat pesaing Indonesia beriklan dan dua di antaranya sudah lebih dari 140 hari. Yang belum terjawab adalah biaya AI untuk tiap foto: kalau dijual sekali bayar seperti pesaing, pembeli yang rajin bisa membuat hitungannya rugi.",
+    "iklan": [
+     "Di Indonesia terbaca empat pengiklan produk sejenis: Mantra Foto 230 hari, Seller Studio AI 140 hari, StudioFoto AI 32 hari, dan VoxGen 19 hari.",
+     "Seller Studio AI dan StudioFoto AI sama-sama menambah iklan baru dalam 35 hari terakhir, tanda mereka masih lanjut beriklan.",
+     "Sudut iklan yang dipakai: hemat biaya model dan studio, cukup dari HP, tanpa prompt, dan bayar sekali. StudioFoto AI memecah iklannya per jenis usaha (kuliner, kemasan).",
+     "Di Amerika, Artistly beriklan 570 hari dengan harga 49 dolar sekali bayar, dan Genera Space 122 hari khusus fashion. LYFA baru 2 hari dengan sudut foto AI yang tidak terlihat palsu.",
+     "Jumlah iklan pasti tiap pesaing tidak terbaca. Pengecekan per halaman pengiklan tidak memberi hasil."
+    ],
+    "pesaing_app": [
+     "Mantra Foto: Rp 99.000 sekali bayar, 60+ fitur.",
+     "VoxGen: Rp 139.000 sekali bayar, puluhan mode.",
+     "StudioFoto AI: sekali bayar, ada coba gratis, harga tidak terbaca.",
+     "Canva Pro Lite: mulai Rp 33 ribu per bulan, langganan, ada hapus dan ganti latar foto produk.",
+     "LYFA (Amerika): 10 dolar untuk 15 gambar, bayar per paket tanpa langganan.",
+     "Artistly (Amerika): 49 dolar sekali bayar untuk gambar tanpa batas."
+    ],
+    "gratisan": [
+     "Aplikasi AI gratis seperti Gemini, ChatGPT, dan Meta AI bisa mengubah foto produk kalau pembeli mau menulis perintahnya sendiri. Google dan Qwen juga sedang beriklan di Indonesia.",
+     "Canva gratis punya template, tapi hapus latar hanya ada di paket berbayar.",
+     "Alasan orang tetap membayar: tidak perlu menulis perintah, hasilnya sudah pas untuk jenis barangnya, dan sekali klik langsung jadi beberapa foto. Alasan ini cukup kuat untuk pembeli awam, tapi lemah untuk yang sudah terbiasa memakai AI."
+    ],
+    "harga": [
+     "Harga saran Rp 99.000, sama dengan Mantra Foto dan di bawah VoxGen Rp 139.000. Lebih aman dijual dengan jatah foto, misalnya 30 foto, bukan tanpa batas.",
+     "Perkiraan biaya iklan per pembelian Rp 30.000 sampai Rp 60.000. Ini perkiraan, bukan data. Kalau kamu punya angka sendiri, vonis bisa berubah.",
+     "Perkiraan biaya AI Rp 500 sampai Rp 1.500 per foto, jadi Rp 15.000 sampai Rp 45.000 untuk jatah 30 foto. Ini juga perkiraan dan harus dicek ke penyedia AI yang dipakai.",
+     "Sisa per penjualan: dari rugi Rp 6.000 sampai untung Rp 54.000, tergantung dua perkiraan di atas.",
+     "Untuk tes iklan Rp 300.000: kalau sisanya Rp 25.000 per penjualan, butuh 12 penjualan untuk balik modal."
+    ],
+    "langkah": [
+     "Coba buat 20 foto produk dengan penyedia AI yang akan dipakai, lalu catat biaya nyata per foto dan berapa yang hasilnya layak pakai.",
+     "Pilih satu jenis toko saja, misalnya fashion muslim, supaya berbeda dari pesaing yang serba ada.",
+     "Kalau biaya per foto di bawah Rp 1.000 dan sebagian besar hasilnya layak pakai, vonis naik jadi lanjut tes kecil: buat halaman jualan sederhana dan pasang 2 sampai 3 iklan selama 3 hari."
+    ],
+    "tautan": [
+     {
+      "label": "Mantra Foto",
+      "url": "https://mantraa.id/mantra-foto"
+     },
+     {
+      "label": "StudioFoto AI",
+      "url": "https://studiofoto.ai/lp/coba/umkm"
+     },
+     {
+      "label": "VoxGen",
+      "url": "https://voxgen.space/"
+     },
+     {
+      "label": "Canva Pro Lite",
+      "url": "https://www.canva.com/id_id/desain-jualan/"
+     },
+     {
+      "label": "LYFA (Amerika)",
+      "url": "https://lyfa.ai/"
+     },
+     {
+      "label": "Artistly (Amerika)",
+      "url": "https://artistly.ai/fbdeal/"
+     },
+     {
+      "label": "Iklan Seller Studio AI, 140 hari",
+      "url": "https://www.facebook.com/ads/library/?id=2467319314017272"
+     },
+     {
+      "label": "Iklan StudioFoto AI, 32 hari",
+      "url": "https://www.facebook.com/ads/library/?id=4616632288605768"
+     },
+     {
+      "label": "Iklan Artistly, 570 hari",
+      "url": "https://www.facebook.com/ads/library/?id=1858705734968586"
+     },
+     {
+      "label": "Iklan Genera Space, 122 hari",
+      "url": "https://www.facebook.com/ads/library/?id=1386775333374442"
+     }
+    ],
+    "tanggal": "2026-11-12"
+   },
+   "no": 3
+  }
+ ]
+}
