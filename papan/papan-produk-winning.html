@@ -1,0 +1,445 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body><title>Ghost Ads Spy · Papan Produk Winning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap">
+<style>
+/* Tata letak: pita merek di atas, daftar produk di kiri, satu produk dibaca penuh di kanan. Satu kolom di HP. Satu tema gelap. */
+:root {
+  color-scheme: dark;
+  --bg: #0A0A0A; --card: #141414; --card2: #1C1C1C; --line: rgba(255,255,255,.1); --line2: rgba(255,255,255,.2);
+  --txt: #F5F5F0; --mut: #B4AEA9; --dim: #948E89;
+  --red: #EF4444; --red2: #DC2626; --spk: #F87171; --soft: #FCA5A5; --ink: #0A0A0A;
+  --win: #22C55E; --pot: #F5A524; --baru: #7DD3FC;
+  --f: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --m: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0; color: var(--txt); font: 400 16px/1.55 var(--f); -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(900px 420px at 72% -8%, rgba(239,68,68,.2), transparent 70%),
+    linear-gradient(rgba(255,255,255,.028) 1px, transparent 1px) 0 0/48px 48px,
+    linear-gradient(90deg, rgba(255,255,255,.028) 1px, transparent 1px) 0 0/48px 48px, var(--bg);
+  padding: 0 max(16px, env(safe-area-inset-right, 0px)) 48px max(16px, env(safe-area-inset-left, 0px));
+  min-height: 100vh;
+}
+h1, h2, h3, h4, p, ul { margin: 0; padding: 0; }
+ul { list-style: none; }
+a { color: var(--soft); }
+button, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--spk); outline-offset: 2px; }
+.mono { font-family: var(--m); letter-spacing: .12em; text-transform: uppercase; }
+.bungkus { max-width: 1240px; margin-inline: auto; display: grid; gap: 18px; }
+
+/* Pita merek */
+.top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 22px; padding: 16px 0 14px; border-bottom: 1px solid rgba(239,68,68,.35); }
+.logo { font-weight: 900; font-size: clamp(24px, 3vw, 32px); letter-spacing: -.035em; color: var(--red); text-shadow: 0 0 26px rgba(239,68,68,.5); line-height: 1.1; }
+.top .tag { font-size: 12px; font-weight: 700; color: var(--mut); border-left: 1px solid #333; padding-left: 22px; }
+.live { margin-left: auto; display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 800; color: var(--win); }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: var(--win); box-shadow: 0 0 12px var(--win); }
+.live.tunggu { color: var(--pot); }
+.live.tunggu i { background: var(--pot); box-shadow: 0 0 12px var(--pot); animation: kedip 1.8s ease-in-out infinite; }
+@keyframes kedip { 50% { opacity: .25; } }
+.merek { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--dim); }
+.merek a { font-weight: 700; }
+.tagline { font-style: italic; }
+.tagline:empty { display: none; }
+
+/* Pita contoh */
+.pita-contoh { border: 1px solid var(--pot); background: rgba(245,165,36,.1); border-radius: 12px; padding: 12px 16px; font-size: 15px; }
+.pita-contoh b { color: var(--pot); font-family: var(--m); font-size: 12px; letter-spacing: .12em; display: block; margin-bottom: 2px; }
+
+/* Kepala */
+.kepala { display: grid; gap: 12px; }
+.kicker { font-size: 12px; font-weight: 800; color: var(--spk); }
+h1 { font: 900 clamp(26px, 3.4vw, 40px)/1.1 var(--f); letter-spacing: -.035em; text-wrap: balance; max-width: 24em; }
+.alat { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.tab { border: 1px solid var(--line2); background: var(--card); padding: 9px 15px; border-radius: 9px; font-weight: 700; font-size: 14px; color: var(--mut); min-height: 40px; }
+.tab[aria-pressed="true"] { background: var(--red); border-color: var(--red); color: var(--ink); }
+#pilih-riset { border: 1px solid var(--line2); background: var(--card); padding: 9px 10px; border-radius: 9px; max-width: 100%; min-width: 0; min-height: 40px; font-size: 14px; }
+
+/* Papan kosong: satu kotak petunjuk */
+.kosong { border: 1px solid rgba(239,68,68,.45); border-radius: 22px; background: var(--card); box-shadow: 0 0 60px rgba(239,68,68,.12); padding: clamp(26px, 5vw, 56px) clamp(18px, 4vw, 48px); display: grid; gap: 18px; justify-items: center; text-align: center; margin-top: 8px; }
+.kosong .eye { padding: 7px 14px; border-radius: 8px; border: 1px solid rgba(239,68,68,.4); background: rgba(239,68,68,.07); font-size: 11px; font-weight: 800; color: var(--spk); }
+.kosong h1 { max-width: 16em; }
+.kosong h1 em { font-style: normal; color: var(--red); }
+.ketik { width: 100%; max-width: 620px; background: #000; border: 1px solid var(--line2); border-left: 4px solid var(--red); border-radius: 12px; padding: 16px 18px; text-align: left; font: 700 clamp(15px, 2.2vw, 19px)/1.45 var(--m); color: var(--txt); overflow-wrap: anywhere; }
+.ketik::before { content: "> "; color: var(--red); }
+.kosong p { color: var(--mut); max-width: 44ch; font-size: 16px; }
+.kosong p b { color: var(--txt); }
+
+/* Meja dua kolom */
+.meja { display: grid; grid-template-columns: 360px minmax(0, 1fr); gap: 20px; align-items: start; }
+.rel { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow: auto; display: grid; gap: 16px; align-content: start; padding-right: 2px; }
+.rel h2 { font-size: 12px; font-weight: 800; color: var(--red); display: flex; justify-content: space-between; gap: 8px; }
+.rel h2 b { color: var(--dim); font-weight: 700; }
+.kelompok { display: grid; gap: 10px; }
+.baris { width: 100%; display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 12px; align-items: center; text-align: left; padding: 14px; border-radius: 14px; border: 1px solid #262626; background: var(--card); min-height: 84px; }
+.baris:hover { border-color: var(--line2); }
+.baris[aria-current="true"] { border-color: var(--red); background: linear-gradient(90deg, rgba(239,68,68,.16), var(--card) 70%); box-shadow: 0 0 30px rgba(239,68,68,.2); }
+.no { font: 700 15px var(--m); color: var(--dim); }
+.baris[aria-current="true"] .no { color: var(--red); }
+.baris-nama { font-weight: 800; line-height: 1.22; display: block; letter-spacing: -.01em; }
+.baris-sub { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; margin-top: 6px; font-size: 11px; font-weight: 700; color: var(--mut); }
+.baris-umur { text-align: right; }
+.baris-umur i { font-style: normal; font-weight: 900; font-size: 30px; letter-spacing: -.04em; line-height: 1; display: block; font-variant-numeric: tabular-nums; }
+.baris-umur span { display: block; font-size: 10px; color: var(--dim); margin-top: 3px; font-weight: 700; }
+.lencana { display: inline-block; font: 800 11px/1.5 var(--m); letter-spacing: .1em; padding: 2px 8px; border-radius: 5px; white-space: nowrap; text-transform: uppercase; }
+.l-WINNING, .l-LANJUT { background: #16A34A; color: #fff; }
+.l-POTENSIAL, .l-PERLU { background: var(--pot); color: var(--ink); }
+.l-BARU { background: rgba(125,211,252,.16); color: var(--baru); }
+.l-TAHAN { background: var(--red2); color: #fff; }
+.l-BELUM { background: var(--card2); color: var(--mut); border: 1px solid var(--line); }
+.l-SARAN { background: var(--red); color: var(--ink); }
+
+/* Bacaan satu produk */
+.baca { border: 1px solid rgba(239,68,68,.45); border-radius: 22px; background: #161616; box-shadow: 0 0 60px rgba(239,68,68,.1); padding: clamp(18px, 2.6vw, 32px); display: grid; gap: 26px; min-width: 0; }
+.baca-kepala { display: grid; gap: 8px; }
+.tanda { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 11px; color: var(--dim); font-weight: 700; }
+.baca h2 { font: 900 clamp(26px, 3vw, 38px)/1.08 var(--f); letter-spacing: -.035em; text-wrap: balance; }
+.target { color: var(--mut); }
+.janji { font: 700 clamp(18px, 2vw, 22px)/1.36 var(--f); letter-spacing: -.01em; max-width: 34em; }
+.janji mark { background: rgba(239,68,68,.22); color: inherit; padding: 0 .2em; border-radius: 4px; }
+.dtop { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 28px; align-items: center; padding-block: 4px 22px; border-bottom: 1px solid #2a2a2a; }
+.ring { width: 180px; height: 180px; border-radius: 50%; display: grid; place-items: center; box-shadow: 0 0 44px rgba(239,68,68,.3); justify-self: center; }
+.ring > div { width: 142px; height: 142px; border-radius: 50%; background: #0c0c0c; display: grid; place-items: center; align-content: center; text-align: center; }
+.ring b { font-size: 62px; font-weight: 900; letter-spacing: -.06em; line-height: 1; font-variant-numeric: tabular-nums; }
+.ring b small { font: 700 20px var(--m); color: var(--dim); letter-spacing: 0; }
+.ring span { font-size: 10px; font-weight: 800; color: var(--spk); margin-top: 6px; }
+.kv { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 11px 0; border-bottom: 1px solid #262626; font-size: 16px; font-weight: 700; color: #c9c7c1; }
+.kv:last-child { border: 0; }
+.kv span { font: 800 15px var(--m); color: #fff; text-align: right; overflow-wrap: anywhere; }
+.bagian { display: grid; gap: 12px; min-width: 0; }
+.bagian > h3 { font-size: 12px; font-weight: 800; color: var(--red); }
+.bagian > p { max-width: 68ch; color: #dddad4; }
+.bukti { background: var(--card); border: 1px solid #262626; border-radius: 16px; padding: 16px; display: grid; gap: 14px; }
+.bukti-atas { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 16px; align-items: start; }
+.umur { font: 900 40px/1 var(--f); letter-spacing: -.05em; font-variant-numeric: tabular-nums; }
+.umur small { display: block; font: 700 10px/1.4 var(--m); letter-spacing: .12em; color: var(--dim); margin-top: 6px; text-transform: uppercase; }
+.umur.tanpa { color: var(--dim); }
+.bukti-isi { display: grid; gap: 6px; min-width: 0; }
+.bukti-nama { font-weight: 800; font-size: 17px; line-height: 1.3; }
+.bukti-meta { font-size: 15px; color: var(--mut); }
+.bukti-bawah { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.sel { background: #0c0c0c; border: 1px solid #262626; border-radius: 12px; padding: 12px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.sel h4 { font-size: 10px; font-weight: 800; color: var(--spk); }
+.sel p { font-size: 14px; color: var(--mut); }
+.sel .harga { font-weight: 800; font-size: 15px; color: var(--txt); line-height: 1.35; }
+.tautan { display: flex; flex-wrap: wrap; gap: 6px; }
+.tautan a { font-size: 13px; font-weight: 800; text-decoration: none; padding: 8px 12px; border-radius: 8px; background: rgba(239,68,68,.14); border: 1px solid rgba(239,68,68,.4); color: var(--soft); overflow-wrap: anywhere; min-height: 36px; display: inline-flex; align-items: center; }
+.tautan a:hover { background: var(--red); color: var(--ink); }
+.opsi { display: grid; gap: 8px; }
+.opsi-butir { padding: 12px 14px; border-radius: 12px; border: 1px solid #262626; background: var(--card); }
+.opsi-butir.rekom { border-color: var(--red); }
+.opsi-nama { font-weight: 800; }
+.opsi-isi { color: var(--mut); font-size: 15px; display: block; }
+.opsi-butir .lencana { margin-left: 6px; }
+.ragu { background: rgba(245,165,36,.09); border: 1px solid rgba(245,165,36,.4); border-radius: 12px; padding: 12px 14px; color: #e9e4da; }
+.ragu b { display: block; font: 800 11px var(--m); letter-spacing: .12em; color: var(--pot); margin-bottom: 4px; text-transform: uppercase; }
+.vonis { border-radius: 16px; padding: 18px; display: grid; gap: 14px; border: 1px solid var(--line2); background: var(--card); }
+.vonis-kepala .lencana { font-size: 14px; padding: 5px 12px; }
+.vonis h4 { font: 800 11px var(--m); letter-spacing: .12em; color: var(--dim); text-transform: uppercase; margin-bottom: 4px; }
+.vonis-butir { display: grid; gap: 3px; }
+.daftar-titik { display: grid; gap: 7px; list-style: disc; padding-left: 20px; max-width: 72ch; color: #dddad4; }
+.daftar-titik li::marker { color: var(--red); }
+
+/* Halaman lebar: bukti riset */
+.lebar { background: #161616; border: 1px solid #262626; border-radius: 22px; padding: clamp(18px, 2.6vw, 32px); display: grid; gap: 28px; margin-bottom: 16px; }
+.lebar h2 { font: 900 22px/1.2 var(--f); letter-spacing: -.02em; }
+.lebar-bagian { display: grid; gap: 10px; max-width: 860px; min-width: 0; }
+.offer { padding-block: 10px; border-top: 1px solid #262626; display: grid; gap: 4px; }
+.sumber a { overflow-wrap: anywhere; }
+
+/* Cara baca dan kaki */
+.arti { border: 1px solid #262626; border-radius: 14px; background: var(--card); padding: 4px 18px; }
+.arti summary { cursor: pointer; padding: 12px 0; font-size: 12px; font-weight: 800; color: var(--mut); }
+.arti .daftar-titik { padding-bottom: 16px; font-size: 15px; }
+
+@media (max-width: 900px) {
+  .meja { grid-template-columns: minmax(0, 1fr); }
+  .rel { position: static; max-height: none; }
+  .dtop { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .bukti-bawah { grid-template-columns: minmax(0, 1fr); }
+  .top .tag { border-left: 0; padding-left: 0; }
+  .live { margin-left: 0; width: 100%; }
+}
+@media (max-width: 480px) {
+  .bukti-atas { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .umur small { display: inline; margin-left: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .live.tunggu i { animation: none; } }
+</style>
+
+<div class="bungkus">
+  <div class="top">
+    <div class="logo">Ghost Ads Spy</div>
+    <div class="tag mono">Papan Produk Winning</div>
+    <div class="live mono" id="live"><i></i><span id="live-teks"></span></div>
+  </div>
+  <div class="merek">
+    <span class="tagline"></span>
+    <span>Produk resmi Regrow Labs</span>
+    <a id="tautan-resmi" href="" target="_blank" rel="noopener">Halaman resmi</a>
+  </div>
+
+  <div class="pita-contoh" id="pita-contoh" hidden><b>CONTOH RISET NYATA</b>Ini contoh hasil riset sungguhan untuk dipelajari cara bacanya, bukan hasil risetmu. Papanmu sendiri terisi setelah kamu mengetik "Riset produk: niche ..." di Claude Code.</div>
+
+  <header class="kepala" id="kepala" hidden>
+    <p class="kicker mono" id="kicker"></p>
+    <h1 id="judul"></h1>
+    <div class="alat">
+      <select id="pilih-riset" aria-label="Pilih riset" hidden></select>
+      <button class="tab" data-act="tab" data-nilai="ide" aria-pressed="true">Produk winning</button>
+      <button class="tab" data-act="tab" data-nilai="bukti" aria-pressed="false">Bukti riset</button>
+    </div>
+  </header>
+
+  <main id="utama"></main>
+
+  <details class="arti" id="arti" hidden>
+    <summary class="mono">Cara baca papan</summary>
+    <ul class="daftar-titik">
+      <li><b>Paling disarankan</b>: hanya produk yang iklan pesaingnya sudah WINNING. Yang iklannya tayang 90 hari atau lebih didahulukan, lalu Skor Ghost tertinggi. Produk yang iklannya masih BARU atau POTENSIAL tidak masuk kelompok ini walau skornya tinggi.</li>
+      <li><b>Skor Ghost</b>: nilai 0 sampai 30 dari Formula Kurasi Ghost. Makin tinggi, makin layak dijual. Ini penilaian dari bukti yang ditemukan, bukan jaminan laku.</li>
+      <li><span class="lencana l-WINNING">WINNING</span> iklan pesaing aktif 30 hari atau lebih. Orang jarang membayar iklan selama itu kalau tidak balik modal.</li>
+      <li><span class="lencana l-POTENSIAL">POTENSIAL</span> aktif 14 sampai 29 hari, atau punya 10 iklan aktif atau lebih. <span class="lencana l-BARU">BARU</span> aktif di bawah 14 hari, belum terbukti.</li>
+      <li><b>Vonis Validasi</b>: <span class="lencana l-LANJUT">LANJUT TES KECIL</span> layak dicoba dengan modal kecil. <span class="lencana l-PERLU">PERLU BUKTI</span> ada yang harus dicek dulu. <span class="lencana l-TAHAN">TAHAN</span> sebaiknya jangan dulu. Vonis adalah saran, keputusan tetap di tangan kamu.</li>
+      <li>Harga dan klaim adalah tulisan di halaman pesaing, belum diverifikasi. Waktu di kalimat janji produk adalah target rancangan.</li>
+      <li>Semua hasil riset tersimpan di folder <b>papan</b> di dalam folder Ghost Ads Spy. Selama folder itu tidak dihapus, riset lama selalu muncul lagi.</li>
+    </ul>
+  </details>
+
+</div>
+
+<script type="application/json" id="data-riset">{"riset": [], "ide": []}</script>
+<script>
+/* Ghost Ads Spy. Produk resmi Regrow Labs. */
+const RESMI = '';
+let DATA = { riset: [], ide: [] };
+try { DATA = JSON.parse(document.getElementById('data-riset').textContent); } catch (e) { DATA = { riset: [], ide: [] }; }
+DATA.riset = DATA.riset || []; DATA.ide = DATA.ide || [];
+const CONTOH = !!DATA._contoh;
+const S = { rid: 'semua', pilih: null, tampil: 'ide' };
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const aman = u => (/^https:\/\//.test(String(u)) ? esc(u) : '#');
+function tgl(iso) {
+  if (!iso) return '';
+  const [y, m, d] = String(iso).split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+const dua = n => String(n).padStart(2, '0');
+const risetUrut = () => [...DATA.riset].sort((a, b) => String(b.tanggal).localeCompare(String(a.tanggal)));
+const risetAktif = () => (S.rid === 'semua' ? null : DATA.riset.find(r => r.id === S.rid) || null);
+function ideAktif() {
+  const a = S.rid === 'semua' ? [...DATA.ide] : DATA.ide.filter(i => i.riset === S.rid);
+  return a.sort((x, y) => (y.total - x.total) || (x.no - y.no));
+}
+/* Bukti WINNING terkuat = iklan tertua. Angka hari di daftar, judul, dan ringkasan selalu dari pesaing ini. */
+function buktiWinning(i) {
+  return (i.pembanding || []).filter(x => x.status === 'WINNING' && x.hari != null).sort((a, b) => b.hari - a.hari)[0] || null;
+}
+const belum = t => /belum/i.test(String(t || ''));
+const lengkap = p => (p.iklan || []).length > 0 && (p.lp || []).some(l => !belum(l.label)) && !!p.harga && !belum(p.harga);
+/* Urutan Paling disarankan: iklan 90 hari atau lebih dulu, lalu Skor Ghost, lalu bukti lengkap, lalu umur. Hanya WINNING. */
+function kunciSaran(i) {
+  const p = buktiWinning(i);
+  if (!p) return null;
+  return [p.hari >= 90 ? 1 : 0, i.total, (i.pembanding || []).some(x => x.status === 'WINNING' && lengkap(x)) ? 1 : 0, p.hari];
+}
+const banding = (a, b) => { for (let n = 0; n < a.length; n++) if (a[n] !== b[n]) return b[n] - a[n]; return 0; };
+function saranUrut() {
+  const rs = S.rid === 'semua' ? DATA.riset : DATA.riset.filter(r => r.id === S.rid);
+  const ids = rs.flatMap(r => r.rekomendasi || []);
+  return ideAktif().filter(i => ids.includes(i.id) && kunciSaran(i)).sort((a, b) => banding(kunciSaran(a), kunciSaran(b)));
+}
+const rekomSet = () => saranUrut().map(i => i.id);
+/* Urutan baca: Paling disarankan dulu, lalu produk lain urut Skor Ghost */
+function urutPapan() { const atas = saranUrut(); const ids = atas.map(i => i.id); return [...atas, ...ideAktif().filter(i => !ids.includes(i.id))]; }
+/* Judul papan disusun dari data, supaya selalu menyebut produk nomor 1 yang sama dengan daftar */
+function judulPapan() {
+  const semua = ideAktif(); const top = saranUrut()[0];
+  if (!top) return `${semua.length} produk ditemukan. Belum ada yang iklan pesaingnya tayang 30 hari atau lebih, jadi belum ada yang disarankan.`;
+  const p = buktiWinning(top); const h = hargaRingkas(top, p);
+  return `${semua.length} produk siap dipilih. ${top.nama} paling kuat: iklan pesaing tayang ${p.hari} hari${/\d/.test(h) ? `, harga ${h}` : ''}, Skor Ghost ${top.total}/30.`;
+}
+const ideTerpilih = () => ideAktif().find(i => i.id === S.pilih) || urutPapan()[0] || null;
+const kelasVonis = v => ({ 'LANJUT TES KECIL': 'LANJUT', 'PERLU BUKTI': 'PERLU', 'TAHAN': 'TAHAN' }[v] || 'BELUM');
+/* Bukti terkuat satu produk: iklan tertua, penawaran Indonesia didahulukan */
+function buktiUtama(i) {
+  return (i.pembanding || []).filter(x => x.hari != null).sort((a, b) => b.hari - a.hari)[0] || null;
+}
+/* Di dalam satu produk: pesaing urut dari iklan terlama, yang umurnya belum dicek paling bawah */
+function buktiUrut(i) {
+  return [...(i.pembanding || [])].sort((a, b) => (b.hari ?? -1) - (a.hari ?? -1));
+}
+
+/* Harga untuk ringkasan: harga pendek bukti utama, lalu bukti lain, lalu angka pertama yang tertulis */
+function hargaRingkas(i, p) {
+  const semua = [p, ...(i.pembanding || [])].filter(Boolean);
+  const pendek = semua.find(x => x.harga_pendek && !/belum/i.test(x.harga_pendek))?.harga_pendek;
+  if (pendek) return pendek;
+  for (const x of semua) { const m = String(x.harga || '').match(/(?:Rp|US\$|\$|RM|€|£)\s?[\d.,]+/); if (m) return m[0]; }
+  return 'BELUM DICEK';
+}
+function gambarKepala() {
+  const urut = risetUrut();
+  const ada = urut.length > 0;
+  $('pita-contoh').hidden = !CONTOH;
+  $('kepala').hidden = !ada;
+  $('arti').hidden = !ada;
+  $('live').classList.toggle('tunggu', !ada);
+  $('live-teks').textContent = ada ? `${DATA.ide.length} produk dari ${urut.length} riset` : 'Menunggu riset pertama';
+  if (!ada) return;
+  const r = risetAktif() || urut[0];
+  $('kicker').textContent = S.rid === 'semua' && urut.length > 1 ? `${urut.length} riset · terbaru ${tgl(urut[0].tanggal)}` : `${r.judul} · ${tgl(r.tanggal)}`;
+  $('judul').textContent = judulPapan();
+  const sel = $('pilih-riset');
+  sel.hidden = urut.length < 2;
+  if (!sel.hidden) {
+    sel.innerHTML = `<option value="semua">Semua riset</option>` + urut.map(x => `<option value="${esc(x.id)}" ${x.id === S.rid ? 'selected' : ''}>${esc(tgl(x.tanggal))} · ${esc(x.judul)}</option>`).join('');
+  }
+  document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-pressed', String(t.dataset.nilai === S.tampil)));
+}
+
+function baris(i, n) {
+  const aktif = ideTerpilih()?.id === i.id;
+  const v = i.validasi?.vonis;
+  const p = buktiUtama(i);
+  const umur = p ? `<i>${esc(p.hari)}</i><span class="mono">hari tayang</span>` : `<i>?</i><span class="mono">${(i.pembanding || []).length ? 'umur belum dicek' : 'ide baru'}</span>`;
+  return `<li><button class="baris" data-act="pilih" data-id="${esc(i.id)}" aria-current="${aktif}">
+    <span class="no">${dua(n)}</span>
+    <span><span class="baris-nama">${esc(i.nama)}</span>
+      <span class="baris-sub mono"><span>Skor ${esc(i.total)}/30</span>${p?.status ? `<span class="lencana l-${esc(p.status)}">${esc(p.status)}</span>` : ''}${v ? `<span class="lencana l-${kelasVonis(v)}">${esc(v)}</span>` : ''}</span></span>
+    <span class="baris-umur">${umur}</span></button></li>`;
+}
+function gambarRel() {
+  const atas = saranUrut();
+  const ids = atas.map(i => i.id);
+  const lain = ideAktif().filter(i => !ids.includes(i.id));
+  let n = 0;
+  return `<nav class="rel" aria-label="Daftar produk">
+    ${atas.length ? `<div class="kelompok"><h2 class="mono">Paling disarankan <b>iklan terbukti lama</b></h2><ul class="kelompok">${atas.map(i => baris(i, ++n)).join('')}</ul></div>` : ''}
+    ${lain.length ? `<div class="kelompok"><h2 class="mono">${atas.length ? 'Produk lain' : 'Semua produk'} <b>urut Skor Ghost</b></h2><ul class="kelompok">${lain.map(i => baris(i, ++n)).join('')}</ul></div>` : ''}
+  </nav>`;
+}
+const janji = t => esc(t).replace(/(dalam \d+ (?:menit|jam|detik|hari))/, '<mark>$1</mark>');
+function bukti(p) {
+  const lp = (p.lp || []).map(l => `<a href="${aman(l.url)}" target="_blank" rel="noopener">${esc(l.label || 'Buka landing page')}</a>`);
+  const ik = (p.iklan || []).map((u, n, a) => `<a href="${aman(u)}" target="_blank" rel="noopener">${a.length > 1 ? `Lihat iklan ${n + 1}` : 'Lihat iklan'}</a>`);
+  const umur = p.hari != null ? `<div class="umur">${esc(p.hari)}<small>hari tayang</small></div>` : `<div class="umur tanpa">?<small>umur belum dicek</small></div>`;
+  return `<article class="bukti">
+    <div class="bukti-atas">${umur}<div class="bukti-isi">
+      <div><span class="bukti-nama">${esc(p.nama)}</span> ${p.status ? `<span class="lencana l-${esc(p.status)}">${esc(p.status)}</span>` : ''}</div>
+      <p class="bukti-meta">${esc(p.isi)}</p>
+      ${p.catatan ? `<p class="bukti-meta">${esc(p.catatan)}</p>` : ''}</div></div>
+    <div class="bukti-bawah">
+      <div class="sel"><h4 class="mono">Bukti iklan</h4>${ik.length ? `<div class="tautan">${ik.join('')}</div>` : '<p>Tautan iklan belum ada.</p>'}</div>
+      <div class="sel"><h4 class="mono">Landing page</h4>${lp.length ? `<div class="tautan">${lp.join('')}</div>` : '<p>Belum dibuka.</p>'}</div>
+      <div class="sel"><h4 class="mono">Harga kompetitor</h4>${p.harga ? `<p class="harga">${esc(p.harga)}</p>` : '<p>Belum dicek.</p>'}</div>
+    </div></article>`;
+}
+const titik = a => `<ul class="daftar-titik">${(a || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul>`;
+function gambarValidasi(i) {
+  const v = i.validasi;
+  if (!v) {
+    return `<section class="bagian"><h3 class="mono">Vonis Validasi</h3><div class="vonis"><div class="vonis-kepala"><span class="lencana l-BELUM">Belum divalidasi</span></div>
+      <p>Mau tahu produk ini layak dites atau tidak? Ketik ini di Claude Code. Vonisnya muncul di sini.</p>
+      <div class="ketik">Validasi ide: ${esc(i.nama)}</div></div></section>`;
+  }
+  const butir = (judul, isi) => !isi || (Array.isArray(isi) && !isi.length) ? '' : `<div class="vonis-butir"><h4>${judul}</h4>${Array.isArray(isi) ? titik(isi) : `<p>${esc(isi)}</p>`}</div>`;
+  return `<section class="bagian"><h3 class="mono">Vonis Validasi${v.tanggal ? ` · ${esc(tgl(v.tanggal))}` : ''}</h3><div class="vonis">
+    <div class="vonis-kepala"><span class="lencana l-${kelasVonis(v.vonis)}">${esc(v.vonis)}</span></div>
+    <p><b>${esc(v.alasan)}</b></p>
+    ${butir('Iklan pesaing, dicek lebih dalam', v.iklan)}${butir('Pesaing berbentuk aplikasi atau AI', v.pesaing_app)}
+    ${butir('Alternatif gratis, dan kenapa orang tetap mau bayar', v.gratisan)}${butir('Hitungan harga', v.harga)}${butir('Langkah berikutnya', v.langkah)}
+    ${(v.tautan || []).length ? `<div class="tautan">${v.tautan.map(l => `<a href="${aman(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join('')}</div>` : ''}
+  </div></section>`;
+}
+function gambarBaca(i) {
+  const rek = rekomSet().includes(i.id);
+  const r = DATA.riset.find(x => x.id === i.riset);
+  const p = buktiUtama(i);
+  const persen = Math.max(0, Math.min(100, (i.total / 30) * 100));
+  const v = i.validasi?.vonis;
+  const opsi = (i.opsi || []).map((o, n) => {
+    const s = (i.opsi_rekom || []).includes(n);
+    return `<div class="opsi-butir ${s ? 'rekom' : ''}"><span class="opsi-nama">${esc(o.nama)}</span>${s ? '<span class="lencana l-SARAN">Disarankan</span>' : ''}<span class="opsi-isi">${esc(o.isi)}</span></div>`;
+  }).join('');
+  const nb = (i.pembanding || []).length;
+  return `<article class="baca" id="baca">
+    <div class="baca-kepala">
+      <div class="tanda mono">${rek ? '<span class="lencana l-SARAN">Paling disarankan</span>' : ''}<span>${esc(r?.judul || '')}</span></div>
+      <h2>${esc(i.nama)}</h2><p class="target">Untuk ${esc(i.target)}</p>
+    </div>
+    <p class="janji">${janji(i.formula)}</p>
+    <div class="dtop">
+      <div class="ring" style="background:conic-gradient(#EF4444 0 ${persen.toFixed(1)}%,#262626 0)" role="img" aria-label="Skor Ghost ${esc(i.total)} dari 30"><div><b>${esc(i.total)}<small>/30</small></b><span class="mono">Skor Ghost</span></div></div>
+      <div>
+        <div class="kv">Umur iklan tertua<span>${p ? `${esc(p.hari)} HARI` : 'BELUM DICEK'}</span></div>
+        <div class="kv">Bukti iklan pesaing<span>${nb ? `${nb} PENAWARAN` : 'IDE BARU'}</span></div>
+        <div class="kv">Harga kompetitor<span>${esc(hargaRingkas(i, p))}</span></div>
+        <div class="kv">Vonis<span>${esc(v || 'BELUM DIVALIDASI')}</span></div>
+      </div>
+    </div>
+    <section class="bagian"><h3 class="mono">Bukti iklan, landing page, dan harga kompetitor</h3>${nb ? buktiUrut(i).map(bukti).join('') : '<p>Ide baru. Belum ada pesaing langsung yang ditemukan, jadi belum ada bukti orang mau membayar.</p>'}</section>
+    ${i.bentuk ? `<section class="bagian"><h3 class="mono">Bentuk produk terbaik</h3><p>${esc(i.bentuk)}</p></section>` : ''}
+    ${opsi ? `<section class="bagian"><h3 class="mono">Pilihan bentuk produk</h3><div class="opsi">${opsi}</div>${i.opsi_catatan ? `<p class="bukti-meta">${esc(i.opsi_catatan)}</p>` : ''}</section>` : ''}
+    ${i.tambahan ? `<section class="bagian"><h3 class="mono">Produk tambahan yang bisa ditawarkan</h3><p>${esc(i.tambahan)}</p></section>` : ''}
+    ${i.ragu ? `<div class="ragu"><b>Yang masih ragu</b>${esc(i.ragu)}</div>` : ''}
+    ${i.saran ? `<section class="bagian"><h3 class="mono">Saran langkah</h3><p>${esc(i.saran)}</p></section>` : ''}
+    ${gambarValidasi(i)}
+  </article>`;
+}
+function gambarBukti() {
+  const rs = S.rid === 'semua' ? risetUrut() : [risetAktif()].filter(Boolean);
+  return rs.map(r => `<div class="lebar">
+    <section class="lebar-bagian"><h2>${esc(r.judul)} · ${esc(tgl(r.tanggal))}</h2><p class="bukti-meta">Permintaan: ${esc(r.input)}</p>${r.cara_cek ? `<p class="bukti-meta">Cara cek iklan: ${esc(r.cara_cek)}</p>` : ''}</section>
+    ${(r.pola || []).length ? `<section class="lebar-bagian"><h2>Pola dari iklan</h2>${titik(r.pola)}</section>` : ''}
+    ${(r.sinyal || []).length ? `<section class="lebar-bagian"><h2>Sinyal lain</h2>${titik(r.sinyal)}</section>` : ''}
+    ${(r.offer_lain || []).length ? `<section class="lebar-bagian"><h2>Penawaran lain yang terlihat</h2><p class="bukti-meta">Tidak menjadi produk tersendiri di papan, dicatat supaya tidak ada yang tersembunyi.</p>
+      ${r.offer_lain.map(o => `<article class="offer"><div><b>${esc(o.nama)}</b> ${o.status ? `<span class="lencana l-${esc(o.status)}">${esc(o.status)}</span>` : ''}</div><p class="bukti-meta">${esc(o.isi)}</p>${o.iklan ? `<div class="tautan"><a href="${aman(o.iklan)}" target="_blank" rel="noopener">Lihat iklan</a></div>` : ''}</article>`).join('')}</section>` : ''}
+    ${(r.catatan_baca || []).length ? `<section class="lebar-bagian"><h2>Cara baca angka</h2>${titik(r.catatan_baca)}</section>` : ''}
+    ${(r.sumber || []).length ? `<section class="lebar-bagian sumber"><h2>Sumber di luar Meta</h2><ul class="daftar-titik">${r.sumber.map(u => `<li><a href="${aman(u)}" target="_blank" rel="noopener">${esc(u)}</a></li>`).join('')}</ul></section>` : ''}
+  </div>`).join('');
+}
+function gambarKosong() {
+  return `<section class="kosong">
+    <span class="eye mono">Belum ada riset</span>
+    <h1>Ketik ini di <em>Claude Code</em></h1>
+    <div class="ketik">Riset produk: niche pemilik bisnis online</div>
+    <p>Ganti nichenya dengan bidang atau target pembeli yang kamu mau. <b>Hasil muncul di sini dalam 10 sampai 30 menit.</b></p>
+  </section>`;
+}
+function gambar() {
+  gambarKepala();
+  const utama = $('utama');
+  if (!DATA.riset.length || !DATA.ide.length) { utama.innerHTML = gambarKosong(); return; }
+  if (S.tampil === 'bukti') { utama.innerHTML = gambarBukti(); return; }
+  const i = ideTerpilih();
+  S.pilih = i.id;
+  utama.innerHTML = `<div class="meja">${gambarRel()}${gambarBaca(i)}</div>`;
+}
+document.addEventListener('click', ev => {
+  const t = ev.target.closest('[data-act]');
+  if (!t) return;
+  const act = t.dataset.act;
+  if (act === 'tab') { S.tampil = t.dataset.nilai; gambar(); return; }
+  if (act === 'pilih') {
+    ev.preventDefault();
+    S.pilih = t.dataset.id; S.tampil = 'ide'; gambar();
+    if (window.innerWidth <= 900) $('baca')?.scrollIntoView({ block: 'start' });
+  }
+});
+document.addEventListener('change', ev => { if (ev.target.id === 'pilih-riset') { S.rid = ev.target.value; S.pilih = null; gambar(); } });
+if (!/^https:\/\//.test(RESMI)) {
+  $('tautan-resmi')?.remove();
+}
+gambar();
+/* Papan kosong memuat ulang sendiri, supaya hasil riset pertama langsung muncul di halaman yang sama */
+if (!DATA.riset.length && !CONTOH && location.protocol === 'file:') setTimeout(() => location.reload(), 20000);
+</script>
+</body></html>
