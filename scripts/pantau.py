@@ -18,6 +18,7 @@ Kode keluar: 0 berhasil, 2 tidak ada yang dipantau, 3 browser belum siap, 4 face
 import argparse
 import datetime
 import json
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -25,8 +26,22 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 AKAR = Path(__file__).resolve().parent.parent
-BERKAS = AKAR / "papan" / "pantauan.json"
+BERKAS = AKAR / "papan" / "pantauan.json"   # bawaan; --folder mengganti untuk proyek lain
+RIWAYAT_MAKS = 30
 MINIMAL_HARI = 14
+
+
+def pakai_folder(folder):
+    global BERKAS
+    if folder:
+        BERKAS = Path(folder).expanduser() / "pantauan.json"
+
+
+def rakit_ulang_papan():
+    """Papan memuat ringkasan pantauan, jadi dirakit ulang setelah pantauan berubah."""
+    folder = BERKAS.parent
+    subprocess.run([sys.executable, str(AKAR / "scripts" / "buat_papan.py"), "mulai", "--folder", str(folder)],
+                   capture_output=True, text=True)
 
 
 def muat():
@@ -41,6 +56,7 @@ def simpan(d):
 
 
 def perintah_rekam(a):
+    pakai_folder(a.folder)
     d = muat()
     hari_ini = datetime.date.today().isoformat()
     baru = 0
@@ -61,10 +77,12 @@ def perintah_rekam(a):
                                              "masih_tayang": True}
                 baru += 1
     simpan(d)
+    rakit_ulang_papan()
     print(f"REKAM: {baru} iklan baru dipantau, total {len(d['iklan'])}. Disimpan di {BERKAS}")
 
 
 def perintah_lihat(a):
+    pakai_folder(a.folder)
     d = muat()
     if not d["iklan"]:
         print("Belum ada iklan yang dipantau. Jalankan 'rekam' setelah mengambil iklan.")
@@ -76,6 +94,7 @@ def perintah_lihat(a):
 
 
 def perintah_cek(a):
+    pakai_folder(a.folder)
     d = muat()
     if not d["iklan"]:
         print("Belum ada iklan yang dipantau. Jalankan 'rekam' dulu.")
@@ -121,6 +140,9 @@ def perintah_cek(a):
     masih = hilang = 0
     print(f"PANTAU {hari_ini.isoformat()} | {len(d['iklan'])} iklan dipantau\n")
     for i, x in sorted(d["iklan"].items(), key=lambda kv: -kv[1]["hari_saat_rekam"]):
+        if i in dinilai:
+            x.setdefault("riwayat", []).append({"tanggal": hari_ini.isoformat(), "masih": i in terlihat, "hari": x.get("hari_sekarang") if i in terlihat else None})
+            x["riwayat"] = x["riwayat"][-RIWAYAT_MAKS:]
         if i in terlihat:
             x["masih_tayang"], x["terakhir_terlihat"] = True, hari_ini.isoformat()
             masih += 1
@@ -131,6 +153,7 @@ def perintah_cek(a):
             print(f"TIDAK TERLIHAT LAGI | {x['pengiklan']} [{x['negara']}] | terakhir terlihat {x['terakhir_terlihat']} | {x['tautan']}")
     d["cek_terakhir"] = hari_ini.isoformat()
     simpan(d)
+    rakit_ulang_papan()
     print(f"\nRingkas: {masih} masih tayang, {hilang} tidak terlihat lagi. Tidak terlihat belum tentu berhenti: bisa tergeser dari hasil yang termuat.")
 
 
@@ -144,11 +167,14 @@ def main():
     sub = ap.add_subparsers(dest="perintah", required=True)
     r = sub.add_parser("rekam")
     r.add_argument("berkas", nargs="+")
+    r.add_argument("--folder")
     r.set_defaults(fungsi=perintah_rekam)
     c = sub.add_parser("cek")
     c.add_argument("--gulir", type=int, default=4)
+    c.add_argument("--folder")
     c.set_defaults(fungsi=perintah_cek)
     l = sub.add_parser("lihat")
+    l.add_argument("--folder")
     l.set_defaults(fungsi=perintah_lihat)
     a = ap.parse_args()
     a.fungsi(a)

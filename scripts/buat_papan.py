@@ -7,7 +7,7 @@ Pemakaian (hanya butuh Python 3, tanpa internet, tanpa pustaka tambahan). Jalank
 
   python3 scripts/buat_papan.py mulai                      rakit papan; sebelum riset pertama papan hanya berisi petunjuk
   python3 scripts/buat_papan.py tambah hasil.json          tambah riset baru atau hasil validasi, lalu rakit ulang papan
-  python3 scripts/buat_papan.py pulihkan papan-lama.html   ambil data dari file papan lama (untuk chat baru)
+  python3 scripts/buat_papan.py pulihkan papan-lama.html   ambil data dari file papan lama atau salinan di papan/cadangan/ (.json)
   python3 scripts/buat_papan.py lihat                      daftar riset dan ide yang sudah tersimpan
   python3 scripts/buat_papan.py contoh                     rakit halaman Contoh Riset Nyata (terpisah dari papan pengguna)
 
@@ -234,6 +234,59 @@ def cetak_saran(gudang):
             print(f"  {n}. {i['nama']} | iklan {p['hari']} hari ({p['nama']}) | Skor Ghost {i['total']}/30{kurang}")
 
 
+VERSI_DATA = 2
+CADANGAN_MAKS = 10
+
+
+def cadangkan(folder, teks_baru):
+    """Sebelum data riset ditimpa, simpan salinan data lama (maksimal 10 salinan terakhir). Riset pengguna tidak boleh hilang."""
+    f = folder / "data-riset.json"
+    if not f.is_file():
+        return
+    lama = f.read_text(encoding="utf-8")
+    if lama == teks_baru or not lama.strip():
+        return
+    cad = folder / "cadangan"
+    cad.mkdir(exist_ok=True)
+    ada = sorted(cad.glob("data-riset-*.json"))
+    if ada and ada[-1].read_text(encoding="utf-8") == lama:
+        return
+    (cad / f"data-riset-{datetime.datetime.now().strftime('%Y%m%d-%H%M%S')}.json").write_text(lama, encoding="utf-8")
+    for x in sorted(cad.glob("data-riset-*.json"))[:-CADANGAN_MAKS]:
+        x.unlink()
+
+
+def baca_pantauan(folder):
+    """Ringkasan pantauan iklan untuk papan: hanya yang perlu ditampilkan."""
+    f = folder / "pantauan.json"
+    if not f.is_file():
+        return None
+    try:
+        d = json.loads(f.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    iklan = []
+    for i, x in d.get("iklan", {}).items():
+        iklan.append({"id": i, "pengiklan": x.get("pengiklan"), "negara": x.get("negara"), "frasa": x.get("frasa"),
+                      "hari_saat_rekam": x.get("hari_saat_rekam"), "hari_sekarang": x.get("hari_sekarang"),
+                      "direkam": x.get("direkam"), "terakhir_terlihat": x.get("terakhir_terlihat"),
+                      "masih_tayang": x.get("masih_tayang"), "tautan": x.get("tautan"), "riwayat": x.get("riwayat", [])})
+    return {"cek_terakhir": d.get("cek_terakhir"), "iklan": iklan}
+
+
+def baca_produk(folder):
+    """Halaman jualan yang sudah dirakit buat_lp.py, supaya papan bisa menunjukkan tahap tiap produk."""
+    hasil = []
+    for f in sorted((folder / "produk").glob("*/spesifikasi.json")) if (folder / "produk").is_dir() else []:
+        try:
+            s = json.loads(f.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        hasil.append({"id": s.get("id"), "nama": s.get("nama"), "ide": s.get("ide"), "harga": (s.get("harga") or {}).get("jual"),
+                      "sudut_iklan": len(s.get("iklan") or []), "pixel": bool(s.get("pixel_id"))})
+    return hasil
+
+
 def rakit(folder, gudang, contoh=False):
     """Rakit papan pengguna, atau halaman Contoh Riset Nyata kalau contoh=True (tidak menyentuh data pengguna)."""
     t = baca_template()
@@ -241,10 +294,16 @@ def rakit(folder, gudang, contoh=False):
     if contoh:
         gudang["_contoh"] = True
     else:
-        (folder / "data-riset.json").write_text(json.dumps(gudang, ensure_ascii=False, indent=1), encoding="utf-8")
+        gudang["_versi"] = VERSI_DATA
+        teks = json.dumps(gudang, ensure_ascii=False, indent=1)
+        cadangkan(folder, teks)
+        (folder / "data-riset.json").write_text(teks, encoding="utf-8")
     # Halaman hanya membawa Skor Ghost (total). Tiga nilai rinciannya tinggal di data-riset.json.
     tampil = dict(gudang, ide=[{k: v for k, v in i.items() if k not in ("malas", "instant", "applicable")}
                                for i in gudang["ide"]])
+    if not contoh:
+        tampil["pantau"] = baca_pantauan(folder)
+        tampil["produk"] = baca_produk(folder)
     muatan = json.dumps(tampil, ensure_ascii=False).replace("</", "<\\/")
     isi = t.replace("__DATA_RISET__", muatan)
     hasil = folder / ("contoh-riset.html" if contoh else "papan-produk-winning.html")
@@ -291,10 +350,13 @@ def perintah_tambah(a):
 def perintah_pulihkan(a):
     folder = folder_kerja(a.folder)
     teks = Path(a.file).expanduser().read_text(encoding="utf-8")
-    m = re.search(r'<script type="application/json" id="data-riset">(.*?)</script>', teks, re.S)
-    if not m:
-        gagal("file itu bukan papan Ghost Ads Spy, atau datanya tidak terbaca")
-    lama = json.loads(m.group(1).replace("<\\/", "</"))
+    if str(a.file).lower().endswith(".json"):   # salinan dari folder cadangan
+        lama = json.loads(teks)
+    else:
+        m = re.search(r'<script type="application/json" id="data-riset">(.*?)</script>', teks, re.S)
+        if not m:
+            gagal("file itu bukan papan Ghost Ads Spy, atau datanya tidak terbaca")
+        lama = json.loads(m.group(1).replace("<\\/", "</"))
     lama.pop("_lisensi", None)
     if lama.pop("_contoh", None):
         gagal("file itu halaman contoh riset, bukan papan milik pengguna. Tidak ada yang diambil.")

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panduan Ngiklan Ghost Ads Spy</title>
+<style>
+  :root { color-scheme: dark; --r:#EF4444; --bg:#0A0A0A; --card:#141414; --line:#262626; --mut:#B4AEA9; --ok:#22C55E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: #F5F5F0; font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; padding: 20px 16px 90px; }
+  main { max-width: 760px; margin: 0 auto; display: grid; gap: 16px; }
+  h1 { font-size: clamp(28px, 7vw, 38px); line-height: 1.1; margin: 0; font-weight: 900; letter-spacing: -.03em; }
+  h1 em { font-style: normal; color: var(--r); }
+  h2 { font-size: 21px; margin: 0 0 6px; font-weight: 800; letter-spacing: -.01em; }
+  h3 { font-size: 16px; margin: 14px 0 4px; color: #fff; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 14px; }
+  p { margin: 0 0 8px; } a { color: #FCA5A5; overflow-wrap: anywhere; } b { color: #fff; }
+  .cap { display: inline-block; border: 1px solid rgba(239,68,68,.45); background: rgba(239,68,68,.08); color: #F87171; font: 800 11px/1.4 ui-monospace, Menlo, Consolas, monospace; letter-spacing: .14em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; }
+  .kecil { font-size: 14px; color: var(--mut); }
+  .awas { border-color: rgba(239,68,68,.5); background: rgba(239,68,68,.07); }
+  .ketik { background: #000; border: 1px solid #3a3a3a; border-left: 3px solid var(--r); border-radius: 6px; padding: 2px 10px; font: 700 14.5px/1.6 ui-monospace, Menlo, Consolas, monospace; display: inline-block; max-width: 100%; overflow-wrap: anywhere; }
+  ul.cek { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 4px; }
+  ul.cek li { display: flex; gap: 12px; align-items: flex-start; padding: 8px 0; border-top: 1px solid var(--line); }
+  ul.cek li:first-child { border-top: 0; }
+  ul.cek input { flex: none; width: 24px; height: 24px; margin-top: 2px; accent-color: var(--ok); }
+  ul.cek label { cursor: pointer; min-width: 0; overflow-wrap: anywhere; }
+  ul.cek input:checked + label { color: var(--mut); text-decoration: line-through; text-decoration-color: rgba(255,255,255,.25); }
+  ul.biasa { padding-left: 20px; margin: 6px 0; display: grid; gap: 6px; } ul.biasa li::marker { color: var(--r); }
+  .bar { position: sticky; top: 0; z-index: 5; background: rgba(10,10,10,.95); backdrop-filter: blur(6px); padding: 10px 0; display: grid; gap: 6px; }
+  .trek { height: 10px; border-radius: 99px; background: #222; overflow: hidden; } .trek i { display: block; height: 100%; width: 0; background: var(--ok); transition: width .3s; }
+  .isi-bar { display: flex; justify-content: space-between; font-size: 13px; color: var(--mut); }
+  details { border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; margin: 8px 0; } summary { cursor: pointer; font-weight: 700; }
+  .nomor { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--r); color: #0A0A0A; font: 800 14px ui-monospace, monospace; margin-right: 8px; }
+  button { font: inherit; } .reset { background: none; border: 1px solid var(--line); color: var(--mut); padding: 8px 14px; border-radius: 10px; cursor: pointer; justify-self: start; }
+</style>
+</head>
+<body>
+<main>
+  <div><span class="cap">Produk resmi Regrow Labs</span></div>
+  <h1>Panduan Ngiklan <em>step by step</em></h1>
+  <p>Dari produk yang sudah divalidasi sampai iklan pertama tayang dan hasilnya terbaca. Ikuti urutannya dan centang tiap langkah. Centangmu tersimpan di browser ini.</p>
+  <p class="kecil">Nama menu di Facebook, Meta, dan layanan lain sering berubah. Kalau namanya beda dari yang tertulis di sini, cari menu yang artinya sama, atau tanya Claude sambil menyebut apa yang kamu lihat di layar.</p>
+
+  <div class="bar"><div class="isi-bar"><span id="teks-progres">0 dari 0 langkah</span><span id="persen">0%</span></div><div class="trek"><i id="isi"></i></div></div>
+
+  <section class="awas">
+    <h2>Baca dulu, ini penting</h2>
+    <ul class="biasa">
+      <li>Iklan itu <b>tes berbayar</b>, bukan jaminan untung. Banyak tes pertama rugi kecil, dan itu wajar. Yang kamu beli adalah informasi: produk ini laku atau tidak.</li>
+      <li>Pakai <b>modal yang siap hilang</b>. Mulai dari Rp 50.000 per hari selama 3 hari.</li>
+      <li>Hitung dulu batas impasnya: ketik di chat Claude <span class="ketik">Hitung modal tes iklan untuk nama produkmu</span></li>
+      <li>Jangan menjanjikan penghasilan atau hasil tertentu di iklan dan halaman jualan. Itu melanggar aturan iklan dan membuat akun bisa dibatasi.</li>
+    </ul>
+  </section>
+
+  <section id="langkah-1">
+    <h2><span class="nomor">1</span>Siapkan akun</h2>
+    <ul class="cek">
+      <li><input type="checkbox" id="c1"><label for="c1">Punya <b>akun Facebook pribadi</b> yang aktif dan sudah lama dipakai. Akun baru atau sering bermasalah lebih mudah dibatasi.</label></li>
+      <li><input type="checkbox" id="c2"><label for="c2">Buat <b>Halaman Facebook</b> (Page) untuk produkmu. Nama dan foto profil harus sesuai dengan produk. Iklan tayang atas nama Halaman ini.</label></li>
+      <li><input type="checkbox" id="c3"><label for="c3">Buka <b>Meta Business Suite</b> (business.facebook.com) lalu hubungkan Halaman tadi. Dari sana kamu bisa masuk ke <b>Ads Manager</b>.</label></li>
+      <li><input type="checkbox" id="c4"><label for="c4">Di Ads Manager, buka pengaturan <b>pembayaran</b> dan tambahkan kartu atau metode yang tersedia. Pastikan mata uang dan zona waktu akun iklan benar, karena <b>tidak bisa diubah</b> setelah dipilih.</label></li>
+    </ul>
+  </section>
+
+  <section id="langkah-2">
+    <h2><span class="nomor">2</span>Siapkan tempat jualan dan pembayaran</h2>
+    <p>Pembeli harus bisa membayar dan menerima produknya <b>otomatis</b>, tanpa kamu online. Pilih salah satu:</p>
+    <details open><summary>Opsi A, paling mudah: lapak produk digital</summary>
+      <p class="kecil">Layanan seperti Lynk.id atau Mayar menyediakan halaman produk, pembayaran, dan pengiriman file otomatis. Ada potongan per penjualan, jadi isi angkanya di perintah hitung.</p>
+      <ul class="biasa"><li>Daftar, buat produk, unggah file atau tautan produkmu, tetapkan harga.</li><li>Salin <b>tautan pembayaran</b> produk itu. Tautan ini nanti jadi tombol beli di halaman jualanmu.</li></ul>
+    </details>
+    <details><summary>Opsi B: pakai halaman jualan dari Ghost Ads Spy</summary>
+      <p class="kecil">Claude membuatkan halaman jualan satu file yang siap HP. Tombol belinya mengarah ke tautan pembayaran dari Opsi A. Jadi Opsi B melengkapi Opsi A, bukan menggantinya.</p>
+    </details>
+    <ul class="cek">
+      <li><input type="checkbox" id="c5"><label for="c5">Produk sudah ada di lapak, dengan harga final dan file yang terkirim otomatis.</label></li>
+      <li><input type="checkbox" id="c6"><label for="c6"><b>Coba beli sendiri satu kali</b> (boleh dengan harga kecil atau kode diskon). Pastikan pembayaran masuk dan produk terkirim.</label></li>
+      <li><input type="checkbox" id="c7"><label for="c7">Catat <b>tautan pembayaran</b> dan <b>nomor WhatsApp</b> untuk bantuan pembeli.</label></li>
+    </ul>
+  </section>
+
+  <section id="langkah-3">
+    <h2><span class="nomor">3</span>Buat halaman jualan</h2>
+    <ul class="cek">
+      <li><input type="checkbox" id="c8"><label for="c8">Ketik di chat Claude: <span class="ketik">Bangun produk: nama produkmu</span> Claude menanyakan tautan pembayaran, harga, nama penjual, dan hal lain yang tidak boleh ditebak.</label></li>
+      <li><input type="checkbox" id="c9"><label for="c9">Baca hasilnya. Pastikan semua janji di halaman <b>benar-benar ada</b> di produkmu. Hasil: halaman jualan, lembar iklan, dan rencana tes.</label></li>
+      <li><input type="checkbox" id="c10"><label for="c10"><b>Testimoni hanya dari pembeli sungguhan.</b> Kalau belum ada, kosongkan. Jangan dikarang, itu melanggar aturan dan merusak kepercayaan.</label></li>
+    </ul>
+  </section>
+
+  <section id="langkah-4">
+    <h2><span class="nomor">4</span>Pasang halaman di internet</h2>
+    <p>Halaman jualan perlu alamat web (https) supaya iklan bisa mengarah ke sana.</p>
+    <details open><summary>Cara GitHub Pages (gratis, bisa dari HP)</summary>
+      <ul class="biasa"><li>Halaman jualanmu sudah tersimpan di repo GitHub-mu (Claude menyimpannya). Buka repo itu di <b>github.com</b> lewat browser HP.</li>
+      <li>Buka <b>Settings</b>, lalu <b>Pages</b>. Di <b>Source</b> pilih <b>Deploy from a branch</b>, pilih cabang dan folder yang berisi halaman, lalu simpan.</li>
+      <li>Tunggu 1 sampai 3 menit. Alamatnya tampil di halaman yang sama, bentuknya mirip <b>namamu.github.io/nama-repo/...</b></li>
+      <li>Catatan: repo harus publik atau akunmu mendukung Pages untuk repo pribadi. Kalau ragu, tanya Claude.</li></ul>
+    </details>
+    <details><summary>Cara lain</summary><p class="kecil">Kamu juga bisa memasang file halaman di layanan hosting statis lain (Cloudflare Pages, Netlify, dan sejenisnya). Mintalah Claude memandu langkahnya sesuai layanan yang kamu pilih.</p></details>
+    <ul class="cek">
+      <li><input type="checkbox" id="c11"><label for="c11">Halaman bisa dibuka dari HP lewat alamat https, tampilannya rapi.</label></li>
+      <li><input type="checkbox" id="c12"><label for="c12">Tombol beli membuka tautan pembayaran yang benar.</label></li>
+    </ul>
+  </section>
+
+  <section id="langkah-5">
+    <h2><span class="nomor">5</span>Pasang Pixel supaya pembelian terbaca</h2>
+    <p>Pixel adalah kode kecil yang memberi tahu Meta siapa yang membuka halaman dan membeli. Tanpanya Meta tidak bisa mengoptimalkan iklan untuk penjualan.</p>
+    <ul class="cek">
+      <li><input type="checkbox" id="c13"><label for="c13">Di Meta Business Suite buka <b>Events Manager</b>, buat <b>Pixel</b> (sumber data web), dan salin <b>ID Pixel</b> (deretan angka).</label></li>
+      <li><input type="checkbox" id="c14"><label for="c14">Kirim ID itu ke Claude: <span class="ketik">Pasang Pixel 1234567890 di halaman jualan</span> Claude memasukkannya dan merakit ulang halaman.</label></li>
+      <li><input type="checkbox" id="c15"><label for="c15">Pasang ulang halaman (langkah 4), lalu di Events Manager buka <b>Test events</b>, masukkan alamat halamanmu, dan pastikan peristiwa <b>PageView</b> muncul.</label></li>
+      <li><input type="checkbox" id="c16"><label for="c16">Kalau pembayaran terjadi di lapak (bukan di halamanmu), Meta hanya melihat klik tombol beli. Itu cukup untuk tes pertama. Pembelian sebenarnya kamu cek di dashboard lapak.</label></li>
+    </ul>
+    <p class="kecil">Peringatan Meta soal verifikasi domain atau pengukuran peristiwa bisa muncul. Ikuti petunjuk di Events Manager. Untuk tes kecil, itu tidak menghalangi iklan tayang.</p>
+  </section>
+
+  <section id="langkah-6">
+    <h2><span class="nomor">6</span>Buat kampanye iklan</h2>
+    <p>Buka <b>Ads Manager</b>, tekan <b>Buat</b>. Isi sesuai lembar iklan dari Claude (<b>iklan.md</b>).</p>
+    <ul class="cek">
+      <li><input type="checkbox" id="c17"><label for="c17"><b>Tujuan:</b> pilih <b>Penjualan</b> (Sales) kalau Pixel sudah terbaca. Kalau belum, pilih <b>Traffic</b> dulu. Jangan pilih tujuan lain untuk tes pertama.</label></li>
+      <li><input type="checkbox" id="c18"><label for="c18"><b>Anggaran:</b> harian, sesuai rencana tes (misalnya Rp 50.000). Jangan dinaikkan di tengah tes.</label></li>
+      <li><input type="checkbox" id="c19"><label for="c19"><b>Target:</b> negara, umur, dan minat sesuai lembar iklan. Biarkan <b>penempatan otomatis</b> untuk tes pertama.</label></li>
+      <li><input type="checkbox" id="c20"><label for="c20"><b>Iklan:</b> pilih Halaman Facebook-mu. Tempel <b>teks utama, judul, dan deskripsi</b> dari lembar iklan. Pakai gambar atau video yang jelas menunjukkan produknya (bukan foto orang yang tidak berhubungan).</label></li>
+      <li><input type="checkbox" id="c21"><label for="c21"><b>Tautan tujuan:</b> alamat halaman jualanmu (langkah 4). Buka tautan itu dari HP sekali lagi sebelum menyimpan.</label></li>
+      <li><input type="checkbox" id="c22"><label for="c22">Buat <b>tiga iklan</b> dengan sudut berbeda (satu per sudut di lembar iklan), supaya kamu tahu sudut mana yang berhasil.</label></li>
+    </ul>
+  </section>
+
+  <section id="langkah-7">
+    <h2><span class="nomor">7</span>Cek terakhir sebelum menekan Publikasikan</h2>
+    <ul class="cek">
+      <li><input type="checkbox" id="c23"><label for="c23">Isi iklan <b>sama dengan isi halaman jualan</b>: harga, janji, dan produknya.</label></li>
+      <li><input type="checkbox" id="c24"><label for="c24">Tidak ada janji penghasilan, tidak menyebut kondisi pribadi pembaca, tidak ada gambar sebelum dan sesudah.</label></li>
+      <li><input type="checkbox" id="c25"><label for="c25">Kamu sudah menghitung batas impas dan tahu berapa total modal tes (anggaran harian dikali jumlah hari).</label></li>
+      <li><input type="checkbox" id="c26"><label for="c26">Tekan <b>Publikasikan</b>. Iklan masuk tinjauan Meta, biasanya sampai 24 jam. Jangan ubah apa pun selama tinjauan.</label></li>
+    </ul>
+  </section>
+
+  <section id="langkah-8">
+    <h2><span class="nomor">8</span>Jalankan tes 3 hari dan baca hasilnya</h2>
+    <ul class="cek">
+      <li><input type="checkbox" id="c27"><label for="c27">Biarkan iklan jalan <b>3 hari penuh</b>. Jangan mengubah anggaran, teks, atau target. Mengubahnya mengulang pembelajaran Meta dan merusak data tes.</label></li>
+      <li><input type="checkbox" id="c28"><label for="c28">Hari ke 3, catat per iklan: <b>biaya per klik</b>, <b>jumlah klik</b>, <b>jumlah pembelian</b> (dari lapak), dan <b>total biaya</b>.</label></li>
+      <li><input type="checkbox" id="c29"><label for="c29">Kirim angkanya ke Claude: <span class="ketik">Baca hasil tes iklan: biaya Rp 150.000, 90 klik, 2 pembelian, harga Rp 49.000</span></label></li>
+    </ul>
+    <h3>Cara membaca angka</h3>
+    <ul class="biasa">
+      <li><b>CPC</b> (biaya per klik) tinggi dan klik sedikit: iklannya kurang menarik. Ganti sudut atau gambar.</li>
+      <li><b>Banyak klik, tidak ada yang beli</b>: masalahnya di halaman jualan, harga, atau kepercayaan. Perbaiki halaman, bukan iklan.</li>
+      <li><b>CPA</b> (biaya iklan per pembelian) di bawah batas impas: ada harapan. Naikkan pelan-pelan.</li>
+      <li><b>ROAS</b> di atas angka impas: iklan menghasilkan lebih dari biayanya.</li>
+      <li>Jangan memutuskan sebelum sekitar 1000 tayangan dan 3 hari berjalan, kecuali iklan ditolak.</li>
+    </ul>
+  </section>
+
+  <section id="langkah-9">
+    <h2><span class="nomor">9</span>Keputusan setelah tes</h2>
+    <ul class="biasa">
+      <li><b>Untung atau impas</b> di tiga hari: jalankan lagi tiga hari dengan anggaran naik sekitar 20 persen per hari. Jangan melompat besar.</li>
+      <li><b>Rugi tapi ada pembelian</b>: ubah satu hal saja (sudut iklan, gambar, atau harga), tes lagi dengan modal sama.</li>
+      <li><b>Tidak ada pembelian setelah modal tes habis</b>: berhenti. Itu hasil tes yang sah, bukan kegagalan. Kembali ke papan dan pilih produk berikutnya.</li>
+    </ul>
+    <ul class="cek">
+      <li><input type="checkbox" id="c30"><label for="c30">Catat hasil tes (angka dan keputusan) supaya produk berikutnya bisa dibandingkan.</label></li>
+      <li><input type="checkbox" id="c31"><label for="c31">Ketik <span class="ketik">Simpan riset</span> agar semua tersimpan ke GitHub.</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Kalau ada masalah</h2>
+    <ul class="biasa">
+      <li><b>Iklan ditolak</b>: baca alasannya di Ads Manager. Biasanya karena janji hasil, klaim kesehatan atau keuangan, atau isi yang tidak sama dengan halaman. Perbaiki lalu ajukan tinjauan ulang. Jangan membuat akun baru untuk menghindari penolakan.</li>
+      <li><b>Iklan tayang tapi tidak ada klik</b>: tunggu sampai ada ribuan tayangan. Kalau tetap sepi, targetnya terlalu sempit atau gambarnya lemah.</li>
+      <li><b>Ada klik tapi Pixel tidak membaca</b>: cek ID Pixel dan Test events lagi (langkah 5).</li>
+      <li><b>Akun iklan dibatasi</b>: ikuti proses banding di Meta Business Suite. Jangan menyalahgunakan akun lain.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Istilah singkat</h2>
+    <ul class="biasa">
+      <li><b>CPC</b>: biaya per klik. <b>CTR</b>: persen orang yang melihat lalu mengklik.</li>
+      <li><b>CPA</b>: biaya iklan untuk satu pembelian. <b>ROAS</b>: uang masuk dibagi biaya iklan.</li>
+      <li><b>Impas</b>: titik di mana untung dari penjualan sama dengan biaya iklan.</li>
+      <li><b>Pixel</b>: kode pengukur dari Meta di halaman jualanmu.</li>
+    </ul>
+  </section>
+
+  <button class="reset" id="reset">Kosongkan semua centang</button>
+</main>
+<script>
+(function () {
+  var kotak = Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox]'));
+  var KEY = 'gas-panduan-ngiklan';
+  var simpan = {};
+  try { simpan = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { simpan = {}; }
+  function hitung() {
+    var n = kotak.filter(function (k) { return k.checked; }).length;
+    var p = kotak.length ? Math.round(n * 100 / kotak.length) : 0;
+    document.getElementById('teks-progres').textContent = n + ' dari ' + kotak.length + ' langkah';
+    document.getElementById('persen').textContent = p + '%';
+    document.getElementById('isi').style.width = p + '%';
+  }
+  kotak.forEach(function (k) {
+    k.checked = !!simpan[k.id];
+    k.addEventListener('change', function () {
+      simpan[k.id] = k.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(simpan)); } catch (e) { /* tanpa penyimpanan, centang tetap jalan di halaman ini */ }
+      hitung();
+    });
+  });
+  document.getElementById('reset').addEventListener('click', function () {
+    if (!confirm('Kosongkan semua centang?')) return;
+    simpan = {}; kotak.forEach(function (k) { k.checked = false; });
+    try { localStorage.removeItem(KEY); } catch (e) { /* diabaikan */ }
+    hitung();
+  });
+  hitung();
+})();
+</script>
+</body>
+</html>

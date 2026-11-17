@@ -23,6 +23,10 @@ Pengguna folder ini orang awam, bukan programmer. Pakai bahasa Indonesia sehari-
 - Di sesi cloud (pengguna lewat HP), papan tidak dibuka dengan `open`: kirim file papan ke pengguna dengan `SendUserFile`, lalu jalankan `python3 scripts/simpan.py` supaya riset tersimpan di GitHub. Ikuti bagian "Sesi cloud" di skill.
 - Jangan mengubah file di `scripts/`, `papan/bahan/`, `.claude/`, atau `CLAUDE.md`. File kerja sementara (hasil ambil iklan, file JSON riset) ditulis di folder `papan/kerja/`.
 
+## Setelah riset
+
+Skill `ghost-ads-spy` punya tahap lanjutan: validasi, bangun produk (halaman jualan, teks iklan, hitungan modal, panduan `PANDUAN-NGIKLAN.html`), laporan bagikan, dan pantau terjadwal. Tidak ada testimoni karangan dan tidak ada janji penghasilan. Pengguna sendiri yang memasang dan membayar iklan.
+
 ## Contoh perintah pengguna
 
 - `mulai`
@@ -31,4 +35,10 @@ Pengguna folder ini orang awam, bukan programmer. Pakai bahasa Indonesia sehari-
 - `Buka papan`
 - `Buka contoh riset`
 - `Pantau iklan`
+- `Jadwalkan pantau tiap minggu`
+- `Bangun produk: nama produk dari papan`
+- `Hitung modal tes iklan untuk nama produk`
+- `Baca hasil tes iklan: biaya Rp 150.000, 90 klik, 2 pembelian, harga Rp 49.000`
+- `Buat laporan PDF untuk Nama Klien`
 - `Simpan riset`
+- `Periksa sistem`

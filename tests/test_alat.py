@@ -9,7 +9,9 @@ from pathlib import Path
 AKAR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(AKAR / "scripts"))
 import analisa  # noqa: E402
+import buat_lp  # noqa: E402
 import buat_papan  # noqa: E402
+import hitung  # noqa: E402
 
 
 def iklan(i, nama, hari, tujuan, frasa="f"):
@@ -82,6 +84,68 @@ class TesPapan(unittest.TestCase):
             html = (Path(t) / "contoh-riset.html").read_text(encoding="utf-8")
             for kata in ('"malas"', '"instant"', '"applicable"'):
                 self.assertNotIn(kata, html)
+
+
+class TesHitung(unittest.TestCase):
+    def test_batas_impas_dan_skenario(self):
+        h = hitung.hitung(49000, biaya_alat=2000, potongan=5)
+        self.assertAlmostEqual(h["sisa_sebelum_iklan"], 49000 - 2000 - 2450)
+        self.assertGreater(h["skenario"]["baik"]["untung_per_penjualan"], h["skenario"]["buruk"]["untung_per_penjualan"])
+        self.assertEqual(len(h["diperkirakan"]), 2)
+
+    def test_biaya_melebihi_harga_ditolak(self):
+        with self.assertRaises(ValueError):
+            hitung.hitung(1000, potongan=100)
+
+    def test_putusan_hasil_tes(self):
+        self.assertEqual(hitung.baca_hasil(49000, 0, 0, 100000, 10, 0)["putusan"], "BELUM CUKUP DATA")
+        self.assertEqual(hitung.baca_hasil(49000, 0, 0, 150000, 90, 4)["putusan"], "LANJUT DAN NAIKKAN PELAN")
+        self.assertEqual(hitung.baca_hasil(49000, 0, 0, 200000, 120, 0)["putusan"], "BERHENTI ATAU PERBAIKI HALAMAN")
+
+
+class TesHalamanJualan(unittest.TestCase):
+    def spek(self):
+        return json.loads(json.dumps(buat_lp.CONTOH))
+
+    def test_contoh_lolos(self):
+        buat_lp.periksa(self.spek())
+
+    def test_aturan_ditolak(self):
+        kasus = [lambda s: s.update(judul="Pasti kaya dari jualan online"),
+                 lambda s: s.update(testimoni=[{"nama": "A", "isi": "bagus"}]),
+                 lambda s: s.pop("dasar_harga_coret"),
+                 lambda s: s["tombol"].update(tautan="http://x.com"),
+                 lambda s: s.update(subjudul="Hitung mundur 10 menit lagi")]
+        for ubah in kasus:
+            s = self.spek()
+            ubah(s)
+            with self.assertRaises(SystemExit):
+                buat_lp.periksa(s)
+
+    def test_html_lolos_aman_dan_pixel(self):
+        s = self.spek()
+        s["judul"] = "<script>alert(1)</script>"
+        s["pixel_id"] = "123456"
+        h = buat_lp.rakit_html(s)
+        self.assertNotIn("<script>alert(1)</script>", h)
+        self.assertIn("fbq('init','123456')", h)
+
+
+class TesCadangan(unittest.TestCase):
+    def test_data_lama_dicadangkan_sebelum_ditimpa(self):
+        with tempfile.TemporaryDirectory() as t:
+            t = Path(t)
+            d = json.loads((AKAR / "papan" / "bahan" / "data-contoh.json").read_text(encoding="utf-8"))
+            d.pop("_lisensi", None)
+            for r in d["riset"]:
+                r.pop("contoh", None)
+            g = buat_papan.gabung(buat_papan.gudang_kosong(), d)
+            buat_papan.rakit(t, g)
+            self.assertFalse((t / "cadangan").exists())
+            g["riset"][0]["ringkas"] = "diubah"
+            buat_papan.rakit(t, g)
+            self.assertEqual(len(list((t / "cadangan").glob("data-riset-*.json"))), 1)
+            self.assertEqual(json.loads((t / "data-riset.json").read_text(encoding="utf-8"))["_versi"], buat_papan.VERSI_DATA)
 
 
 if __name__ == "__main__":

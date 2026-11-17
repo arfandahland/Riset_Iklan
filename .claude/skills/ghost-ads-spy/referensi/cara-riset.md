@@ -23,6 +23,8 @@ Jalankan dari folder utama, satu perintah per negara, semua frasa sekaligus:
 
 `python3 scripts/ambil_iklan.py --negara US --frasa "printable worksheets" --frasa "picky eater" --frasa "side hustle template" --keluar papan/kerja/iklan-us.json`
 
+Untuk beberapa negara dengan frasa yang sama sekaligus: `python3 scripts/ambil_iklan.py --negara US,MY,PH --frasa "printable worksheets" --keluar papan/kerja/iklan-{negara}.json` (satu file per negara). Pemilihan negara per niche ada di `negara-per-niche.md`.
+
 Tiap frasa butuh sekitar 15 sampai 20 detik. Hasil sudah urut dari tayangan terbanyak. Untuk tiap frasa skrip mencetak:
 
 - berapa hasil menurut Facebook dan berapa kartu yang terbaca;

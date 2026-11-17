@@ -158,6 +158,33 @@ h1 { font: 900 clamp(26px, 3.4vw, 40px)/1.1 var(--f); letter-spacing: -.035em; t
 .arti summary { cursor: pointer; padding: 12px 0; font-size: 12px; font-weight: 800; color: var(--mut); }
 .arti .daftar-titik { padding-bottom: 16px; font-size: 15px; }
 
+/* Langkah, bandingkan, pantauan, bantuan, mulai */
+.langkah { display: grid; gap: 10px; counter-reset: l; }
+.langkah li { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 14px; border: 1px solid #262626; border-radius: 12px; background: var(--card); }
+.langkah .tanda-l { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font: 800 13px var(--m); border: 2px solid var(--line2); color: var(--dim); }
+.langkah .ok .tanda-l { background: var(--win); border-color: var(--win); color: var(--ink); }
+.langkah .nanti .tanda-l { border-color: var(--red); color: var(--soft); }
+.langkah .nama-l { font-weight: 700; }
+.langkah .ket-l { display: block; font-size: 13px; color: var(--dim); font-weight: 500; }
+.berikut { border: 1px solid var(--red); background: rgba(239,68,68,.08); border-radius: 14px; padding: 14px 16px; display: grid; gap: 8px; }
+.berikut b { color: var(--soft); font: 800 12px var(--m); letter-spacing: .1em; text-transform: uppercase; }
+.berikut .ketik { max-width: none; font-size: 15px; padding: 12px 14px; }
+.kartu-b { border: 1px solid #262626; background: var(--card); border-radius: 14px; padding: 14px 16px; display: grid; gap: 6px; }
+.kartu-b h4 { font-size: 16px; font-weight: 800; }
+.kartu-b .sub { color: var(--mut); font-size: 14px; }
+.petak { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.angka { border: 1px solid #262626; background: var(--card); border-radius: 12px; padding: 12px 14px; }
+.angka b { display: block; font: 900 28px/1.1 var(--f); letter-spacing: -.02em; }
+.angka span { font-size: 12px; color: var(--dim); }
+.titik-r { font: 700 15px var(--m); letter-spacing: .2em; color: var(--win); }
+.titik-r .mati { color: var(--dim); }
+.grup-bantu { display: grid; gap: 10px; }
+.grup-bantu .ketik { font-size: 15px; padding: 12px 14px; max-width: none; }
+.grup-bantu .ket { color: var(--mut); font-size: 14px; margin: -4px 0 2px; }
+.mulai-langkah { display: grid; gap: 12px; text-align: left; width: 100%; max-width: 620px; counter-reset: m; }
+.mulai-langkah li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: start; }
+.mulai-langkah li::before { counter-increment: m; content: counter(m); width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--red); color: var(--ink); font: 800 14px var(--m); }
+@media print { .alat, .arti, .top .live, .merek { display: none !important; } body { background: #fff; color: #000; } }
 /* Saringan, favorit */
 .saring { gap: 6px; }
 .chip { border: 1px solid var(--line2); background: transparent; padding: 7px 13px; border-radius: 999px; font-weight: 700; font-size: 13px; color: var(--mut); min-height: 36px; }
@@ -200,6 +227,9 @@ h1 { font: 900 clamp(26px, 3.4vw, 40px)/1.1 var(--f); letter-spacing: -.035em; t
       <select id="pilih-riset" aria-label="Pilih riset" hidden></select>
       <button class="tab" data-act="tab" data-nilai="ide" aria-pressed="true">Produk winning</button>
       <button class="tab" data-act="tab" data-nilai="bukti" aria-pressed="false">Bukti riset</button>
+      <button class="tab" data-act="tab" data-nilai="bandingkan" aria-pressed="false">Bandingkan</button>
+      <button class="tab" data-act="tab" data-nilai="pantau" aria-pressed="false">Pantauan</button>
+      <button class="tab" data-act="tab" data-nilai="bantuan" aria-pressed="false">Bantuan</button>
       <button class="tab" data-act="csv" title="Simpan daftar produk sebagai file CSV">Unduh CSV</button>
     </div>
     <div class="alat saring" id="saring" role="group" aria-label="Saring produk"></div>
@@ -222,7 +252,7 @@ h1 { font: 900 clamp(26px, 3.4vw, 40px)/1.1 var(--f); letter-spacing: -.035em; t
 
 </div>
 
-<script type="application/json" id="data-riset">{"riset": [], "ide": []}</script>
+<script type="application/json" id="data-riset">{"riset": [], "ide": [], "_versi": 2, "pantau": null, "produk": []}</script>
 <script>
 /* Ghost Ads Spy. Produk resmi Regrow Labs. */
 const RESMI = '';
@@ -435,6 +465,7 @@ function gambarBaca(i) {
     ${opsi ? `<section class="bagian"><h3 class="mono">Pilihan bentuk produk</h3><div class="opsi">${opsi}</div>${i.opsi_catatan ? `<p class="bukti-meta">${esc(i.opsi_catatan)}</p>` : ''}</section>` : ''}
     ${i.tambahan ? `<section class="bagian"><h3 class="mono">Produk tambahan yang bisa ditawarkan</h3><p>${esc(i.tambahan)}</p></section>` : ''}
     ${i.ragu ? `<div class="ragu"><b>Yang masih ragu</b>${esc(i.ragu)}</div>` : ''}
+    ${langkahIde(i)}
     ${i.saran ? `<section class="bagian"><h3 class="mono">Saran langkah</h3><p>${esc(i.saran)}</p></section>` : ''}
     ${gambarValidasi(i)}
   </article>`;
@@ -451,12 +482,113 @@ function gambarBukti() {
     ${(r.sumber || []).length ? `<section class="lebar-bagian sumber"><h2>Sumber di luar Meta</h2><ul class="daftar-titik">${r.sumber.map(u => `<li><a href="${aman(u)}" target="_blank" rel="noopener">${esc(u)}</a></li>`).join('')}</ul></section>` : ''}
   </div>`).join('');
 }
+/* Tahap manual (tes iklan, penjualan pertama) tersimpan di browser ini saja */
+let TAHAP = {};
+try { TAHAP = JSON.parse(localStorage.getItem('gas-tahap') || '{}') || {}; } catch (e) { TAHAP = {}; }
+function ubahTahap(id, k) {
+  TAHAP[id] = TAHAP[id] || {}; TAHAP[id][k] = !TAHAP[id][k];
+  try { localStorage.setItem('gas-tahap', JSON.stringify(TAHAP)); } catch (e) { /* diabaikan */ }
+}
+const produkIde = i => (DATA.produk || []).find(p => p.ide === i.id) || null;
+const KET = { ide: 'Dari bukti iklan pesaing', validasi: 'Cek iklan, pesaing, gratisan, dan hitungan harga', lp: 'Halaman jualan dan teks iklan siap pasang', iklan: 'Pasang iklan 3 hari dengan modal kecil', jual: 'Bukti paling kuat bahwa produk laku' };
+function langkahIde(i) {
+  const lp = produkIde(i); const t = TAHAP[i.id] || {};
+  const st = [
+    { k: 'ide', n: 'Ide dari bukti iklan', ok: true },
+    { k: 'validasi', n: 'Validasi ide', ok: !!i.validasi, cmd: `Validasi ide: ${i.nama}` },
+    { k: 'lp', n: 'Halaman jualan dan teks iklan', ok: !!lp, cmd: `Bangun produk: ${i.nama}` },
+    { k: 'iklan', n: 'Tes iklan', ok: !!t.iklan, manual: true, cmd: `Hitung modal tes iklan untuk ${i.nama}` },
+    { k: 'jual', n: 'Penjualan pertama', ok: !!t.jual, manual: true }
+  ];
+  const next = st.find(x => !x.ok);
+  const daftar = st.map((x, n) => `<li class="${x.ok ? 'ok' : (x === next ? 'nanti' : '')}"><span class="tanda-l">${x.ok ? '✓' : n + 1}</span>
+    <span class="nama-l">${esc(x.n)}<span class="ket-l">${esc(KET[x.k])}</span></span>
+    ${x.manual ? `<button class="chip" data-act="tahap" data-id="${esc(i.id)}" data-k="${x.k}" aria-pressed="${x.ok}">${x.ok ? 'Sudah' : 'Tandai selesai'}</button>` : ''}</li>`).join('');
+  const kotak = !next ? '<div class="berikut"><b>Semua langkah selesai</b><span>Catat hasilnya, lalu ulangi dengan produk berikutnya.</span></div>'
+    : `<div class="berikut"><b>Langkah berikutnya</b>${next.cmd ? `<span>Ketik di chat Claude:</span><div class="ketik">${esc(next.cmd)}</div>` : '<span>Tandai selesai kalau sudah kamu kerjakan.</span>'}</div>`;
+  return `<section class="bagian"><h3 class="mono">Dari ide sampai jualan</h3>${kotak}<ol class="langkah">${daftar}</ol></section>`;
+}
+const norm = s => String(s || '').toLowerCase().replace(/\(.*?\)/g, ' ').replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+const kata = s => new Set(norm(s).split(' ').filter(w => w.length > 2));
+function mirip(a, b) { const x = kata(a), y = kata(b); if (!x.size || !y.size) return 0; let n = 0; x.forEach(w => { if (y.has(w)) n++; }); return n / (x.size + y.size - n); }
+function gambarBandingkan() {
+  const rs = risetUrut();
+  if (rs.length < 2) return `<section class="kosong"><span class="eye mono">Perlu 2 riset atau lebih</span><h1>Belum ada yang dibandingkan</h1>
+    <p>Perbandingan muncul setelah kamu punya minimal dua riset. Ketik di chat Claude:</p><div class="ketik">Riset produk: niche lain yang mau kamu coba</div></section>`;
+  const per = rs.map(r => {
+    const ids = DATA.ide.filter(i => i.riset === r.id);
+    const skor = ids.map(i => i.total);
+    const win = ids.filter(i => buktiWinning(i)).length;
+    return `<div class="kartu-b"><h4>${esc(r.judul)}</h4><span class="sub">${esc(tgl(r.tanggal))}</span>
+      <div class="petak"><div class="angka"><b>${ids.length}</b><span>produk</span></div><div class="angka"><b>${skor.length ? Math.max(...skor) : 0}</b><span>Skor Ghost tertinggi</span></div>
+      <div class="angka"><b>${skor.length ? (skor.reduce((a, b) => a + b, 0) / skor.length).toFixed(1) : 0}</b><span>rata-rata Skor</span></div><div class="angka"><b>${win}</b><span>dengan iklan winning</span></div></div></div>`;
+  }).join('');
+  const peta = {};
+  DATA.ide.forEach(i => (i.pembanding || []).forEach(p => {
+    const k = norm(p.nama); if (!k) return;
+    const g = peta[k] = peta[k] || { nama: p.nama, riset: new Set(), ide: new Set(), hari: null, harga: '' };
+    g.riset.add(i.riset); g.ide.add(i.nama);
+    if (p.hari != null && (g.hari == null || p.hari > g.hari)) g.hari = p.hari;
+    if (!g.harga && p.harga_pendek && !belum(p.harga_pendek)) g.harga = p.harga_pendek;
+  }));
+  const ulang = Object.values(peta).filter(g => g.riset.size > 1 || g.ide.size > 1).sort((a, b) => (b.riset.size - a.riset.size) || ((b.hari ?? -1) - (a.hari ?? -1)));
+  const serupa = [];
+  const ide = DATA.ide;
+  for (let a = 0; a < ide.length; a++) for (let b = a + 1; b < ide.length; b++) if (ide[a].riset !== ide[b].riset && mirip(ide[a].nama, ide[b].nama) >= 0.5) serupa.push([ide[a], ide[b]]);
+  const nama = id => (DATA.riset.find(r => r.id === id) || {}).judul || '';
+  return `<div class="lebar-bagian"><section class="lebar-bagian"><h2>Riset berdampingan</h2><div class="petak" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">${per}</div></section>
+    <section class="lebar-bagian"><h2>Pesaing yang muncul berulang</h2><p class="bukti-meta">Pengiklan yang sama di beberapa produk atau riset. Tanda pasar yang benar-benar ramai.</p>
+    ${ulang.length ? ulang.slice(0, 12).map(g => `<div class="kartu-b"><h4>${esc(g.nama)}</h4><span class="sub">Muncul di ${g.ide.size} produk, ${g.riset.size} riset${g.hari != null ? ` · iklan tertua ${g.hari} hari` : ''}${g.harga ? ` · ${esc(g.harga)}` : ''}</span></div>`).join('') : '<p class="bukti-meta">Belum ada pesaing yang muncul lebih dari sekali.</p>'}</section>
+    <section class="lebar-bagian"><h2>Produk serupa antar riset</h2><p class="bukti-meta">Ide dengan nama mirip di riset berbeda. Kalau ada, itu kandidat yang konsisten.</p>
+    ${serupa.length ? serupa.slice(0, 10).map(([a, b]) => `<div class="kartu-b"><h4>${esc(a.nama)} dan ${esc(b.nama)}</h4><span class="sub">${esc(nama(a.riset))} · ${esc(nama(b.riset))} · Skor ${esc(a.total)} dan ${esc(b.total)}</span></div>`).join('') : '<p class="bukti-meta">Belum ada produk bernama mirip di riset yang berbeda.</p>'}</section></div>`;
+}
+function gambarPantau() {
+  const pt = DATA.pantau;
+  if (!pt || !(pt.iklan || []).length) return `<section class="kosong"><span class="eye mono">Belum ada yang dipantau</span><h1>Lihat iklan mana yang <em>bertahan</em></h1>
+    <p>Iklan yang tetap tayang berminggu-minggu adalah bukti terkuat. Setelah riset selesai, ketik di chat Claude:</p><div class="ketik">Pantau iklan</div>
+    <p>Mau dicek otomatis tiap minggu? Ketik <b>Jadwalkan pantau tiap minggu</b>.</p></section>`;
+  const a = [...pt.iklan].sort((x, y) => (Number(!!y.masih_tayang) - Number(!!x.masih_tayang)) || ((y.hari_sekarang ?? y.hari_saat_rekam) - (x.hari_sekarang ?? x.hari_saat_rekam)));
+  const masih = a.filter(x => x.masih_tayang).length;
+  const sudahCek = (x) => (x.riwayat || []).length > 0;
+  const baris = a.map(x => {
+    const r = x.riwayat || [];
+    const status = !sudahCek(x) ? '<span class="lencana l-BARU">Baru direkam</span>' : x.masih_tayang ? '<span class="lencana l-WINNING">Masih tayang</span>' : '<span class="lencana l-POTENSIAL">Tidak terlihat lagi</span>';
+    return `<div class="kartu-b"><h4>${esc(x.pengiklan)} <span class="sub">${esc(x.negara)}</span></h4>
+      <div class="baris-sub mono">${status}<span>${esc(x.hari_sekarang ?? x.hari_saat_rekam)} hari</span></div>
+      <span class="sub">Frasa: ${esc(x.frasa)} · direkam ${esc(tgl(x.direkam))}${x.masih_tayang ? '' : ` · terakhir terlihat ${esc(tgl(x.terakhir_terlihat))}`}</span>
+      ${r.length ? `<span class="titik-r" role="img" aria-label="Riwayat pengecekan">${r.map(c => c.masih ? '●' : '<span class="mati">○</span>').join('')}</span>` : ''}
+      ${/^https:\/\//.test(x.tautan || '') ? `<a href="${aman(x.tautan)}" target="_blank" rel="noopener">Lihat iklannya</a>` : ''}</div>`;
+  }).join('');
+  return `<div class="lebar-bagian"><section class="lebar-bagian"><h2>Iklan yang dipantau</h2>
+    <div class="petak"><div class="angka"><b>${a.length}</b><span>dipantau</span></div><div class="angka"><b>${masih}</b><span>masih tayang</span></div><div class="angka"><b>${a.length - masih}</b><span>tidak terlihat lagi</span></div><div class="angka"><b>${pt.cek_terakhir ? esc(tgl(pt.cek_terakhir)) : 'Belum'}</b><span>cek terakhir</span></div></div>
+    <p class="bukti-meta">Tidak terlihat lagi belum tentu berhenti, bisa juga tergeser dari hasil yang termuat. Ketik <b>Pantau iklan</b> di chat Claude untuk memeriksa ulang.</p></section>
+    <section class="lebar-bagian"><div class="petak" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">${baris}</div></section></div>`;
+}
+const BANTU = [
+  ['Mulai riset', 'Claude membuka Ads Library, membaca iklan, dan mengisi papan ini.', ['Riset produk: niche pemilik bisnis online', 'Riset produk: karyawan 30an yang ingin penghasilan sampingan']],
+  ['Cek satu ide', 'Vonis LANJUT TES KECIL, PERLU BUKTI, atau TAHAN, lengkap dengan hitungan harga.', ['Validasi ide: template laporan keuangan untuk toko online']],
+  ['Bangun produk', 'Claude menyusun halaman jualan, 3 teks iklan, rencana tes, dan hitungan modal.', ['Bangun produk: nama produk dari papan', 'Hitung modal tes iklan untuk nama produk']],
+  ['Pantau pesaing', 'Lihat iklan mana yang masih tayang. Bisa dijadwalkan otomatis.', ['Pantau iklan', 'Jadwalkan pantau tiap minggu']],
+  ['Bagikan dan simpan', 'Laporan PDF untuk klien atau tim, dan simpan hasil ke GitHub.', ['Buat laporan PDF untuk Nama Klien', 'Simpan riset']],
+  ['Lain-lain', 'Cek kesehatan sistem dan lihat contoh.', ['Periksa sistem', 'Buka contoh riset', 'Buka papan']]
+];
+function gambarBantuan() {
+  return `<div class="lebar-bagian"><section class="lebar-bagian"><h2>Apa yang bisa diketik di chat Claude</h2><p class="bukti-meta">Semua perintah diketik di chat Claude Code, bukan di papan ini. Papan hanya untuk membaca hasil.</p>
+    ${BANTU.map(([j, k, c]) => `<div class="grup-bantu"><h3 class="mono" style="font-size:12px;color:var(--red)">${esc(j)}</h3><p class="ket">${esc(k)}</p>${c.map(x => `<div class="ketik">${esc(x)}</div>`).join('')}</div>`).join('')}</section>
+    <section class="lebar-bagian"><h2>Alur yang disarankan</h2><ul class="daftar-titik"><li>Riset niche, lalu buka produk dengan tanda Paling disarankan.</li><li>Validasi satu atau dua produk teratas. Jangan langsung membangun semuanya.</li><li>Kalau vonisnya LANJUT TES KECIL, bangun produknya dan hitung modal tes.</li><li>Pasang iklan 3 hari dengan modal kecil, baca hasilnya, lalu putuskan: lanjut, ubah, atau berhenti.</li><li>Pantau pesaing tiap minggu supaya tahu pasar masih hidup.</li></ul></section></div>`;
+}
 function gambarKosong() {
   return `<section class="kosong">
     <span class="eye mono">Belum ada riset</span>
-    <h1>Ketik ini di <em>Claude Code</em></h1>
-    <div class="ketik">Riset produk: niche pemilik bisnis online</div>
-    <p>Ganti nichenya dengan bidang atau target pembeli yang kamu mau. <b>Hasil muncul di sini dalam 10 sampai 30 menit.</b></p>
+    <h1>Mulai dari <em>satu kalimat</em></h1>
+    <p>Kamu tidak perlu membuka Facebook atau menyalin apa pun. Cukup ketik di chat Claude, lalu tunggu. <b>Hasil muncul di sini dalam 10 sampai 30 menit.</b></p>
+    <ol class="mulai-langkah">
+      <li><span>Ketik di chat Claude:<div class="ketik" style="margin-top:8px">Riset produk: niche pemilik bisnis online</div></span></li>
+      <li><span>Ganti niche dengan bidang atau target pembeli yang kamu mau. Boleh juga ide mentah: <b>Validasi ide: ...</b></span></li>
+      <li><span>Buka papan ini lagi. Produk, bukti iklan, harga pesaing, dan Skor Ghost sudah tersusun.</span></li>
+      <li><span>Pilih satu produk, lalu ikuti kotak <b>Langkah berikutnya</b> sampai halaman jualan dan iklan siap.</span></li>
+    </ol>
+    <p>Mau lihat dulu seperti apa hasilnya? Ketik <b>Buka contoh riset</b>.</p>
   </section>`;
 }
 function gambar() {
@@ -464,6 +596,9 @@ function gambar() {
   const utama = $('utama');
   if (!DATA.riset.length || !DATA.ide.length) { utama.innerHTML = gambarKosong(); return; }
   if (S.tampil === 'bukti') { utama.innerHTML = gambarBukti(); return; }
+  if (S.tampil === 'bandingkan') { utama.innerHTML = gambarBandingkan(); return; }
+  if (S.tampil === 'pantau') { utama.innerHTML = gambarPantau(); return; }
+  if (S.tampil === 'bantuan') { utama.innerHTML = gambarBantuan(); return; }
   const i = ideTerpilih();
   if (!i) {
     utama.innerHTML = `<section class="kosong"><h1>Belum ada produk di saringan ini</h1><p>${S.saring === 'fav' ? 'Buka satu produk lalu tekan Simpan ke favorit.' : 'Pilih saringan lain di atas.'}</p></section>`;
@@ -480,6 +615,7 @@ document.addEventListener('click', ev => {
   if (act === 'saring') { S.saring = t.dataset.nilai; S.pilih = null; gambar(); return; }
   if (act === 'fav') { ubahFav(t.dataset.id); gambar(); return; }
   if (act === 'csv') { unduhCsv(); return; }
+  if (act === 'tahap') { ubahTahap(t.dataset.id, t.dataset.k); gambar(); return; }
   if (act === 'pilih') {
     ev.preventDefault();
     S.pilih = t.dataset.id; S.tampil = 'ide'; gambar();

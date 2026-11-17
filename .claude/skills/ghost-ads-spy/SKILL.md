@@ -23,11 +23,16 @@ Ghost Ads Spy adalah satu folder yang dibuka pengguna di Claude Code (tab Code d
 - `scripts/analisa.py`: merangkum semua hasil `ambil_iklan.py` menjadi satu peringkat pengiklan, kelompok per alamat jualan, frasa terbaik, dan perintah `buka_lp.py` yang siap jalan. Tanpa internet.
 - `scripts/pantau.py`: merekam iklan WINNING lalu, di hari lain, memeriksa apakah iklannya masih tayang.
 - `scripts/simpan.py`: menyimpan folder `papan/` ke GitHub. Wajib di sesi cloud (lihat bawah).
+- `scripts/hitung.py`: kalkulator harga, batas impas, modal tes, dan pembaca hasil tes iklan nyata.
+- `scripts/buat_lp.py`: merakit halaman jualan satu file, lembar teks iklan, dan rencana tes dari satu spesifikasi JSON.
+- `scripts/buat_laporan.py`: laporan satu riset yang rapi (HTML dan PDF) untuk dibagikan.
+- `scripts/periksa.py`: pemeriksa kesehatan sistem dan izin.
+- `PANDUAN-NGIKLAN.html`: panduan step by step dari halaman jualan sampai iklan pertama dan membaca hasilnya.
 - `scripts/buat_papan.py`: merakit Papan Produk Winning, dan halaman Contoh Riset Nyata.
 - `papan/`: tempat papan dan data riset pengguna disimpan. Papan pengguna adalah `papan/papan-produk-winning.html`.
 - `PANDUAN-MULAI.html`: Panduan Mulai untuk pengguna.
 
-Perintah Python: pakai `python3`. Kalau tidak dikenali (biasanya di Windows), pakai `python`, lalu `py`. Jalankan satu skrip per perintah, tanpa digabung dengan perintah lain (tanpa `;`, `&&`, atau `|`), supaya pengguna tidak ditanya izin berulang-ulang. Untuk membaca file hasil di `papan/kerja/`, pakai alat baca file bawaanmu. Jangan menjalankan perintah lain di terminal (`grep`, `cat`, `ls`, `python3 -c`, dan sejenisnya): setiap perintah di luar empat skrip paket memunculkan pertanyaan izin ke pengguna.
+Perintah Python: pakai `python3`. Kalau tidak dikenali (biasanya di Windows), pakai `python`, lalu `py`. Jalankan satu skrip per perintah, tanpa digabung dengan perintah lain (tanpa `;`, `&&`, atau `|`), supaya pengguna tidak ditanya izin berulang-ulang. Untuk membaca file hasil di `papan/kerja/`, pakai alat baca file bawaanmu. Jangan menjalankan perintah lain di terminal (`grep`, `cat`, `ls`, `python3 -c`, dan sejenisnya): setiap perintah di luar skrip paket (siapkan, ambil_iklan, buka_lp, buat_papan, analisa, pantau, simpan, hitung, buat_lp, buat_laporan, periksa) memunculkan pertanyaan izin ke pengguna.
 
 **Kamu yang meriset, bukan pengguna.** Kamu sendiri yang menjalankan skrip, membaca iklan, menghitung umur, dan membuka halaman jualan. Jangan pernah menyuruh pengguna membuka Ads Library, menyalin teks iklan, atau mengirim tangkapan layar, dan jangan memberi tautan pencarian Ads Library untuk dibuka sendiri, baik sebagai pengganti riset maupun "sambil menunggu". Pengguna membeli alat ini supaya tidak perlu melakukan itu.
 
@@ -90,6 +95,11 @@ Pengguna tanpa laptop memakai Claude Code di cloud. Bedanya:
 - **"Buka papan"**: Langkah 0 saja.
 - **"Pantau iklan"** atau **"Cek iklan masih tayang"**: lihat Tahap 4.
 - **"Simpan riset"**: jalankan `python3 scripts/simpan.py` dan laporkan hasilnya.
+- **"Bangun produk: ..."**, **"Pasang Pixel ..."**, **"Baca hasil tes iklan: ..."**, **"Hitung modal tes iklan untuk ..."**: lihat Tahap 5.
+- **"Buat laporan"** atau **"Buat laporan PDF untuk <nama>"**: lihat Tahap 6.
+- **"Jadwalkan pantau tiap minggu"**: lihat Tahap 7.
+- **"Periksa sistem"**: jalankan `python3 scripts/periksa.py` (tambah `--internet` kalau diminta menguji Facebook), lalu jelaskan hasilnya dengan bahasa biasa dan perbaiki yang bisa diperbaiki dengan izin pengguna.
+- **"Untuk klien <nama>"** atau proyek terpisah: pakai folder kerja sendiri, `papan/klien-<nama-huruf-kecil>`, dengan `--folder papan/klien-<nama>` pada `buat_papan.py`, `pantau.py`, dan `buat_laporan.py`. Riset klien tidak boleh tercampur dengan papan utama. Papan klien dibuka dari `papan/klien-<nama>/papan-produk-winning.html`.
 - **"Buka contoh riset"**: lihat bagian Contoh Riset Nyata.
 
 Jangan pernah memberi daftar ide dari tebakan sendiri, ide kilat, atau ide "sambil menunggu". Setiap produk yang kamu sebut ke pengguna harus berasal dari iklan yang benar-benar kamu baca lewat skrip pada riset itu.
@@ -114,10 +124,10 @@ Panduan memberi nilai ada di `referensi/menyusun-ide.md`.
 
 ## Tahap 1: kumpulkan bukti
 
-Baca `referensi/cara-riset.md` sebelum mulai. Intinya, semua kamu kerjakan sendiri lewat skrip:
+Baca `referensi/cara-riset.md` sebelum mulai, dan `referensi/negara-per-niche.md` untuk memilih negara pembanding (pengguna menyerahkan pilihan negara ke kamu). Intinya, semua kamu kerjakan sendiri lewat skrip:
 
 1. Jalankan `scripts/ambil_iklan.py` untuk Indonesia dengan minimal 5 frasa bahasa pembeli, dan untuk minimal satu negara lain dengan minimal 3 frasa.
-2. Baca hasilnya: pengiklan, tanggal mulai tayang, umur dalam hari, jumlah iklan terlihat, dan status WINNING, POTENSIAL, atau BARU. Skrip mencoba ulang sendiri kalau halaman Facebook terlambat terbuka.
+2. Baca hasilnya: pengiklan, tanggal mulai tayang, umur dalam hari, jumlah iklan terlihat, dan status WINNING, POTENSIAL, atau BARU. Skrip mencoba ulang sendiri kalau halaman Facebook terlambat terbuka. Kalau tetap kosong, itu biasanya pembatasan sementara dari Facebook (permintaan beruntun dari satu alamat): kerjakan hal lain (misalnya buka halaman jualan atau analisa hasil yang sudah ada), tunggu 5 sampai 10 menit, lalu ulangi sekali. Jangan mengulang beruntun, itu memperpanjang pembatasan. Katakan terus terang ke pengguna kalau ada frasa yang belum terbaca.
    Setelah semua frasa dan negara selesai, jalankan `python3 scripts/analisa.py papan/kerja/iklan-id.json papan/kerja/iklan-us.json --keluar papan/kerja/peringkat.json --csv papan/kerja/peringkat.csv`. Itu menggabungkan semua frasa menjadi satu peringkat (satu iklan dihitung sekali), menunjukkan alamat jualan yang dipakai banyak pengiklan sekaligus (tanda produk ramai), frasa mana yang paling berhasil, dan mencetak perintah `buka_lp.py` untuk alamat terbaik. Pakai peringkat itu, jangan menggabungkan dengan menghitung sendiri.
 3. Jalankan `scripts/buka_lp.py` untuk halaman tujuan penawaran terbaik. Catat harga, isi produk, dan bentuknya dari halaman itu, bukan dari teks iklan.
 4. Cek sumber di luar Meta: tren, keluhan komunitas, etalase seperti Gumroad dan Etsy.
@@ -144,13 +154,25 @@ Untuk melihat apakah iklan pesaing bertahan. Dipakai kalau pengguna meminta, ata
 3. Laporkan di chat singkat: berapa iklan masih tayang, berapa tidak terlihat. Kalau umur iklan pembanding di papan sudah berubah, perbarui lewat `buat_papan.py tambah --timpa`.
 4. Jalankan `python3 scripts/simpan.py` di sesi cloud.
 
+## Tahap 5: bangun produk, halaman jualan, dan iklan
+
+Baca `referensi/membangun-produk.md`. Dari produk yang sudah divalidasi, susun halaman jualan, tiga teks iklan, rencana tes, dan hitungan modal dengan `buat_lp.py` dan `hitung.py`, lalu pandu pengguna lewat `PANDUAN-NGIKLAN.html`. Tidak ada testimoni karangan, tidak ada janji penghasilan, dan pengguna sendiri yang menekan Publikasikan di Ads Manager.
+
+## Tahap 6: laporan yang bisa dibagikan
+
+Untuk klien, tim, atau arsip. `python3 scripts/buat_laporan.py --untuk "<nama>" --oleh "<nama>" --pdf` (tambah `--riset <id>` untuk riset tertentu, `--folder` untuk proyek klien). Hasil di `papan/laporan/`. Di sesi cloud kirim PDF dengan `SendUserFile` (display attach) dan HTML-nya (display render). Laporan hanya memuat Skor Ghost. Jalankan `simpan.py` sesudahnya.
+
+## Tahap 7: pantau terjadwal
+
+Kalau pengguna meminta pengecekan otomatis, buat tugas terjadwal dengan alat penjadwal sesi (`create_trigger`, mode sesi baru tiap jalan) setelah pengguna setuju, karena itu berjalan berulang di akunnya. Prompt tugas harus berdiri sendiri: masuk ke repo ini, jalankan `python3 scripts/siapkan.py`, lalu `python3 scripts/pantau.py cek`, lalu `python3 scripts/simpan.py`, dan laporkan ringkasan (berapa masih tayang, berapa tidak terlihat lagi, ada perubahan penting atau tidak). Jadwal bawaan: mingguan, pagi hari waktu Indonesia, di luar jam 6 sampai 9 pagi Pasifik bila memungkinkan. Sebut jadwalnya ke pengguna dan cara mematikannya. Syaratnya `pantau.py rekam` sudah pernah dijalankan.
+
 ## Tahap 3: validasi ide
 
 Baca `referensi/validasi.md`. Dipakai untuk ide yang pengguna pilih dari papan, atau ide mentah dari pengguna.
 
 Hasilnya vonis LANJUT TES KECIL, PERLU BUKTI, atau TAHAN, dengan alasan. Di papan bagian ini bernama Vonis Validasi. Tulis ke papan lewat `scripts/buat_papan.py tambah` (bagian `validasi`), lalu buka papan terbaru. Vonis adalah saran, pengguna yang memutuskan.
 
-Skill ini berhenti di validasi. Kalau pengguna meminta nama produk, halaman jualan, iklan, atau pembuatan produknya, bantu sebisamu sebagai percakapan biasa di luar skill ini, dan jangan menulisnya ke papan.
+Setelah vonis LANJUT TES KECIL, tawarkan Tahap 5 (bangun produk). Jangan menulis nama produk atau teks iklan ke papan lewat data riset. Hasil Tahap 5 hidup di `papan/produk/`.
 
 ## Yang tidak dilakukan
 

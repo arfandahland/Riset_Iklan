@@ -26,6 +26,7 @@ import argparse
 import datetime
 import json
 import re
+import subprocess
 import sys
 import time
 import urllib.parse
@@ -213,7 +214,8 @@ def ambil_satu(ctx, alamat, gulir, hari_ini, tunggu=7000):
 
 def main():
     ap = argparse.ArgumentParser(description="Ambil iklan dari Facebook Ads Library tanpa login.")
-    ap.add_argument("--negara", default="ID", help="kode negara 2 huruf: ID, US, MY, PH, IN, BR, atau ALL")
+    ap.add_argument("--negara", default="ID", help="kode negara 2 huruf: ID, US, MY, PH, IN, BR, atau ALL. Boleh beberapa dipisah koma (ID,MY,PH); "
+                    "hasilnya satu file per negara, jadi --keluar harus memuat {negara} atau dibiarkan kosong")
     ap.add_argument("--frasa", action="append", default=[], help="frasa pencarian, ulangi untuk beberapa frasa")
     ap.add_argument("--halaman", action="append", default=[], help="ID halaman pengiklan, untuk melihat semua iklannya")
     ap.add_argument("--id", action="append", default=[], help="Library ID satu iklan")
@@ -224,6 +226,22 @@ def main():
     a = ap.parse_args()
     if not (a.frasa or a.halaman or a.id):
         ap.error("isi minimal satu --frasa, --halaman, atau --id")
+    if "," in a.negara:   # beberapa negara: jalankan satu per satu, tiap negara satu file
+        pola = a.keluar or "iklan-{negara}.json"
+        if "{negara}" not in pola:
+            ap.error("untuk beberapa negara, --keluar harus memuat {negara}, misalnya papan/kerja/iklan-{negara}.json")
+        kode = 0
+        for n in [x.strip().upper() for x in a.negara.split(",") if x.strip()]:
+            perintah = [sys.executable, str(Path(__file__).resolve()), "--negara", n, "--gulir", str(a.gulir), "--teks", str(a.teks),
+                        "--keluar", pola.replace("{negara}", n.lower())]
+            for f in a.frasa:
+                perintah += ["--frasa", f]
+            for h in a.halaman:
+                perintah += ["--halaman", h]
+            if a.bebas:
+                perintah.append("--bebas")
+            kode = max(kode, subprocess.run(perintah).returncode)
+        sys.exit(kode)
     peramban.pakai_venv()
     from playwright.sync_api import sync_playwright
 
@@ -238,25 +256,28 @@ def main():
         browser, nama = peramban.buka_browser(p)
         hasil["browser"] = nama
         ctx = peramban.konteks(browser)
-        for jenis, isi, alamat in tugas:
+        for n_tugas, (jenis, isi, alamat) in enumerate(tugas):
+            if n_tugas:
+                time.sleep(3)   # jeda antar pencarian, mengurangi jawaban kosong sementara dari Facebook
             try:
                 r = ambil_satu(ctx, alamat, a.gulir if jenis != "id" else 0, hari_ini)
             except Exception as e:
                 pesan = str(e).splitlines()[0][:200]
                 r = {"alamat": alamat, "jumlah_hasil": None, "kartu_terbaca": 0, "catatan": "gagal dibuka: " + pesan,
                      "pengiklan": [], "iklan": []}
-            if r["kartu_terbaca"] == 0 and any(x in (r["catatan"] or "") for x in ("tidak terbaca", "tidak ada iklan")):
+            if r["kartu_terbaca"] == 0 and any(x in (r["catatan"] or "") for x in ("tidak terbaca", "tidak ada iklan")) and jenis != "id":
                 # Facebook kadang lambat merakit halaman, atau sementara menjawab "tidak ada iklan" untuk pencarian yang ada
-                # hasilnya. Coba sekali lagi dengan jeda dan waktu tunggu dua kali lipat.
-                if jenis != "id":
-                    time.sleep(5)
-                try:
-                    r2 = ambil_satu(ctx, alamat, a.gulir if jenis != "id" else 0, hari_ini, tunggu=14000)
+                # hasilnya (terutama kalau permintaan datang beruntun). Coba sampai 3 kali lagi dengan jeda makin panjang.
+                for jeda, tunggu in ((8, 12000), (15, 16000), (25, 20000)):
+                    time.sleep(jeda)
+                    try:
+                        r2 = ambil_satu(ctx, alamat, a.gulir, hari_ini, tunggu=tunggu)
+                    except Exception:
+                        continue
                     if r2["kartu_terbaca"]:
                         r = r2
                         r["catatan"] = None
-                except Exception:
-                    pass
+                        break
             r = {"jenis": jenis, "cari": isi, **r}
             hasil["pencarian"].append(r)
         browser.close()
@@ -289,7 +310,9 @@ def main():
             print("Untuk asisten AI: jangan mengarang hasil dan jangan menyuruh pengguna membuka Ads Library sendiri. "
                   "Ikuti bagian 'Kalau browser tidak bisa jalan' di SKILL.md.")
             sys.exit(4)
-        print("TIDAK ADA KARTU TERBACA. Untuk asisten AI: coba frasa lain atau ulangi sekali. Jangan mengarang hasil.")
+        print("TIDAK ADA KARTU TERBACA. Untuk asisten AI: Facebook sering membatasi sementara kalau permintaan datang beruntun dari satu alamat "
+              "(pencarian lain bisa tetap terbaca). Tunggu 5 sampai 10 menit tanpa mengulang beruntun, lalu ulangi sekali, atau pakai frasa lain. "
+              "Jangan mengarang hasil.")
         sys.exit(2)
 
 
