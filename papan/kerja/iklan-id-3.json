@@ -1,0 +1,1544 @@
+{
+ "diambil": "2026-11-17T12:31",
+ "umur_dihitung_sampai": "2026-11-17",
+ "negara": "ID",
+ "gulir": 4,
+ "pencarian": [
+  {
+   "jenis": "frasa",
+   "cari": "ebook",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22ebook%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": "~15,000",
+   "kartu_terbaca": 21,
+   "catatan": null,
+   "pengiklan": [
+    {
+     "pengiklan": "Adrienne's Classic Desserts, LLC",
+     "iklan_terlihat": 1,
+     "hari_tertua": 1448,
+     "mulai_tertua": "2022-11-30",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=2315109475329338",
+     "status": "WINNING",
+     "tujuan": [
+      "https://www.instagram.com/adriennesclassicdesserts/"
+     ]
+    },
+    {
+     "pengiklan": "Treatmedy",
+     "iklan_terlihat": 1,
+     "hari_tertua": 832,
+     "mulai_tertua": "2024-08-07",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1511554006421180",
+     "status": "WINNING",
+     "tujuan": [
+      "https://shop.treatmedy.com/bunion/ps-2-50"
+     ]
+    },
+    {
+     "pengiklan": "Business Explained",
+     "iklan_terlihat": 1,
+     "hari_tertua": 545,
+     "mulai_tertua": "2025-05-21",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1048691656590265",
+     "status": "WINNING",
+     "tujuan": [
+      "http://business-explained.com/shop/everything-explained-bundle/",
+      "https://business-explained.com/shop/everything-explained-bundle/"
+     ]
+    },
+    {
+     "pengiklan": "Splunk",
+     "iklan_terlihat": 1,
+     "hari_tertua": 460,
+     "mulai_tertua": "2025-08-14",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1288848826083390",
+     "status": "WINNING",
+     "tujuan": [
+      "https://www.splunk.com/en_us/form/security-use-case-enhanced-by-ai-and-ml.html"
+     ]
+    },
+    {
+     "pengiklan": "PDF Reader: Ebook PDFs Reader",
+     "iklan_terlihat": 18,
+     "hari_tertua": 424,
+     "mulai_tertua": "2025-09-19",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1710256273017515",
+     "status": "WINNING",
+     "tujuan": [
+      "http://play.google.com/store/apps/details?id=com.trustedapp.pdfreaderpdfviewer"
+     ]
+    },
+    {
+     "pengiklan": "Irsanni Kurniati",
+     "iklan_terlihat": 4,
+     "hari_tertua": 289,
+     "mulai_tertua": "2026-02-01",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=2113634109401436",
+     "status": "WINNING",
+     "tujuan": [
+      "https://irsani.id/homefit30"
+     ]
+    },
+    {
+     "pengiklan": "Duo Security",
+     "iklan_terlihat": 1,
+     "hari_tertua": 195,
+     "mulai_tertua": "2026-05-06",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=840196251882187",
+     "status": "WINNING",
+     "tujuan": [
+      "https://resources.duo.com/identity-security-for-dummies-cisco-duo-download"
+     ]
+    },
+    {
+     "pengiklan": "Zymuno Id",
+     "iklan_terlihat": 1,
+     "hari_tertua": 162,
+     "mulai_tertua": "2026-06-08",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=936499859418795",
+     "status": "WINNING",
+     "tujuan": [
+      "http://officialzymuno.id/"
+     ]
+    },
+    {
+     "pengiklan": "Confluent",
+     "iklan_terlihat": 1,
+     "hari_tertua": 151,
+     "mulai_tertua": "2026-06-19",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1713174726493000",
+     "status": "WINNING",
+     "tujuan": [
+      "https://www.confluent.io/resources/ebook/developers-guide-to-rag/?utm_medium=paidsocial&utm_source=facebook&utm_campaign=ch.paidsocial_tp.prs_tgt.adv-5pct-lal-segment-highscore-content-downloads_rgn.apac_sbrgn.apac-tier2_lgn.eng_bgt.pg_con.developers-guide-rag-ebook_creative.ebook-bv1"
+     ]
+    },
+    {
+     "pengiklan": "Oxyvit Kidz ID",
+     "iklan_terlihat": 1,
+     "hari_tertua": 131,
+     "mulai_tertua": "2026-07-09",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1104537855254522",
+     "status": "WINNING",
+     "tujuan": [
+      "https://oxyvit.id/"
+     ]
+    },
+    {
+     "pengiklan": "Zymuno For Femme",
+     "iklan_terlihat": 2,
+     "hari_tertua": 71,
+     "mulai_tertua": "2026-09-07",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=2020661938622599",
+     "status": "WINNING",
+     "tujuan": [
+      "https://zymunoindonesia.id/femme"
+     ]
+    },
+    {
+     "pengiklan": "Zymuno Indonesia",
+     "iklan_terlihat": 1,
+     "hari_tertua": 43,
+     "mulai_tertua": "2026-10-05",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1059113696937733",
+     "status": "WINNING",
+     "tujuan": [
+      "https://zymunoindonesia.id/essential"
+     ]
+    },
+    {
+     "pengiklan": "Kavelo Notes",
+     "iklan_terlihat": 2,
+     "hari_tertua": 21,
+     "mulai_tertua": "2026-10-27",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1422039503472373",
+     "status": "POTENSIAL",
+     "tujuan": [
+      "https://vip.fueer.com/aiprompt5"
+     ]
+    },
+    {
+     "pengiklan": "Add-004",
+     "iklan_terlihat": 1,
+     "hari_tertua": 21,
+     "mulai_tertua": "2026-10-27",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1121254687022898",
+     "status": "POTENSIAL",
+     "tujuan": [
+      "https://vip.fueer.com/candle6"
+     ]
+    }
+   ],
+   "iklan": [
+    {
+     "id_iklan": "1710256273017515",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1710256273017515",
+     "pengiklan": "PDF Reader: Ebook PDFs Reader",
+     "halaman_pengiklan": "https://www.facebook.com/61560666361435/",
+     "mulai": "2025-09-19",
+     "hari": 424,
+     "iklan_sama": 9,
+     "tujuan": [
+      "http://play.google.com/store/apps/details?id=com.trustedapp.pdfreaderpdfviewer"
+     ],
+     "tombol": "Learn more",
+     "teks": "Best PDF Reader App 2025, try it now 👉\nSorry, we're having trouble playing this video.\nLearn more"
+    },
+    {
+     "id_iklan": "1422039503472373",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1422039503472373",
+     "pengiklan": "Kavelo Notes",
+     "halaman_pengiklan": "https://www.facebook.com/61595207834544/",
+     "mulai": "2026-10-27",
+     "hari": 21,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://vip.fueer.com/aiprompt5"
+     ],
+     "tombol": "See details",
+     "teks": "📘 10.000 Prompt AI untuk Keuangan & Investasi!\n🔍 Dari riset saham, analisis fundamental, valuasi perusahaan hingga manajemen risiko investasi.\n📚 27 topik dalam 1 ebook PDF, dengan 1.470 halaman referensi. Hanya Rp10.000!\nVIP.FUEER.COM\n🛒 Dapatkan ebook prompt investasi ini sekarang!\nGunakan template prompt untuk riset investasi, perencanaan keuangan pribadi, dan analisis keuangan bisnis. Sesuaikan dengan data serta tujuan Anda, lalu jalankan di alat AI pilihan Anda.\nSee details"
+    },
+    {
+     "id_iklan": "1282769523593492",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1282769523593492",
+     "pengiklan": "PDF Reader: Ebook PDFs Reader",
+     "halaman_pengiklan": "https://www.facebook.com/61560666361435/",
+     "mulai": "2025-09-28",
+     "hari": 415,
+     "iklan_sama": 3,
+     "tujuan": [
+      "http://play.google.com/store/apps/details?id=com.trustedapp.pdfreaderpdfviewer"
+     ],
+     "tombol": "Learn more",
+     "teks": "Best PDF Reader App 2025, try it now 👉\nSorry, we're having trouble playing this video.\nLearn more"
+    },
+    {
+     "id_iklan": "2315109475329338",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2315109475329338",
+     "pengiklan": "Adrienne's Classic Desserts, LLC",
+     "halaman_pengiklan": "https://www.facebook.com/healthiernevertastedsogood/",
+     "mulai": "2022-11-30",
+     "hari": 1448,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://www.instagram.com/adriennesclassicdesserts/"
+     ],
+     "tombol": "Learn More",
+     "teks": "No Bake Chocolate Tart is for the chocolate lovers.  It’s decadent and delicious, as well as smooth and creamy.  Some key ingredients included avocado, almond milk, unsweetened cocoa powder and sugar free maple syrup.  The crust is a blend of almonds, coconut flake and cocoa powder and it is incredibly tasty.\nNo Bake Chocolate Tart\nIngredients:\n1 1/3 Cups of raw almonds, unsalted\n1/2 Cup of unsweetened coconut\nflakes\n2 Tablespoons of unsweetened cocoa\npowder\n1/3 Cup + 1 tablespoon of sugar free maple syrup or you can use agave syrup\n2 Tablespoon of coconut oil, melted\nChocolate Avocado Mousse\n1 Cup of avocado, about 3 to 4 avocados (240g 8.5 oz)\n1/3 Cup of unsweetened almond milk or you can use rice milk\n1/3 Cup + 1 Tablespoon of unsweetened cocoa powder\n1/3 Cup + 2 tablespoons of sugar free maple syrup or agave\n3 Tablespoon of coconut oil, melted\nTopping:\n1/2 Cup 85% dark chocolate bar, shaved or cut into chunks\nDirections:\n-In a blender or a food processor, add all the dry ingredients, raw almonds, unsweetened coconut and cocoa powder. Blend for 30 seconds until the almonds are a thick meal. Then add the maple syrup and melted coconut oil. Then blend again until it’s a sticky dough. If it’s too loose, or dry adjust by adding 1 tablespoon of water if necessary then blend again. Add the sticky dough to the pan, 20 cm (8 inches). I used a 9 inch pan and added the crust to the bottom of the pan. If it’s too sticky, you can also place a piece of parchment paper between your fingers and the dough to prevent sticking to your fingers if desired. Press the dough until it covers the entire pan then put in the refrigerator to set.\n-To make the chocolate mousse, scoop out the ripe avocado flesh and add to the blender along with the sugar free maple syrup, cocoa powder, unsweetened almond milk and melted coconut oil. Blend ingredients well until coconut is combined. Then pour the chocolate mouse into the prepared pie crust. Add shaved chocolate to the top of the pie to decorate then refrigerate for 4 hours or overnight. Serve with dairy free ice cream and enjoy!\nSorry, we're having trouble playing this video.\nLearn more\nINSTAGRAM.COM\nThis ebook will help you to create some delicious vegan and gluten free desserts. You will also receive tips, suggestions for key ingredients to stock in your pantry, and even brand recommendations.\nNo Bake Chocolate Tart\nLearn More\nNo Bake Chocolate Tart\nINSTAGRAM.COM\nEbook: Adrienne's Delightful Desserts\nLearn More\nINSTAGRAM.COM\nVegan Fruit Tart\nLearn More\nINSTAGRAM.COM\nVegan Chocolate Cake with Peanut Butter Glaze\nLearn More\nINSTAGRAM.COM\nVegan Chocolate Chip Cheesecake Bars\nLearn More\nINSTAGRAM.COM\nVegan Chocolate Chip Cookie Skillet\nLearn More"
+    },
+    {
+     "id_iklan": "1419703806222526",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1419703806222526",
+     "pengiklan": "PDF Reader: Ebook PDFs Reader",
+     "halaman_pengiklan": "https://www.facebook.com/61560666361435/",
+     "mulai": "2026-02-18",
+     "hari": 272,
+     "iklan_sama": 3,
+     "tujuan": [
+      "http://play.google.com/store/apps/details?id=com.trustedapp.pdfreaderpdfviewer"
+     ],
+     "tombol": "Learn more",
+     "teks": "Best PDF Reader App 2025, try it now 👉\nSorry, we're having trouble playing this video.\nLearn more"
+    },
+    {
+     "id_iklan": "1121254687022898",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1121254687022898",
+     "pengiklan": "Add-004",
+     "halaman_pengiklan": "https://www.facebook.com/61562913351593/",
+     "mulai": "2026-10-27",
+     "hari": 21,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://vip.fueer.com/candle6"
+     ],
+     "tombol": "See details",
+     "teks": "Belajar grafik saham\ndimulai dari satu candle.\nCukup Rp10.000.\nTemukan urutan belajar yang jelas dalam 8 bab, 60 halaman bergambar, dan 14 soal beserta pembahasan. Kenali bagian candle terlebih dahulu, kemudian lanjutkan ke pola dan tren.\nVIP.FUEER.COM\n👉 Beli Panduan PDF Rp10.000\nTemukan urutan belajar yang jelas dalam 8 bab, 60 halaman bergambar, dan 14 soal beserta pembahasan. Kenali bagian candle terlebih dahulu, kemudian lanjutkan ke pola dan tren.\nSee details"
+    },
+    {
+     "id_iklan": "885112897893710",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=885112897893710",
+     "pengiklan": "PDF Reader: Ebook PDFs Reader",
+     "halaman_pengiklan": "https://www.facebook.com/61560666361435/",
+     "mulai": "2026-04-03",
+     "hari": 228,
+     "iklan_sama": 1,
+     "tujuan": [
+      "http://play.google.com/store/apps/details?id=com.trustedapp.pdfreaderpdfviewer"
+     ],
+     "tombol": "Install now",
+     "teks": "Scan, Read, and Edit PDFs in One App\nSorry, we're having trouble playing this video.\nLearn more\nPLAY.GOOGLE.COM\nTry now\nInstall now"
+    },
+    {
+     "id_iklan": "1104537855254522",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1104537855254522",
+     "pengiklan": "Oxyvit Kidz ID",
+     "halaman_pengiklan": "https://www.facebook.com/OxyvitKidzID/",
+     "mulai": "2026-07-09",
+     "hari": 131,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://oxyvit.id/"
+     ],
+     "tombol": "Learn more",
+     "teks": "𝐉𝐀𝐓𝐔𝐇 𝐂𝐈𝐍𝐓𝐀 𝐁𝐀𝐍𝐆𝐄𝐓 𝐁𝐀𝐍𝐆𝐄𝐓 𝐒𝐀𝐌𝐀 𝐓𝐀𝐁𝐋𝐄𝐓 𝐇𝐈𝐒𝐀𝐏 𝐈𝐍𝐈!🫶🏻🥹\nAkhirnya setelah sekian lama drama anak langganan batuk pilek terlewati juga, welcome anak aktif seharian! Jangan bolos sekolah lagi yaa😂\nBu ibu, yang anaknya masih terjebak di siklus bapil tiap bulan, amaan? Cobain Oxyvit Kidz deh kalau kataku. Ekstrak menirannya canggih banget lewat teknologi Dexa Medica.\nAman dikonsumsi jangka panjang (gak kayak booster lain) dan gulanya dari pemanis alami steviosida. Aman banget di gigi si kecil!\nBorong sekarang Moms, lagi ada promo BELI 3 GRATIS 1 dan GRATIS EBOOK Spesial! Lumayan banget hematnya hwhw.\nKlik tombol dibawah ini\nSorry, we're having trouble playing this video.\nLearn more\nOXYVIT.ID\nOxyvit Kidz ID\nLearn more"
+    },
+    {
+     "id_iklan": "840196251882187",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=840196251882187",
+     "pengiklan": "Duo Security",
+     "halaman_pengiklan": "https://www.facebook.com/duosec/",
+     "mulai": "2026-05-06",
+     "hari": 195,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://resources.duo.com/identity-security-for-dummies-cisco-duo-download"
+     ],
+     "tombol": "Download",
+     "teks": "Discover the A to Z of identity security and learn how breaches happen\nIdentity Security for Dummies\nDownload"
+    },
+    {
+     "id_iklan": "1511554006421180",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1511554006421180",
+     "pengiklan": "Treatmedy",
+     "halaman_pengiklan": "https://www.facebook.com/treatmedy/",
+     "mulai": "2024-08-07",
+     "hari": 832,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://shop.treatmedy.com/bunion/ps-2-50"
+     ],
+     "tombol": "Shop now",
+     "teks": "Forgot to checkout? 50% OFF Sale Ends Today!\n⭐️⭐️⭐️⭐️⭐️ \"I have been suffering from bunion discomfort for years.\nNothing has helped until I tried this Bunion Fix! I spend 10-12 hours a day standing at work and this has been a lifesaver! ” - Sherri T.\nGet yours now >> https://shop.treatmedy.com/bunion/ps-2-50\n✅ FREE Shipping & 90-Day Results or Full Refund Guarantee\nTREATMEDY.COM/BUNIONFIX\nFREE Shipping & 90-Day Results or Refund Guarantee\n+ FREE eBook: Natural Bunion Remedies and Prevention Strategies ($19.95 Value)\nShop now"
+    },
+    {
+     "id_iklan": "1059113696937733",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1059113696937733",
+     "pengiklan": "Zymuno Indonesia",
+     "halaman_pengiklan": "https://www.facebook.com/zymunoindonesia.id/",
+     "mulai": "2026-10-05",
+     "hari": 43,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://zymunoindonesia.id/essential"
+     ],
+     "tombol": "Get offer",
+     "teks": "Agar ikhtiar sembuhmu maksimal, pastikan kamu hanya membeli dari Distributor Resmi Tangan Pertama!\n𝐉𝐀𝐌𝐈𝐍𝐀𝐍 𝐁𝐄𝐋𝐀𝐍𝐉𝐀 𝐀𝐌𝐀𝐍 𝟏𝟎𝟎%:\n✅ Pasti Original: Produk dikirim langsung dari pusat Zymuno.\n✅ Garansi Uang Kembali: Dana kembali utuh jika produk rusak, kadaluarsa, atau terbukti palsu.\n✅ Garansi Pengiriman: Paket dipastikan tiba dengan aman dan sesuai jadwal.\n𝐊𝐋𝐀𝐈𝐌 𝐏𝐑𝐎𝐌𝐎 𝐒𝐏𝐄𝐒𝐈𝐀𝐋 𝐇𝐀𝐑𝐈 𝐈𝐍𝐈:\n✅ Bebas Ongkir ke seluruh Pulau Jawa (Subsidi s/d Rp 45.000 untuk Luar Jawa!)\n✅ GRATIS Pendampingan Konsultasi VIP sampai kamu benar-benar sembuh.\n✅ GRATIS E-Book Panduan Kewanitaan.\n✅ GRATIS Akses Daftar Member Prioritas.\n✅ Bebas Ribet: Transfer (Lebih Diprioritaskan) atau bisa COD\nSorry, we're having trouble playing this video.\nLearn more\nZYMUNOINDONESIA.ID\n𝐖𝐄𝐁𝐒𝐈𝐓𝐄 𝐑𝐄𝐒𝐌𝐈 + 𝐅𝐋𝐀𝐒𝐇𝐒𝐀𝐋𝐄 𝟐 𝐁𝐎𝐓𝐎𝐋 𝐇𝐄𝐌𝐀𝐓 👉 𝗧𝗲𝗿𝗷𝘂𝗮𝗹 𝟭.𝟵𝟯𝟴.𝟳𝟯𝟴 𝗕𝗼𝘅 | ⭐⭐⭐⭐⭐(𝟰.𝟵/𝟱.𝟬)\nGet offer"
+    },
+    {
+     "id_iklan": "850729764006370",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=850729764006370",
+     "pengiklan": "PDF Reader: Ebook PDFs Reader",
+     "halaman_pengiklan": "https://www.facebook.com/61560666361435/",
+     "mulai": "2025-11-27",
+     "hari": 355,
+     "iklan_sama": 1,
+     "tujuan": [
+      "http://play.google.com/store/apps/details?id=com.trustedapp.pdfreaderpdfviewer"
+     ],
+     "tombol": "Install now",
+     "teks": "Best PDF Reader App 2025, try it now 👉\nSorry, we're having trouble playing this video.\nLearn more\nPLAY.GOOGLE.COM\nSmart Scan PDF\nInstall now"
+    },
+    {
+     "id_iklan": "2020661938622599",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2020661938622599",
+     "pengiklan": "Zymuno For Femme",
+     "halaman_pengiklan": "https://www.facebook.com/ZymunoForFemme/",
+     "mulai": "2026-09-07",
+     "hari": 71,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://zymunoindonesia.id/femme"
+     ],
+     "tombol": "Get offer",
+     "teks": "𝐉𝐚𝐧𝐠𝐚𝐧 𝐛𝐢𝐚𝐫𝐤𝐚𝐧 𝐤𝐞𝐩𝐮𝐭𝐢𝐡𝐚𝐧 𝐦𝐞𝐧𝐚𝐡𝐮𝐧, 𝐧𝐲𝐞𝐫𝐢 𝐡𝐚𝐢𝐝, 𝐚𝐭𝐚𝐮 𝐚𝐧𝐜𝐚𝐦𝐚𝐧 𝐤𝐢𝐬𝐭𝐚 𝐦𝐞𝐫𝐚𝐦𝐩𝐚𝐬 𝐤𝐞𝐧𝐲𝐚𝐦𝐚𝐧𝐚𝐧𝐦𝐮! Rawat kembali kesehatan rahimmu dengan Zymuno For Femme.\nAgar ikhtiar sembuhmu maksimal, pastikan kamu hanya membeli dari Distributor Resmi Tangan Pertama!\n𝐉𝐀𝐌𝐈𝐍𝐀𝐍 𝐁𝐄𝐋𝐀𝐍𝐉𝐀 𝐀𝐌𝐀𝐍 𝟏𝟎𝟎%:\n✅ Pasti Original: Produk dikirim langsung dari pusat Zymuno.\n✅ Garansi Uang Kembali: Dana kembali utuh jika produk rusak, kadaluarsa, atau terbukti palsu.\n✅ Garansi Pengiriman: Paket dipastikan tiba dengan aman dan sesuai jadwal.\n𝐊𝐋𝐀𝐈𝐌 𝐏𝐑𝐎𝐌𝐎 𝐒𝐏𝐄𝐒𝐈𝐀𝐋 𝐇𝐀𝐑𝐈 𝐈𝐍𝐈:\n✅ Bebas Ongkir ke seluruh Pulau Jawa (Subsidi s/d Rp 45.000 untuk Luar Jawa!)\n✅ GRATIS Pendampingan Konsultasi VIP sampai kamu benar-benar sembuh.\n✅ GRATIS E-Book Panduan Kewanitaan.\n✅ GRATIS Akses Daftar Member Prioritas.\n✅ Bebas Ribet: Terima barang dulu baru bayar (Bisa COD) atau via Transfer Bank.\n𝐏𝐄𝐍𝐓𝐈𝐍𝐆: 𝐒𝐀𝐘𝐀𝐍𝐆𝐈 𝐓𝐔𝐁𝐔𝐇𝐌𝐔 𝐃𝐀𝐑𝐈 𝐁𝐀𝐑𝐀𝐍𝐆 𝐏𝐀𝐋𝐒𝐔!\nZymuno yang asli memiliki barcode khusus yang hanya bisa di-scan 1x untuk verifikasi keaslian.\n𝐉𝐚𝐧𝐠𝐚𝐧 𝐬𝐚𝐦𝐩𝐚𝐢 𝐤𝐞𝐡𝐚𝐛𝐢𝐬𝐚𝐧 𝐤𝐮𝐨𝐭𝐚 𝐩𝐫𝐨𝐦𝐨𝐧𝐲𝐚!\nAmbil Promo Tangan Pertama langsung dari distributor resminya di sini:\nSorry, we're having trouble playing this video.\nLearn more\nZYMUNOINDONESIA.ID\nZymuno For Femme\nGet offer"
+    },
+    {
+     "id_iklan": "2113634109401436",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2113634109401436",
+     "pengiklan": "Irsanni Kurniati",
+     "halaman_pengiklan": "https://www.facebook.com/61573809603013/",
+     "mulai": "2026-02-01",
+     "hari": 289,
+     "iklan_sama": 4,
+     "tujuan": [
+      "https://irsani.id/homefit30"
+     ],
+     "tombol": "Learn More",
+     "teks": "Berat badanmu bukan naik karena salah makan,\ntapi karena ototmu nggak tumbuh.\nBangun masa otot = stabilin metabolisme.\nItu kuncinya biar nggak terus-terusan mulai dari nol\nhttps://irsani.id/homefit30\nhttps://irsani.id/homefit30\nIRSANI.ID\nHomeFit30 - Bangun Otot Dirumah Cukup 30 Menit Sehari\nBayar sekali, akses materi selamanya..\nLearn More"
+    },
+    {
+     "id_iklan": "3166434266894930",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=3166434266894930",
+     "pengiklan": "Kavelo Notes",
+     "halaman_pengiklan": "https://www.facebook.com/61595207834544/",
+     "mulai": "2026-10-29",
+     "hari": 19,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://vip.fueer.com/aiprompt5"
+     ],
+     "tombol": "See details",
+     "teks": "📘 10.000 Prompt AI untuk Keuangan & Investasi!\n🔍 Dari riset saham, analisis fundamental, valuasi perusahaan hingga manajemen risiko investasi.\n📚 27 topik dalam 1 ebook PDF, dengan 1.470 halaman referensi. Hanya Rp10.000!\nVIP.FUEER.COM\n🛒 Dapatkan ebook prompt investasi ini sekarang!\nGunakan template prompt untuk riset investasi, perencanaan keuangan pribadi, dan analisis keuangan bisnis. Sesuaikan dengan data serta tujuan Anda, lalu jalankan di alat AI pilihan Anda.\nSee details"
+    },
+    {
+     "id_iklan": "1713174726493000",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1713174726493000",
+     "pengiklan": "Confluent",
+     "halaman_pengiklan": "https://www.facebook.com/confluentinc/",
+     "mulai": "2026-06-19",
+     "hari": 151,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://www.confluent.io/resources/ebook/developers-guide-to-rag/?utm_medium=paidsocial&utm_source=facebook&utm_campaign=ch.paidsocial_tp.prs_tgt.adv-5pct-lal-segment-highscore-content-downloads_rgn.apac_sbrgn.apac-tier2_lgn.eng_bgt.pg_con.developers-guide-rag-ebook_creative.ebook-bv1"
+     ],
+     "tombol": "Download",
+     "teks": "Combat LLM hallucinations with retrieval-augmented generation and real-time, contextualized data. Our new eBook has everything developers need to know about building RAG for GenAI applications.\nCONFLUENT.IO\neBook | The Developer’s Guide to RAG\nDownload"
+    },
+    {
+     "id_iklan": "936499859418795",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=936499859418795",
+     "pengiklan": "Zymuno Id",
+     "halaman_pengiklan": "https://www.facebook.com/officialzymunoid/",
+     "mulai": "2026-06-08",
+     "hari": 162,
+     "iklan_sama": 1,
+     "tujuan": [
+      "http://officialzymuno.id/"
+     ],
+     "tombol": "Get offer",
+     "teks": "𝐀𝐝𝐚 𝐘𝐚𝐧𝐠 𝐁𝐢𝐥𝐚𝐧𝐠 𝐙𝐲𝐦𝐮𝐧𝐨 𝐏𝐞𝐧𝐢𝐩𝐮???, 𝐊𝐞𝐥𝐞𝐰𝐚𝐭𝐚𝐧 𝐁𝐚𝐧𝐠𝐞𝐭!\nMasih bingung beli zymuno versi langsung dari pabrik pusatnya? PT. Tresno Jamu Indonesia?\nSekarang ga usah bingung lagi pesan zymuno langsung dari tangan pertamanya melalui video ini / di di Facebook Zymuno id  / kalo gak lewat website resminya\n🌐 officialzymuno.id yang nanti akan mendapatkan banjir untungnya\n𝐏𝐫𝐨𝐦𝐨 𝐋𝐞𝐧𝐠𝐤𝐚𝐩 𝐘𝐚𝐧𝐠 𝐀𝐤𝐚𝐧 𝐃𝐢 𝐃𝐚𝐩𝐞𝐭𝐢𝐧 𝐃𝐞𝐧𝐠𝐚𝐧 𝐏𝐞𝐦𝐛𝐞𝐥𝐢𝐚𝐧 𝐃𝐢𝐬𝐢𝐧𝐢 𝐋𝐚𝐧𝐠𝐬𝐮𝐧𝐠 𝐃𝐚𝐫𝐢 𝐏𝐢𝐡𝐚𝐤 𝐑𝐞𝐬𝐦𝐢\n✅ Garansi 100% Original Asli: Produk asli langsung dari ZYMUNO (Produsen)\n✅ Garansi Uang Kembali: Jika produk rusak, kadaluarsa, atau palsu\n✅ Garansi Pengiriman Tepat Waktu: Kami menjamin produk Anda tiba sesuai jadwal\n𝐏𝐥𝐮𝐬, 𝐍𝐢𝐤𝐦𝐚𝐭𝐢 𝐏𝐫𝐨𝐦𝐨 𝐄𝐤𝐬𝐤𝐥𝐮𝐬𝐢𝐟𝐞 𝐊𝐚𝐦𝐢!\n✅ Gratis Ongkir di seluruh Pulau Jawa, serta Makassar & Medan\n✅ Gratis Ongkir hingga Rp 45.000 untuk luar Jawa\n✅ Konsultasi Kesehatan Gratis hingga Anda sembuh\n✅ E-Book Kesehatan Gratis\n✅ Gratis Biaya Layanan Member Prioritas Gratis Seumur Hidup\n✅ Pembayaran Mudah: COD & transfer via semua bank\nHanya Pembelian Disini Ya, Caranya Klik ambil promo Atau Kunjungi Website Resmi Kami officialzymuno.id\nSegera Atasi Masalah Kewanitaan Mu Dengan Paket Tuntas 2 botol Lebih Cepat Sembuhnya!\nSorry, we're having trouble playing this video.\nLearn more\nOFFICIALZYMUNO.ID\nZymuno Id\nGet offer"
+    },
+    {
+     "id_iklan": "1592546168929459",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1592546168929459",
+     "pengiklan": "Zymuno For Femme",
+     "halaman_pengiklan": "https://www.facebook.com/ZymunoForFemme/",
+     "mulai": "2026-09-09",
+     "hari": 69,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://zymunoindonesia.id/femme"
+     ],
+     "tombol": "Get offer",
+     "teks": "𝐉𝐚𝐧𝐠𝐚𝐧 𝐛𝐢𝐚𝐫𝐤𝐚𝐧 𝐤𝐞𝐩𝐮𝐭𝐢𝐡𝐚𝐧 𝐦𝐞𝐧𝐚𝐡𝐮𝐧, 𝐧𝐲𝐞𝐫𝐢 𝐡𝐚𝐢𝐝, 𝐚𝐭𝐚𝐮 𝐚𝐧𝐜𝐚𝐦𝐚𝐧 𝐤𝐢𝐬𝐭𝐚 𝐦𝐞𝐫𝐚𝐦𝐩𝐚𝐬 𝐤𝐞𝐧𝐲𝐚𝐦𝐚𝐧𝐚𝐧𝐦𝐮! Rawat kembali kesehatan rahimmu dengan Zymuno For Femme.\nAgar ikhtiar sembuhmu maksimal, pastikan kamu hanya membeli dari Distributor Resmi Tangan Pertama!\n𝐉𝐀𝐌𝐈𝐍𝐀𝐍 𝐁𝐄𝐋𝐀𝐍𝐉𝐀 𝐀𝐌𝐀𝐍 𝟏𝟎𝟎%:\n✅ Pasti Original: Produk dikirim langsung dari pusat Zymuno.\n✅ Garansi Uang Kembali: Dana kembali utuh jika produk rusak, kadaluarsa, atau terbukti palsu.\n✅ Garansi Pengiriman: Paket dipastikan tiba dengan aman dan sesuai jadwal.\n𝐊𝐋𝐀𝐈𝐌 𝐏𝐑𝐎𝐌𝐎 𝐒𝐏𝐄𝐒𝐈𝐀𝐋 𝐇𝐀𝐑𝐈 𝐈𝐍𝐈:\n✅ Bebas Ongkir ke seluruh Pulau Jawa (Subsidi s/d Rp 45.000 untuk Luar Jawa!)\n✅ GRATIS Pendampingan Konsultasi VIP sampai kamu benar-benar sembuh.\n✅ GRATIS E-Book Panduan Kewanitaan.\n✅ GRATIS Akses Daftar Member Prioritas.\n✅ Bebas Ribet: Terima barang dulu baru bayar (Bisa COD) atau via Transfer Bank.\n𝐏𝐄𝐍𝐓𝐈𝐍𝐆: 𝐒𝐀𝐘𝐀𝐍𝐆𝐈 𝐓𝐔𝐁𝐔𝐇𝐌𝐔 𝐃𝐀𝐑𝐈 𝐁𝐀𝐑𝐀𝐍𝐆 𝐏𝐀𝐋𝐒𝐔!\nZymuno yang asli memiliki barcode khusus yang hanya bisa di-scan 1x untuk verifikasi keaslian.\n𝐉𝐚𝐧𝐠𝐚𝐧 𝐬𝐚𝐦𝐩𝐚𝐢 𝐤𝐞𝐡𝐚𝐛𝐢𝐬𝐚𝐧 𝐤𝐮𝐨𝐭𝐚 𝐩𝐫𝐨𝐦𝐨𝐧𝐲𝐚!\nAmbil Promo Tangan Pertama langsung dari distributor resminya di sini:\nSorry, we're having trouble playing this video.\nLearn more\nZYMUNOINDONESIA.ID\n𝐏𝐞𝐬𝐚𝐧 𝐙𝐲𝐦𝐮𝐧𝐨 𝐋𝐚𝐧𝐠𝐬𝐮𝐧𝐠 𝐝𝐚𝐫𝐢 𝐃𝐢𝐬𝐭𝐫𝐢𝐛𝐮𝐭𝐨𝐫 𝐑𝐞𝐬𝐦𝐢!\nGet offer"
+    },
+    {
+     "id_iklan": "1048691656590265",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1048691656590265",
+     "pengiklan": "Business Explained",
+     "halaman_pengiklan": "https://www.facebook.com/letsexplainbusiness/",
+     "mulai": "2025-05-21",
+     "hari": 545,
+     "iklan_sama": 1,
+     "tujuan": [
+      "http://business-explained.com/shop/everything-explained-bundle/",
+      "https://business-explained.com/shop/everything-explained-bundle/"
+     ],
+     "tombol": "Shop now",
+     "teks": "ATTENTION: This bundle is a must-have for marketers, project managers, entrepreneurs, consultants, analysts, and everyone who wants to take their business knowledge to another level.\nElevate Your Career with the Everything EXPLAINED Bundle!\nGet the Everything EXPLAINED Bundle today and save over $1,700!\nbusiness-explained.com/shop/everything-explained-bundle/\nBUSINESS-EXPLAINED.COM\n43 Business eBooks [Instant PDF Download]\nThe Everything Explained Bundle is the most comprehensive and valuable business eBook bundle available today. It contains 31 high-quality business eBooks.\nShop now"
+    },
+    {
+     "id_iklan": "1288848826083390",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1288848826083390",
+     "pengiklan": "Splunk",
+     "halaman_pengiklan": "https://www.facebook.com/splunk/",
+     "mulai": "2025-08-14",
+     "hari": 460,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://www.splunk.com/en_us/form/security-use-case-enhanced-by-ai-and-ml.html"
+     ],
+     "tombol": "Download",
+     "teks": "Today’s leading organizations are using AI and ML to uplevel their security. Read about their results–and understand how you can do more with less.\nSPLUNK.COM\nSecurity Use Cases Enhanced by AI and ML\nDiscover how AI and ML can transform your business with real-world use cases and analytics strategies.\nDownload"
+    },
+    {
+     "id_iklan": "1879829772646528",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1879829772646528",
+     "pengiklan": "PDF Reader: Ebook PDFs Reader",
+     "halaman_pengiklan": "https://www.facebook.com/61560666361435/",
+     "mulai": "2026-01-13",
+     "hari": 308,
+     "iklan_sama": 1,
+     "tujuan": [
+      "http://play.google.com/store/apps/details?id=com.trustedapp.pdfreaderpdfviewer"
+     ],
+     "tombol": "Install now",
+     "teks": "Best PDF Reader App 2026, try it now 👉\nSorry, we're having trouble playing this video.\nLearn more\nPLAY.GOOGLE.COM\nSmart Scan PDF\nInstall now"
+    }
+   ]
+  },
+  {
+   "jenis": "frasa",
+   "cari": "chatgpt",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22chatgpt%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": "~2,600",
+   "kartu_terbaca": 29,
+   "catatan": null,
+   "pengiklan": [
+    {
+     "pengiklan": "Writeless AI",
+     "iklan_terlihat": 2,
+     "hari_tertua": 174,
+     "mulai_tertua": "2026-05-27",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=963674889847806",
+     "status": "WINNING",
+     "tujuan": [
+      "https://writeless.ai/"
+     ]
+    },
+    {
+     "pengiklan": "scite.ai",
+     "iklan_terlihat": 3,
+     "hari_tertua": 127,
+     "mulai_tertua": "2026-07-13",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1304796107954459",
+     "status": "WINNING",
+     "tujuan": [
+      "https://scite.ai/assistant",
+      "http://scite.ai/assistant",
+      "https://www.scite.ai/"
+     ]
+    },
+    {
+     "pengiklan": "Jenni AI",
+     "iklan_terlihat": 3,
+     "hari_tertua": 109,
+     "mulai_tertua": "2026-07-31",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=38010810881866000",
+     "status": "WINNING",
+     "tujuan": [
+      "https://jenni.ai/"
+     ]
+    },
+    {
+     "pengiklan": "Tugas Kelar AI",
+     "iklan_terlihat": 3,
+     "hari_tertua": 102,
+     "mulai_tertua": "2026-08-07",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1060110579702045",
+     "status": "WINNING",
+     "tujuan": [
+      "https://tugaskelarai.com/page/ai-blueprint-prompt-tesis-lengkap"
+     ]
+    },
+    {
+     "pengiklan": "ChatGPT",
+     "iklan_terlihat": 17,
+     "hari_tertua": 98,
+     "mulai_tertua": "2026-08-11",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1549605806042606",
+     "status": "WINNING",
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Aku%20punya%20ide%20untuk%20sebuah%20gambar.%20Bantu%20aku%20mewujudkannya.",
+      "https://chatgpt.com/?hints=image&prompt=Buatkan%20ilustrasi%20imut%20dan%20menyenangkan%20dengan%20campuran%20gaya%20buku%20cerita%2C%20jurnal%20perjalanan%2C%20dan%20infografis.%20Gunakan%20selfie-ku%2C%20pertahankan%20penampilan%2C%20gaya%20rambut%2C%20dan%20warna%20kulit.%20Keren%2C%20santai%2C%20tanpa%20senyum.%20Garis%20hitam%20tebal%2C%20bentuk%20bulat%2C%20gaya%20cat%20air%20sederhana%2C%20palet%20warna%20bumi%20yang%20hangat%20pada%20kertas%20tua.%20Kolase%20scrapbook%3A%20posisi%20tengah%2C%20dari%20pertengahan%20paha%20ke%20atas%2C%20dengan%205%E2%80%936%20ikon%20chibi%20KESUKAAN.%20Tanpa%20teks.%20Minta%20selfie-ku%20dan%206%20hal%20yang%20kusukai%20terlebih%20dulu.",
+      "https://chatgpt.com/?hints=image&prompt=Ubah%20fotoku%20menjadi%20foto%20profesional%20resolusi%20tinggi%20untuk%20keperluan%20resume.%20Tingkatkan%20pencahayaan%2C%20ketajaman%2C%20dan%20kualitas%20keseluruhan.%20Sesuaikan%20postur%20agar%20terlihat%20percaya%20diri%20dan%20natural%2C%20ekspresi%20santai%20dan%20senyum%20tipis.%20Gunakan%20latar%20studio%20yang%20bersih%20dan%20netral%20(abu-abu%20atau%20putih%20gading).%20Perbaiki%20tampilan%20secara%20halus%20(rambut%2C%20warna%20kulit%2C%20noda%20kecil%2C%20kantung%20mata)%20tanpa%20terlihat%20berlebihan.%20Tambahkan%20pakaian%20profesional%20(blazer%20dan%20kemeja).%20Pastikan%20hasil%20tetap%20fotorealistik%2C%20tajam%2C%20dan%20natural%20tanpa%20filter%20atau%20distorsi.%20Sebelum%20mulai%2C%20minta%20aku%20untuk%20mengunggah%20fotonya.",
+      "https://chatgpt.com/?hints=image&prompt=Pakai%20fotoku.%20Pastiin%20identitas%2C%20wajah%2C%20warna%20kulit%2C%20dan%20umurku%20sama%20seperti%20aslinya.%20Ceritanya%20sekarang%20tahun%201985%20dan%20aku%20lagi%20ngaca%20di%20kamar%20mandi%20kering%20berlantai%20ubin%20hitam.%20Ubah%20gaya%20rambutku%20jadi%20gaya%20rambut%20bervolume%20khas%20tahun%2080an%20yang%20ceria%20dan%20sesuai%20dengan%20tekstur%20rambutku.%20Warna%20dan%20aksesoris%20yang%20dipakai%20harus%20mencolok.%20Pencahayaannya%20khas%20lampu%20disko%20bulat%2C%20flash%20yang%20terang%2C%20warna%20yang%20memudar%2C%20dan%20tekstur%20butiran%20khas%20film%20analog.",
+      "https://chatgpt.com/?hints=image&prompt=Buat%20ilustrasi%20dari%20unggahan%20selfie%2C%20paha%20ke%20atas%2C%20hadap%20depan%2C%20senyum%20ramah%2C%20percaya%20diri.%20Ilustrasi%20anime%2Fcerita%20bergambar%20yang%20imut%2C%20spesifik%20tapi%20dikenali%2C%20mata%20besar%20dan%20ekspresif%2C%20pipi%20berona%2C%20warna%20kulit%20hangat%2C%20bintik%20(jika%20ada)%2C%20rambut%20dan%20fitur%20wajah%20selaras.%20Aksesori%20minimal.%20Pakaian%20memadukan%20minat%20utama%20dari%20yang%20sudah%20diketahui%20tentang%20saya.%20Satu%20tangan%20pegang%20objek%20kreatif%2Fpembelajaran%2C%20satu%20lagi%20pegang%20HP%20dengan%20UI%20abstrak.%20Tambah%20versi%20chibi%20kecil%20(sporty%2C%20mindful%2C%20kreatif%2Ftravel).%20Latar%20landmark%20cerah%2C%20warna%20vibrant%2C%20pencahayaan%20lembut%2C%20dan%20sedikit%20kedalaman.%20Hindari%20foto%20real%2C%20tampilan%20ramai%2C%20teks%2C%20logo%2C%20artefak%20beresolusi%20rendah.%20Jika%20foto%20belum%20ada%2C%20minta%20saya%20untuk%20mengunggahnya."
+     ]
+    },
+    {
+     "pengiklan": "ReRender",
+     "iklan_terlihat": 1,
+     "hari_tertua": 81,
+     "mulai_tertua": "2026-08-28",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=2600629430438442",
+     "status": "WINNING",
+     "tujuan": []
+    },
+    {
+     "pengiklan": "OpenAI",
+     "iklan_terlihat": 1,
+     "hari_tertua": 68,
+     "mulai_tertua": "2026-09-10",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=916616044463271",
+     "status": "WINNING",
+     "tujuan": [
+      "http://openai.com/index/growing-atv-big-air-tour/?utm_source=meta&utm_medium=paid_social&utm_campaign=07319385_us_rpt_oai_awa_262h_stories_t1_na_soc_met_tier_1_user_stories_07351887&utm_content=07319385_tier_1_user_stories_soc_met_met_cpm_auc_cpm_262h_mlti_a1854_nu_vid_nu_tier_1_pr_na_07351888&c_id=07351887&c_agid=07351888&c_crid=07351892&mte_id=07351892"
+     ]
+    },
+    {
+     "pengiklan": "ElevenLabs",
+     "iklan_terlihat": 3,
+     "hari_tertua": 32,
+     "mulai_tertua": "2026-10-16",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1784774692798565",
+     "status": "WINNING",
+     "tujuan": [
+      "https://elevenlabs.io/mcp"
+     ]
+    },
+    {
+     "pengiklan": "Molly Burke with OpenAI",
+     "iklan_terlihat": 1,
+     "hari_tertua": 27,
+     "mulai_tertua": "2026-10-21",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=2763567317392146",
+     "status": "POTENSIAL",
+     "tujuan": [
+      "https://chatgpt.com/?utm_source=meta&utm_medium=paid_social&utm_campaign=07524635_us_rpt_boosting_cns_26q4_reputation_na_soc_met_nu_07525237&utm_content=07524635_reputation_soc_met_met_clk_auc_cpm_262h_mlti_a18pl_nu_vid_nu_boosting_pr_na_07525330&c_id=07525237&c_agid=07525330&c_crid=07525343&mte_id=07525343"
+     ]
+    },
+    {
+     "pengiklan": "Keepder",
+     "iklan_terlihat": 2,
+     "hari_tertua": 21,
+     "mulai_tertua": "2026-10-27",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1068262579577407",
+     "status": "POTENSIAL",
+     "tujuan": [
+      "https://vip.fueer.com/trading7"
+     ]
+    }
+   ],
+   "iklan": [
+    {
+     "id_iklan": "916616044463271",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=916616044463271",
+     "pengiklan": "OpenAI",
+     "halaman_pengiklan": "https://www.facebook.com/openai/",
+     "mulai": "2026-09-10",
+     "hari": 68,
+     "iklan_sama": 1,
+     "tujuan": [
+      "http://openai.com/index/growing-atv-big-air-tour/?utm_source=meta&utm_medium=paid_social&utm_campaign=07319385_us_rpt_oai_awa_262h_stories_t1_na_soc_met_tier_1_user_stories_07351887&utm_content=07319385_tier_1_user_stories_soc_met_met_cpm_auc_cpm_262h_mlti_a1854_nu_vid_nu_tier_1_pr_na_07351888&c_id=07351887&c_agid=07351888&c_crid=07351892&mte_id=07351892"
+     ],
+     "tombol": "Learn More",
+     "teks": "Derek and Larissa are turning their small business into an entertainment giant with ChatGPT.\nSorry, we're having trouble playing this video.\nLearn more\nHelping a small business go big with ChatGPT\nLearn how Derek and Larissa Guetter use ChatGPT to grow ATV Big Air Tour, streamline operations, and put on bigger, better shows while on the road.\nLearn More"
+    },
+    {
+     "id_iklan": "1576609557546719",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1576609557546719",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-09-11",
+     "hari": 67,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Aku%20punya%20ide%20untuk%20sebuah%20gambar.%20Bantu%20aku%20mewujudkannya."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Bermimpi besar dengan berbagai macam ukuran dan kualitas 2K, sekarang di ChatGPT Images.\nCoba ChatGPT Images gratis\nSign Up"
+    },
+    {
+     "id_iklan": "930100873027584",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=930100873027584",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-09-11",
+     "hari": 67,
+     "iklan_sama": 2,
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Buatkan%20ilustrasi%20imut%20dan%20menyenangkan%20dengan%20campuran%20gaya%20buku%20cerita%2C%20jurnal%20perjalanan%2C%20dan%20infografis.%20Gunakan%20selfie-ku%2C%20pertahankan%20penampilan%2C%20gaya%20rambut%2C%20dan%20warna%20kulit.%20Keren%2C%20santai%2C%20tanpa%20senyum.%20Garis%20hitam%20tebal%2C%20bentuk%20bulat%2C%20gaya%20cat%20air%20sederhana%2C%20palet%20warna%20bumi%20yang%20hangat%20pada%20kertas%20tua.%20Kolase%20scrapbook%3A%20posisi%20tengah%2C%20dari%20pertengahan%20paha%20ke%20atas%2C%20dengan%205%E2%80%936%20ikon%20chibi%20KESUKAAN.%20Tanpa%20teks.%20Minta%20selfie-ku%20dan%206%20hal%20yang%20kusukai%20terlebih%20dulu."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Mau ubah fotomu jadi karikatur dengan ChatGPT Images?\nCoba ChatGPT Images gratis\nSign Up"
+    },
+    {
+     "id_iklan": "1372975618382488",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1372975618382488",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-09-11",
+     "hari": 67,
+     "iklan_sama": 2,
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Ubah%20fotoku%20menjadi%20foto%20profesional%20resolusi%20tinggi%20untuk%20keperluan%20resume.%20Tingkatkan%20pencahayaan%2C%20ketajaman%2C%20dan%20kualitas%20keseluruhan.%20Sesuaikan%20postur%20agar%20terlihat%20percaya%20diri%20dan%20natural%2C%20ekspresi%20santai%20dan%20senyum%20tipis.%20Gunakan%20latar%20studio%20yang%20bersih%20dan%20netral%20(abu-abu%20atau%20putih%20gading).%20Perbaiki%20tampilan%20secara%20halus%20(rambut%2C%20warna%20kulit%2C%20noda%20kecil%2C%20kantung%20mata)%20tanpa%20terlihat%20berlebihan.%20Tambahkan%20pakaian%20profesional%20(blazer%20dan%20kemeja).%20Pastikan%20hasil%20tetap%20fotorealistik%2C%20tajam%2C%20dan%20natural%20tanpa%20filter%20atau%20distorsi.%20Sebelum%20mulai%2C%20minta%20aku%20untuk%20mengunggah%20fotonya."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Edit fotomu tanpa kehilangan ciri khas dirimu.\nCoba ChatGPT Images gratis\nSign Up"
+    },
+    {
+     "id_iklan": "1827448491786843",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1827448491786843",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-10-07",
+     "hari": 41,
+     "iklan_sama": 2,
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Pakai%20fotoku.%20Pastiin%20identitas%2C%20wajah%2C%20warna%20kulit%2C%20dan%20umurku%20sama%20seperti%20aslinya.%20Ceritanya%20sekarang%20tahun%201985%20dan%20aku%20lagi%20ngaca%20di%20kamar%20mandi%20kering%20berlantai%20ubin%20hitam.%20Ubah%20gaya%20rambutku%20jadi%20gaya%20rambut%20bervolume%20khas%20tahun%2080an%20yang%20ceria%20dan%20sesuai%20dengan%20tekstur%20rambutku.%20Warna%20dan%20aksesoris%20yang%20dipakai%20harus%20mencolok.%20Pencahayaannya%20khas%20lampu%20disko%20bulat%2C%20flash%20yang%20terang%2C%20warna%20yang%20memudar%2C%20dan%20tekstur%20butiran%20khas%20film%20analog."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Kamu di dekade yang berbeda.\nUnggah fotomu dan coba kilas balik ala tahun 80an dengan ChatGPT Gambar.\nCoba ChatGPT gratis\nSign Up"
+    },
+    {
+     "id_iklan": "1304796107954459",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1304796107954459",
+     "pengiklan": "scite.ai",
+     "halaman_pengiklan": "https://www.facebook.com/sciteai/",
+     "mulai": "2026-07-13",
+     "hari": 127,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://scite.ai/assistant"
+     ],
+     "tombol": "7-day free trial",
+     "teks": "Can you trust your AI answers? Millions of researchers are switching to scite.ai for scientific research, because Scite ethically helps researchers and students work more efficiently by:\n• Finding relevant academic papers faster using AI-powered search across 150M+ publications\n• Getting reliable answers to research questions through Scite Assistant, with verifiable citations you can click to read the full source\n• Verifying claims through 1.5 billion validated citations from peer-reviewed sources\n• Analyzing how papers are supported or disputed in the scientific literature\n• Identifying key research trends and emerging developments in your field\nWhat makes Scite unique:\n• Every insight is grounded in real scientific papers you can instantly verify\n• The most comprehensive full-text database of both open access and paywalled content\n• Track retractions and corrections automatically\nCut literature review time by 67% while maintaining academic rigor\nTrusted by 2,000,000+ researchers and hundreds of universities for ethical AI use. Scite helps you conduct better research.\nStart your 7-day free trial to experience how Scite can accelerate your research process.\nSCITE.AI\nAI grounded in science\nTrusted by top universities & life sciences companies\nSee Details\nTrusted by top universities & life sciences companies\nSCITE.AI\nCited answers\nFrom full-text articles\nSee Details\nFrom full-text articles\nSCITE.AI\nCheck the claims\nLinks directly to the reference\nSee Details\nLinks directly to the reference\nSCITE.AI\nKnow which papers to focus on\nCitation context, not just counts\nSee Details\nCitation context, not just counts\nSCITE.AI\nTry it for free\n7-day free trial\nSee Details\n7-day free trial"
+    },
+    {
+     "id_iklan": "1403160267807086",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1403160267807086",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-09-11",
+     "hari": 67,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Buat%20ilustrasi%20dari%20unggahan%20selfie%2C%20paha%20ke%20atas%2C%20hadap%20depan%2C%20senyum%20ramah%2C%20percaya%20diri.%20Ilustrasi%20anime%2Fcerita%20bergambar%20yang%20imut%2C%20spesifik%20tapi%20dikenali%2C%20mata%20besar%20dan%20ekspresif%2C%20pipi%20berona%2C%20warna%20kulit%20hangat%2C%20bintik%20(jika%20ada)%2C%20rambut%20dan%20fitur%20wajah%20selaras.%20Aksesori%20minimal.%20Pakaian%20memadukan%20minat%20utama%20dari%20yang%20sudah%20diketahui%20tentang%20saya.%20Satu%20tangan%20pegang%20objek%20kreatif%2Fpembelajaran%2C%20satu%20lagi%20pegang%20HP%20dengan%20UI%20abstrak.%20Tambah%20versi%20chibi%20kecil%20(sporty%2C%20mindful%2C%20kreatif%2Ftravel).%20Latar%20landmark%20cerah%2C%20warna%20vibrant%2C%20pencahayaan%20lembut%2C%20dan%20sedikit%20kedalaman.%20Hindari%20foto%20real%2C%20tampilan%20ramai%2C%20teks%2C%20logo%2C%20artefak%20beresolusi%20rendah.%20Jika%20foto%20belum%20ada%2C%20minta%20saya%20untuk%20mengunggahnya."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Ubah dirimu jadi versi karikatur dengan ChatGPT Images.\nCoba ChatGPT Images gratis.\nSign Up"
+    },
+    {
+     "id_iklan": "2763567317392146",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2763567317392146",
+     "pengiklan": "Molly Burke with OpenAI",
+     "halaman_pengiklan": "https://www.facebook.com/MollyBurkeOfficial/",
+     "mulai": "2026-10-21",
+     "hari": 27,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://chatgpt.com/?utm_source=meta&utm_medium=paid_social&utm_campaign=07524635_us_rpt_boosting_cns_26q4_reputation_na_soc_met_nu_07525237&utm_content=07524635_reputation_soc_met_met_clk_auc_cpm_262h_mlti_a18pl_nu_vid_nu_boosting_pr_na_07525330&c_id=07525237&c_agid=07525330&c_crid=07525343&mte_id=07525343"
+     ],
+     "tombol": "Learn more",
+     "teks": "Photographs hold special memories that blind people never get to experience… until today! 📸 Shoutout to @CNIBFoundation and @ChatGPT for making this dream a reality! 💛 #CNIB #ChatGPT_Partner #Blind\nSorry, we're having trouble playing this video.\nLearn more\nCHATGPT.COM\nMolly Burke\nLearn more"
+    },
+    {
+     "id_iklan": "1743099097521938",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1743099097521938",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-10-15",
+     "hari": 33,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Pemandangan%20udara%20lembah%20pegunungan%20alpen%20cerah%20dengan%20danau%20biru%20terang%2C%20sungai%20berkelok%2C%20padang%20rumput%20hijau%20segar%2C%20dan%20pegunungan%20berbatu.%20Pemandangan%20lanskap%20luas%20dengan%20efek%20sun%20flare%20lembut%2C%20sedikit%20efek%20double%20exposure%2C%20kilau%20halus%20pada%20highlights%2C%20dan%20berbagai%20warna%20alami%20cemerlang.%20Fotografi%20sinematik."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Pakai prompt ChatGPT Images untuk membuat adegan hiper-realistis, lanskap mendetail, dan gambar yang hidup dengan cepat.\nSorry, we're having trouble playing this video.\nLearn more\nCoba ChatGPT Gratis\nSign Up"
+    },
+    {
+     "id_iklan": "1113102974792450",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1113102974792450",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-10-08",
+     "hari": 40,
+     "iklan_sama": 2,
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Jika%20tidak%20ada%20gambar%20interior%2C%20mintalah%20gambarnya.%20Buat%20ilustrasi%20interior%20MCM%20yang%20elegan%3A%20kayu%20walnut%2C%20batu%20warna%20pucat%2C%20langit-langit%20putih%2C%20dinding%20putih%20pucat%2C%20garis%20halus.%20Tutup%20semua%20kabinet%2Fperalatan.%20Gunakan%20sedikit%20warna%20MCM%20sebagai%20aksen%20pada%20ubin%2C%20dekor%2C%20tanaman%2C%20dan%20furnitur.%20Pertahankan%20geometri.%20Ukuran%20CAD%20saja.%20Tanpa%20orang."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Wujudkan ruang impianmu dalam hitungan detik.\nCoba ChatGPT Images gratis\nSign Up"
+    },
+    {
+     "id_iklan": "2600629430438442",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2600629430438442",
+     "pengiklan": "ReRender",
+     "halaman_pengiklan": "https://www.facebook.com/61575181177057/",
+     "mulai": "2026-08-28",
+     "hari": 81,
+     "iklan_sama": 1,
+     "tujuan": [],
+     "tombol": "See details",
+     "teks": "GPT Image 2 is now available for architectural rendering!\nAlready have a SketchUp model? Use our Home feature, select GPT Image 2, and turn your SketchUp model into polished, photorealistic architectural visuals.\n① Turn your SketchUp model into a photorealistic render\n② Refine materials and finishes with simple prompts\n③ Generate different architectural views from the same design\n④ Explore different lighting conditions and atmospheres with reference images\n⑤ Turn your final render into an architectural animation\nYour model is ready. See what you can create with GPT Image 2 — try it today.\nReRender\nSee details"
+    },
+    {
+     "id_iklan": "38010810881866000",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=38010810881866000",
+     "pengiklan": "Jenni AI",
+     "halaman_pengiklan": "https://www.facebook.com/whoisjenniai/",
+     "mulai": "2026-07-31",
+     "hari": 109,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://jenni.ai/"
+     ],
+     "tombol": "Sign Up",
+     "teks": "Jenni AI is your trustworthy tool designed to assist students and academics not replace them.\nFeatures include:\n✍️ Auto-Citation\n💬 Upload and Chat to your research\n🌍 Multilingual support in 30+ languages\nSave time and join over 5 million users writing smarter not harder with Jenni.ai\nTry Jenni AI for FREE 👉\nJenni AI is your trustworthy tool designed to assist students and academics not replace them. Features include: ✍️Auto-Citation 💬Chat to your research 🌍Multilingual support in 30+ languages Save time and join over 5 million users writing smarter not harder with Jenni.ai\nSign Up"
+    },
+    {
+     "id_iklan": "1433183495298997",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1433183495298997",
+     "pengiklan": "Jenni AI",
+     "halaman_pengiklan": "https://www.facebook.com/whoisjenniai/",
+     "mulai": "2026-07-31",
+     "hari": 109,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://jenni.ai/"
+     ],
+     "tombol": "Sign Up",
+     "teks": "Jenni AI is your trustworthy tool designed to assist students and academics not replace them.\nFeatures include:\n✍️ Auto-Citation\n💬 Upload and Chat to your research\n🌍 Multilingual support in 30+ languages\nSave time and join over 5 million users writing smarter not harder with Jenni.ai\nTry Jenni AI for FREE 👉\nJenni AI is your trustworthy tool designed to assist students and academics not replace them. Features include: ✍️Auto-Citation 💬Chat to your research 🌍Multilingual support in 30+ languages Save time and join over 5 million users writing smarter not harder with Jenni.ai\nSign Up"
+    },
+    {
+     "id_iklan": "1549605806042606",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1549605806042606",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-08-11",
+     "hari": 98,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://chatgpt.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=07196346_jp_brd_brd_mul_2026_consumer_n%2Fa_soc_met_reach_07196472&utm_content=07196346_broad_st%2Fre_soc_met_fab_rch_auc_flat_2026_mlti_a1844_nu_vid_2p_consumer_pr_na_07240009&c_id=07196346&c_agid=07240009&c_crid=07199924&mte_id=0c2db2d9"
+     ],
+     "tombol": "See details",
+     "teks": "好きな音楽を好きな空間で届けたい。\nスピーカーの設置を相談したり、\n慣れない事務仕事を手伝ってもらったり。\n自分のこだわりを大切にしながら\n必要に応じて役割分担。\nやりたいことに、もっと夢中になるために。\nあなたの「好き」のそばに、ChatGPTを。\nSorry, we're having trouble playing this video.\nLearn more\nCHATGPT.COM\nChatGPT\nSee details"
+    },
+    {
+     "id_iklan": "2587522255083925",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2587522255083925",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-10-02",
+     "hari": 46,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://chatgpt.com/?mode=default&prompt=Aku%20mau%20coba%20olahraga%20yang%20belum%20pernah%20aku%20coba%20dan%20kamu%20bakal%20jadi%20pelatihku.%20Tanyain%20aku%20tentang%20kondisi%20fisikku%20sekarang%2C%20pengalaman%20olahraga%20sebelumnya%2C%20hari%20apa%20aja%20aku%20bisa%20latihan%2C%20dan%20target%20yang%20mau%20aku%20capai.%20%20"
+     ],
+     "tombol": "Sign Up",
+     "teks": "Ubah \"kapan-kapan\" jadi rencana latihan beneran dengan ChatGPT.\nCoba ChatGPT gratis\nSign Up"
+    },
+    {
+     "id_iklan": "2074509409802019",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2074509409802019",
+     "pengiklan": "Jenni AI",
+     "halaman_pengiklan": "https://www.facebook.com/whoisjenniai/",
+     "mulai": "2026-07-31",
+     "hari": 109,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://jenni.ai/"
+     ],
+     "tombol": "Sign Up",
+     "teks": "When reviewers read a paper, they’re not just checking whether sources are cited; they’re asking a much more specific question - \"Do the claims actually match what the cited evidence supports?\"\nThis is where many otherwise solid papers run into trouble.\nReviewers often flag:\n- Claims that sound stronger than the data allows\n- Citations that are relevant, but don’t fully support the point being made\n- Wording that ignores limitations discussed in the cited study\nThese aren’t writing issues, they’re credibility issues.\nThat’s why we built Claim Confidence in Jenni.\nIt helps you quickly check whether each sentence is actually supported by the source you cited before a reviewer does.\nJenni AI is your trustworthy tool designed to assist students and academics not replace them.\nSave time and join over 5 million users writing smarter not harder with Jenni.ai\nSubmit your Papers with Confidence 💪\nJenni AI is your trustworthy tool designed to assist students and academics not replace them. Features include: ✍️Auto-Citation 💬Chat to your research 🌍Multilingual support in 30+ languages Save time and join over 5 million users writing smarter not harder with Jenni.ai\nSign Up"
+    },
+    {
+     "id_iklan": "1060110579702045",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1060110579702045",
+     "pengiklan": "Tugas Kelar AI",
+     "halaman_pengiklan": "https://www.facebook.com/61588174298556/",
+     "mulai": "2026-08-07",
+     "hari": 102,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://tugaskelarai.com/page/ai-blueprint-prompt-tesis-lengkap"
+     ],
+     "tombol": "See Details",
+     "teks": "\"S2 gak akan bikin kamu kaya.\"\nYang bikin berubah adalah apa yang kamu lakukan setelahnya.\nMasalahnya, banyak mahasiswa S2 justru habis energi bukan karena materinya sulit, tapi karena tesisnya mandek.\nBingung cari jurnal.\nNggak tahu mulai dari mana.\nRevisi berkali-kali.\nAkhirnya lulus pun molor.\nAI Mastery Skripsi Complete membantu kamu memanfaatkan AI dengan prompt akademik yang disusun sesuai kaidah penulisan tesis, sehingga proses riset, menyusun BAB, sampai revisi jadi lebih terarah.\nBelajar tetap harus kamu lakukan. Tapi prosesnya nggak harus serumit itu.\nKlik Selengkapnya dan lihat cara kerjanya.\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details\nTUGASKELARAI.COM\nS2 Membuka Peluang, Tesis Jangan Jadi Penghambat\nSee Details"
+    },
+    {
+     "id_iklan": "1537006041820774",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1537006041820774",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-10-07",
+     "hari": 41,
+     "iklan_sama": 2,
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Pakai%20fotoku.%20Pastiin%20identitas%2C%20ciri-ciri%20wajah%2C%20warna%20kulit%2C%20dan%20umurku%20sama%20seperti%20aslinya.%20Bikin%20aku%20seolah%20hidup%20di%20tahun%201985%2C%20duduk%20santai%20di%20karpet%20sambil%20pegang%20kaset.%20Aku%20pakai%20sweater%20dengan%20blok%20warna%20mencolok%20dan%20celana%20jeans%20gelap.%20Suasana%20kamar%20lawas%20yang%20nyaman%2C%20dengan%20flash%20yang%20terang%2C%20warna%20hangat%20agak%20pudar%2C%20fokus%20sedikit%20lembut%2C%20dan%20tekstur%20butiran%20khas%20foto%20analog."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Kamu di dekade yang berbeda.\nUnggah fotomu dan coba kilas balik ala tahun 80an dengan ChatGPT Gambar.\nSorry, we're having trouble playing this video.\nLearn more\nCoba ChatGPT gratis\nSign Up"
+    },
+    {
+     "id_iklan": "3144275755756482",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=3144275755756482",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-09-11",
+     "hari": 67,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://chatgpt.com/?hints=image&prompt=Aku%20punya%20ide%20untuk%20sebuah%20gambar.%20Bantu%20aku%20mewujudkannya."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Bermimpi besar dengan berbagai macam ukuran dan kualitas 2K, sekarang di ChatGPT Images.\nCoba ChatGPT Images gratis\nSign Up"
+    },
+    {
+     "id_iklan": "1068262579577407",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1068262579577407",
+     "pengiklan": "Keepder",
+     "halaman_pengiklan": "https://www.facebook.com/61582455935208/",
+     "mulai": "2026-10-27",
+     "hari": 21,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://vip.fueer.com/trading7"
+     ],
+     "tombol": "See details",
+     "teks": "Masih bingung cara memulai investasi saham? 📈\nSekarang, kamu bisa memanfaatkan ChatGPT untuk membantu memahami dasar-dasar saham, membaca candlestick, menganalisis laporan keuangan, dan mempelajari strategi investasi.\n📘 Ebook: Investasi Saham Lebih Mudah dengan ChatGPT\n✅ Cocok untuk pemula\n✅ Kumpulan prompt AI praktis\n✅ Belajar analisis saham lebih terarah\n🔥 Dapatkan ebook ini hanya dengan Rp10.000!\nKlik sekarang dan mulai belajar investasi saham dengan bantuan AI.\nVIP.FUEER.COM\nBelajar Investasi Saham dengan ChatGPT!\nEbook Investasi Saham — Hanya Rp10.000!\nSee details"
+    },
+    {
+     "id_iklan": "921119884405781",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=921119884405781",
+     "pengiklan": "Tugas Kelar AI",
+     "halaman_pengiklan": "https://www.facebook.com/61588174298556/",
+     "mulai": "2026-09-07",
+     "hari": 71,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://tugaskelarai.com/page/ai-blueprint-prompt-tesis-lengkap"
+     ],
+     "tombol": "See Details",
+     "teks": "Komen \"TESIS\" di komentar nanti kau kasih akses prompt lengkap + link grup bimbingan member nya.\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details"
+    },
+    {
+     "id_iklan": "1685639469648695",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1685639469648695",
+     "pengiklan": "Keepder",
+     "halaman_pengiklan": "https://www.facebook.com/61582455935208/",
+     "mulai": "2026-10-27",
+     "hari": 21,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://vip.fueer.com/trading7"
+     ],
+     "tombol": "See details",
+     "teks": "Masih bingung cara memulai investasi saham? 📈\nSekarang, kamu bisa memanfaatkan ChatGPT untuk membantu memahami dasar-dasar saham, membaca candlestick, menganalisis laporan keuangan, dan mempelajari strategi investasi.\n📘 Ebook: Investasi Saham Lebih Mudah dengan ChatGPT\n✅ Cocok untuk pemula\n✅ Kumpulan prompt AI praktis\n✅ Belajar analisis saham lebih terarah\n🔥 Dapatkan ebook ini hanya dengan Rp10.000!\nKlik sekarang dan mulai belajar investasi saham dengan bantuan AI.\nVIP.FUEER.COM\nBelajar Investasi Saham dengan ChatGPT!\nEbook Investasi Saham — Hanya Rp10.000!\nSee details"
+    },
+    {
+     "id_iklan": "1784774692798565",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1784774692798565",
+     "pengiklan": "ElevenLabs",
+     "halaman_pengiklan": "https://www.facebook.com/elevenlabsio/",
+     "mulai": "2026-10-16",
+     "hari": 32,
+     "iklan_sama": 3,
+     "tujuan": [
+      "https://elevenlabs.io/mcp"
+     ],
+     "tombol": "Learn More",
+     "teks": "Check what a config change will cost before it ships. ElevenAgents on MCP estimates expected LLM usage.\nBuild agents in plain language\nLearn More"
+    },
+    {
+     "id_iklan": "1069735148864277",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1069735148864277",
+     "pengiklan": "scite.ai",
+     "halaman_pengiklan": "https://www.facebook.com/sciteai/",
+     "mulai": "2026-07-14",
+     "hari": 126,
+     "iklan_sama": 1,
+     "tujuan": [
+      "http://scite.ai/assistant"
+     ],
+     "tombol": "See Details",
+     "teks": "Millions of students are switching to scite.ai for scientific research. Here's why – Scite ethically helps researchers and students work more efficiently by:\n• Finding relevant academic papers faster using AI-powered search across 150M+ publications\n• Getting reliable answers to research questions through Scite Assistant, with verifiable citations you can click to read the full source\n• Verifying claims through 1.2 billion validated citations from peer-reviewed sources\n• Analyzing how papers are supported or disputed in the scientific literature\n• Identifying key research trends and emerging developments in your field\nWhat makes Scite unique:\n• Every insight is grounded in real scientific papers you can instantly verify\n• The most comprehensive full-text database of both open access and paywalled content\n• Track retractions and corrections automatically\nCut literature review time by 67% while maintaining academic rigor\nTrusted by 1,200,000+ researchers and hundreds of universities for ethical AI use. Scite helps you conduct better research.\nStart your 7-day free trial to experience how Scite can accelerate your research.\nAI for Academic Research\nSee Details"
+    },
+    {
+     "id_iklan": "963674889847806",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=963674889847806",
+     "pengiklan": "Writeless AI",
+     "halaman_pengiklan": "https://www.facebook.com/61551165148478/",
+     "mulai": "2026-05-27",
+     "hari": 174,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://writeless.ai/"
+     ],
+     "tombol": "See details",
+     "teks": "Still banging out essays with ChatGPT? 🎓✍️ Let's kick it up a notch with Writeless - your new AI sidekick that's all about nailing those papers with style and smarts! 🚀📚\nWRITELESS.AI\nWrite Fast, Generate 20+ Pages Easily!\nWriteless generates essays for you in seconds. It finds citations, writes like you, and is completely undetectable by schools and organizations.\nSee details"
+    },
+    {
+     "id_iklan": "2037750883621336",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2037750883621336",
+     "pengiklan": "Writeless AI",
+     "halaman_pengiklan": "https://www.facebook.com/61551165148478/",
+     "mulai": "2026-05-27",
+     "hari": 174,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://writeless.ai/"
+     ],
+     "tombol": "See details",
+     "teks": "Use Code FLASH30 to get 30% off Writeless AI today.\nStill banging out essays with ChatGPT? 🎓✍️ Let's kick it up a notch with Writeless - your new AI sidekick that's all about nailing those papers with style and smarts! 🚀📚\nWRITELESS.AI\n30% Off Writeless AI Today\nWriteless generates essays for you in seconds. It finds citations, writes like you, and is completely undetectable by schools and organizations.\nSee details"
+    },
+    {
+     "id_iklan": "2519598541803115",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2519598541803115",
+     "pengiklan": "scite.ai",
+     "halaman_pengiklan": "https://www.facebook.com/sciteai/",
+     "mulai": "2026-07-13",
+     "hari": 127,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://www.scite.ai/"
+     ],
+     "tombol": "See Details",
+     "teks": "Millions of students are switching to scite.ai for scientific research. Here's why – Scite ethically helps researchers and students work more efficiently by:\n• Finding relevant academic papers faster using AI-powered search across 150M+ publications\n• Getting reliable answers to research questions through Scite Assistant, with verifiable citations you can click to read the full source\n• Verifying claims through 1.2 billion validated citations from peer-reviewed sources\n• Analyzing how papers are supported or disputed in the scientific literature\n• Identifying key research trends and emerging developments in your field\nWhat makes Scite unique:\n• Every insight is grounded in real scientific papers you can instantly verify\n• The most comprehensive full-text database of both open access and paywalled content\n• Track retractions and corrections automatically\nCut literature review time by 67% while maintaining academic rigor\nTrusted by 1,200,000+ researchers and hundreds of universities for ethical AI use. Scite helps you conduct better research.\nStart your 7-day free trial to experience how Scite can accelerate your research.\nAI for Academic Research\nSee Details"
+    },
+    {
+     "id_iklan": "921475070770141",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=921475070770141",
+     "pengiklan": "ChatGPT",
+     "halaman_pengiklan": "https://www.facebook.com/chatgpt/",
+     "mulai": "2026-10-02",
+     "hari": 46,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://chatgpt.com/?mode=default&prompt=Bantu%20aku%20tetep%20update%20tapi%20tanpa%20kebanyakan%20informasi.%20Tanyain%20info%20apa%20yang%20aku%20ikutin%2C%20apa%20yang%20bikin%20aku%20kewalahan%2C%20dan%20update%20harian%20kayak%20apa%20yang%20bakal%20berguna%20buat%20aku."
+     ],
+     "tombol": "Sign Up",
+     "teks": "Bikin update berita harian tentang hal-hal yang kamu suka.\nSorry, we're having trouble playing this video.\nLearn more\nCoba ChatGPT gratis\nSign Up"
+    },
+    {
+     "id_iklan": "2139126686959441",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=2139126686959441",
+     "pengiklan": "Tugas Kelar AI",
+     "halaman_pengiklan": "https://www.facebook.com/61588174298556/",
+     "mulai": "2026-09-07",
+     "hari": 71,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://tugaskelarai.com/page/ai-blueprint-prompt-tesis-lengkap"
+     ],
+     "tombol": "See Details",
+     "teks": "Mau dibimbing sampe lulus + dapet prompt lengkap nya?\nKomen \"Tesis\" di komentar, nanti aku kirim akses nya di DM kamu ya\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details\nTUGASKELARAI.COM\nTugasKelar.AI — Kerja Iya, Ngejar Gelar Iya, Tapi Thesis Gak Beres-Beres?\nSee Details"
+    }
+   ]
+  },
+  {
+   "jenis": "frasa",
+   "cari": "kelas online",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22kelas%20online%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": "~2,400",
+   "kartu_terbaca": 25,
+   "catatan": null,
+   "pengiklan": [
+    {
+     "pengiklan": "Media Belajar B.Inggris No.1",
+     "iklan_terlihat": 1,
+     "hari_tertua": 455,
+     "mulai_tertua": "2025-08-19",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=684420121320705",
+     "status": "WINNING",
+     "tujuan": [
+      "https://www.englishnesia.id/"
+     ]
+    },
+    {
+     "pengiklan": "AimGroup",
+     "iklan_terlihat": 2,
+     "hari_tertua": 451,
+     "mulai_tertua": "2025-08-23",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1099367388444903",
+     "status": "WINNING",
+     "tujuan": []
+    },
+    {
+     "pengiklan": "Kampung Inggris Pare - Choice English Center",
+     "iklan_terlihat": 2,
+     "hari_tertua": 424,
+     "mulai_tertua": "2025-09-19",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=708201161637491",
+     "status": "WINNING",
+     "tujuan": [
+      "http://wa.me/6285233237633"
+     ]
+    },
+    {
+     "pengiklan": "Kampung Inggris EM",
+     "iklan_terlihat": 2,
+     "hari_tertua": 311,
+     "mulai_tertua": "2026-01-10",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1432148218625517",
+     "status": "WINNING",
+     "tujuan": [
+      "http://instagram.com/kampunginggrism"
+     ]
+    },
+    {
+     "pengiklan": "Kursusbakingonline",
+     "iklan_terlihat": 1,
+     "hari_tertua": 311,
+     "mulai_tertua": "2026-01-10",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1616116246048676",
+     "status": "WINNING",
+     "tujuan": []
+    },
+    {
+     "pengiklan": "English for Everyone",
+     "iklan_terlihat": 6,
+     "hari_tertua": 250,
+     "mulai_tertua": "2026-03-12",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1374935077769606",
+     "status": "WINNING",
+     "tujuan": []
+    },
+    {
+     "pengiklan": "Kelas.Work",
+     "iklan_terlihat": 1,
+     "hari_tertua": 242,
+     "mulai_tertua": "2026-03-20",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1297848555587711",
+     "status": "WINNING",
+     "tujuan": [
+      "https://kelas.work/classes/mahir-ms-office-dari-a-z/2"
+     ]
+    },
+    {
+     "pengiklan": "Ikatan Akuntan Indonesia Wilayah Jawa Timur",
+     "iklan_terlihat": 1,
+     "hari_tertua": 208,
+     "mulai_tertua": "2026-04-23",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1729995054656618",
+     "status": "WINNING",
+     "tujuan": [
+      "https://iaijawatimur.or.id/course/brevetc-online-weekdays"
+     ]
+    },
+    {
+     "pengiklan": "Speaking Partner English",
+     "iklan_terlihat": 22,
+     "hari_tertua": 193,
+     "mulai_tertua": "2026-05-08",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1004395435293788",
+     "status": "WINNING",
+     "tujuan": []
+    },
+    {
+     "pengiklan": "kampunginggris.co",
+     "iklan_terlihat": 1,
+     "hari_tertua": 160,
+     "mulai_tertua": "2026-06-10",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1893649327901765",
+     "status": "WINNING",
+     "tujuan": [
+      "https://www.kampunginggris.co/kelas/online/grammar"
+     ]
+    },
+    {
+     "pengiklan": "Speakgurus",
+     "iklan_terlihat": 1,
+     "hari_tertua": 154,
+     "mulai_tertua": "2026-06-16",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1332033678994006",
+     "status": "WINNING",
+     "tujuan": []
+    },
+    {
+     "pengiklan": "HanTalk",
+     "iklan_terlihat": 7,
+     "hari_tertua": 78,
+     "mulai_tertua": "2026-08-31",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1025529137155411",
+     "status": "WINNING",
+     "tujuan": []
+    },
+    {
+     "pengiklan": "Skill Academy",
+     "iklan_terlihat": 1,
+     "hari_tertua": 75,
+     "mulai_tertua": "2026-09-03",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1402265145306211",
+     "status": "WINNING",
+     "tujuan": [
+      "https://skillacademy.com/topic/rekomendasi-untuk-upgrade-skill?utm_source=facebook&utm_medium=paidsocial&utm_campaign=%7B%7Badset.name%7D%7D&utm_content=%7B%7Bad.name%7D%7D"
+     ]
+    },
+    {
+     "pengiklan": "PT. Lima Prima Solusindo",
+     "iklan_terlihat": 1,
+     "hari_tertua": 71,
+     "mulai_tertua": "2026-09-07",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1055314840748768",
+     "status": "WINNING",
+     "tujuan": [
+      "https://instagram.com/limaprimasolusindo"
+     ]
+    },
+    {
+     "pengiklan": "bahasainggris.darifilm",
+     "iklan_terlihat": 4,
+     "hari_tertua": 65,
+     "mulai_tertua": "2026-09-13",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=883306928046957",
+     "status": "WINNING",
+     "tujuan": [
+      "https://englishwithmovies.com/kursus"
+     ]
+    },
+    {
+     "pengiklan": "Kelas Online Mr.BOB",
+     "iklan_terlihat": 1,
+     "hari_tertua": 48,
+     "mulai_tertua": "2026-09-30",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1400619492282450",
+     "status": "WINNING",
+     "tujuan": [
+      "https://www.kelasonlinemrbob.com/fb/",
+      "https://kelasonlinemrbob.com/fb"
+     ]
+    },
+    {
+     "pengiklan": "Pupulingual",
+     "iklan_terlihat": 1,
+     "hari_tertua": 30,
+     "mulai_tertua": "2026-10-18",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1373074304637334",
+     "status": "WINNING",
+     "tujuan": [
+      "https://nihongo.pupulingual.com/"
+     ]
+    },
+    {
+     "pengiklan": "Eleven Languages Course Bali",
+     "iklan_terlihat": 1,
+     "hari_tertua": 28,
+     "mulai_tertua": "2026-10-20",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1779000069996538",
+     "status": "POTENSIAL",
+     "tujuan": [
+      "http://fb.me/"
+     ]
+    },
+    {
+     "pengiklan": "EF Adults Indonesia",
+     "iklan_terlihat": 2,
+     "hari_tertua": 17,
+     "mulai_tertua": "2026-10-31",
+     "tautan_iklan_tertua": "https://www.facebook.com/ads/library/?id=1915447799421905",
+     "status": "POTENSIAL",
+     "tujuan": [
+      "http://fb.me/"
+     ]
+    }
+   ],
+   "iklan": [
+    {
+     "id_iklan": "684420121320705",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=684420121320705",
+     "pengiklan": "Media Belajar B.Inggris No.1",
+     "halaman_pengiklan": "https://www.facebook.com/englishnesia.id/",
+     "mulai": "2025-08-19",
+     "hari": 455,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://www.englishnesia.id/"
+     ],
+     "tombol": "Learn More",
+     "teks": "Mahir Bahasa Inggris Hanya ✨1000an✨ per hari\nHanya di Kelas Online Mahir Bahasa Inggris kamu bisa belajar bahasa inggris dengan murah dan mudah\nUntuk informasi dan pendaftaran Klik link di bawah ini 👇\nTunggu apa lagi? Segera daftar sebelum kuota pendaftaran habis ❗️\nLearn More"
+    },
+    {
+     "id_iklan": "1741702443762649",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1741702443762649",
+     "pengiklan": "bahasainggris.darifilm",
+     "halaman_pengiklan": "https://www.facebook.com/61563256790168/",
+     "mulai": "2026-09-17",
+     "hari": 61,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://englishwithmovies.com/kursus"
+     ],
+     "tombol": "See details",
+     "teks": "Dibimbing Mentor 3-5 Bulan Sampai Mahir Bahasa Inggris , Hanya 99rb ✨\nBelajar lebih lengkap & terarah:\n✅ Materi lengkap dari dasar sampai mahir\n✅ Dibimbing mentor berpengalaman\n✅ Akses aplikasi belajar dan praktek lengkap\n✅ Belajar lebih natural dari film & series\n✅ Ratusan quiz & latihan soal\n✅ Bonus kelas online 2 bulan\n✅ Bonus e-book, modul & video pembelajaran\nKlik Daftar Sekarang / link bio untuk ambil promonya!\nSorry, we're having trouble playing this video.\nLearn more\nENGLISHWITHMOVIES.COM\nbahasainggris.darifilm\nSee details"
+    },
+    {
+     "id_iklan": "1515477989724951",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1515477989724951",
+     "pengiklan": "AimGroup",
+     "halaman_pengiklan": "https://www.facebook.com/61566922311676/",
+     "mulai": "2025-09-06",
+     "hari": 437,
+     "iklan_sama": 1,
+     "tujuan": [],
+     "tombol": "Send WhatsApp message",
+     "teks": "📱 PUNYA HP RUSAK TAPI GA TAU CARA SERVIS?\nAtau kamu sering bingung nyari tukang servis yang jujur?\nGimana kalau kamu BELAJAR SENDIRI dan BUKA USAHA di rumah? 💰\n🔥 Kelas Online Servis HP — Lengkap dari Nol sampai Mahir!\n✅ Belajar dasar elektronik\n✅ Bongkar pasang hardware\n✅ Deteksi & perbaikan kerusakan\n✅ Software & flashing\n✅ BONUS: Panduan memulai usaha servis HP dari rumah\n❌ Gak perlu alat mahal\n❌ Gak harus lulusan teknik\n✅ Cocok buat pemula!\n💡 Sudah ratusan orang belajar & mulai usaha dari rumah.\n➡️ Dapatkan akses seumur hidup dan update materi terbaru.\n👇 Klik tombol di bawah untuk mulai belajar & jadi teknisi HP handal!\nSorry, we're having trouble playing this video.\nLearn more\nAPI.WHATSAPP.COM\nBelajar Servis HP & Mulai Usaha dari Rumah\nKelas online dari dasar sampai mahir + bonus panduan usaha\nSend WhatsApp message"
+    },
+    {
+     "id_iklan": "1729995054656618",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1729995054656618",
+     "pengiklan": "Ikatan Akuntan Indonesia Wilayah Jawa Timur",
+     "halaman_pengiklan": "https://www.facebook.com/100091767821610/",
+     "mulai": "2026-04-23",
+     "hari": 208,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://iaijawatimur.or.id/course/brevetc-online-weekdays"
+     ],
+     "tombol": "Learn more",
+     "teks": "Ingin naik level di dunia perpajakan? 🌟\nSaatnya upgrade kompetensi Anda di Kelas Online Brevet C (Perpajakan Terapan) bersama IAI Wilayah Jawa Timur!\nPelatihan ini dirancang praktis dan aplikatif untuk memperdalam pemahaman pajak sesuai kebutuhan profesional saat ini—cocok untuk alumni Brevet A & B, praktisi, maupun profesional yang ingin meningkatkan kompetensi di bidang perpajakan!\n🗓 Mulai: 18 Mei 2026\n📅 Jadwal: Senin, Rabu, Jum’at\n⏰ 18.30 – 20.30 WIB\n💻 Online via Zoom\n💥 Diskon Spesial Rp600.000!\n🔹 Mahasiswa / Anggota IAI: dari Rp2.300.000 → Rp1.700.000\n🔹 Umum: dari Rp2.500.000 → Rp1.900.000\n⚠️ Kuota terbatas, jangan sampai terlewat!\n📥 Daftar sekarang: iaijawatimur.or.id\n#IAIJatim #BrevetC #PelatihanPajak #KelasOnline #PajakTerapan #UpgradeSkill #AkuntanIndonesia #BelajarPajak #TaxTraining #ProfesionalAkuntansi\nIAIJAWATIMUR.OR.ID\nHome | IAI Jawa Timur\nPENDIDIKAN PROFESIONAL BERKELANJUTAN\nLearn more"
+    },
+    {
+     "id_iklan": "1099367388444903",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1099367388444903",
+     "pengiklan": "AimGroup",
+     "halaman_pengiklan": "https://www.facebook.com/61566922311676/",
+     "mulai": "2025-08-23",
+     "hari": 451,
+     "iklan_sama": 1,
+     "tujuan": [],
+     "tombol": "Send WhatsApp message",
+     "teks": "📱 PUNYA HP RUSAK TAPI GA TAU CARA SERVIS?\nAtau kamu sering bingung nyari tukang servis yang jujur?\nGimana kalau kamu BELAJAR SENDIRI dan BUKA USAHA di rumah? 💰\n🔥 Kelas Online Servis HP — Lengkap dari Nol sampai Mahir!\n✅ Belajar dasar elektronik\n✅ Bongkar pasang hardware\n✅ Deteksi & perbaikan kerusakan\n✅ Software & flashing\n✅ BONUS: Panduan memulai usaha servis HP dari rumah\n❌ Gak perlu alat mahal\n❌ Gak harus lulusan teknik\n✅ Cocok buat pemula!\n💡 Sudah ratusan orang belajar & mulai usaha dari rumah.\n➡️ Dapatkan akses seumur hidup dan update materi terbaru.\n👇 Klik tombol di bawah untuk mulai belajar & jadi teknisi HP handal!\nSorry, we're having trouble playing this video.\nLearn more\nAPI.WHATSAPP.COM\nBelajar Servis HP & Mulai Usaha dari Rumah\nKelas online dari dasar sampai mahir + bonus panduan usaha\nSend WhatsApp message"
+    },
+    {
+     "id_iklan": "1893649327901765",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1893649327901765",
+     "pengiklan": "kampunginggris.co",
+     "halaman_pengiklan": "https://www.facebook.com/kidotco/",
+     "mulai": "2026-06-10",
+     "hari": 160,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://www.kampunginggris.co/kelas/online/grammar"
+     ],
+     "tombol": "See details",
+     "teks": "Ingin jago grammar tapi bingung mulai dari mana?\nGabung kursus online grammar khusus pemula!\n📌 Materi video tiap hari\n📌 Latihan soal + bimbingan tutor via WhatsApp\n📌 Belajar santai, cukup lewat HP\n🎓 Sertifikat di akhir kursus!\nYuk daftar sekarang!\nKAMPUNGINGGRIS.CO\nBelajar Grammar Bahasa Inggris dari Nol!\nKursus bahasa inggris online untuk pemula. Belajar mulai dari nol.\nSee details"
+    },
+    {
+     "id_iklan": "4323349567906658",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=4323349567906658",
+     "pengiklan": "English for Everyone",
+     "halaman_pengiklan": "https://www.facebook.com/efeindonesia/",
+     "mulai": "2026-05-19",
+     "hari": 182,
+     "iklan_sama": 4,
+     "tujuan": [],
+     "tombol": "KELAS ONLINE BAHASA INGGRIS HANYA 50 RIBU PER BULAN SAMPAI MAHIR",
+     "teks": "KELAS ONLINE BAHASA INGGRIS HANYA 50 RIBU PER BULAN SAMPAI MAHIR"
+    },
+    {
+     "id_iklan": "1025529137155411",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1025529137155411",
+     "pengiklan": "HanTalk",
+     "halaman_pengiklan": "https://www.facebook.com/61573738276332/",
+     "mulai": "2026-08-31",
+     "hari": 78,
+     "iklan_sama": 7,
+     "tujuan": [],
+     "tombol": "Klik Daftar Sekarang dan  mulai belajar hari ini!",
+     "teks": "Kursus Bahasa Mandarin Online dengan Guru native speaker dari China. Cocok untuk pemula hingga tingkat lanjut.\nKlik Daftar Sekarang dan  mulai belajar hari ini!"
+    },
+    {
+     "id_iklan": "38622277567418447",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=38622277567418447",
+     "pengiklan": "bahasainggris.darifilm",
+     "halaman_pengiklan": "https://www.facebook.com/61563256790168/",
+     "mulai": "2026-09-21",
+     "hari": 57,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://englishwithmovies.com/kursus"
+     ],
+     "tombol": "Get offer",
+     "teks": "Dibimbing Mentor Sampai Mahir Bahasa Inggris , Hanya 99rb ✨\nBelajar lebih lengkap & terarah:\n✅ Materi lengkap dari dasar sampai mahir\n✅ Dibimbing mentor berpengalaman\n✅ Akses aplikasi belajar dan praktek lengkap\n✅ Belajar lebih natural dari film & series\n✅ Ratusan quiz & latihan soal\n✅ Bonus kelas online 2 bulan\n✅ Bonus e-book, modul & video pembelajaran\nKlik Daftar Sekarang / link bio untuk ambil promonya!\nSorry, we're having trouble playing this video.\nLearn more\nENGLISHWITHMOVIES.COM\nbahasainggris.darifilm\nGet offer"
+    },
+    {
+     "id_iklan": "1915447799421905",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1915447799421905",
+     "pengiklan": "EF Adults Indonesia",
+     "halaman_pengiklan": "https://www.facebook.com/EFAdultsIndonesia/",
+     "mulai": "2026-10-31",
+     "hari": 17,
+     "iklan_sama": 2,
+     "tujuan": [
+      "http://fb.me/"
+     ],
+     "tombol": "Apply Now",
+     "teks": "Keuntungan yang kamu bisa dapet di kelas online EF EFEKTA!\nSorry, we're having trouble playing this video.\nLearn more\nHTTPS://WWW.EF.CO.ID\nApply Now"
+    },
+    {
+     "id_iklan": "883306928046957",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=883306928046957",
+     "pengiklan": "bahasainggris.darifilm",
+     "halaman_pengiklan": "https://www.facebook.com/61563256790168/",
+     "mulai": "2026-09-13",
+     "hari": 65,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://englishwithmovies.com/kursus"
+     ],
+     "tombol": "Get offer",
+     "teks": "Dibimbing Mentor Sampai Mahir Bahasa Inggris , Hanya 99rb ✨\nBelajar lebih lengkap & terarah:\n✅ Materi lengkap dari dasar sampai mahir\n✅ Dibimbing mentor berpengalaman\n✅ Akses aplikasi belajar dan praktek lengkap\n✅ Belajar lebih natural dari film & series\n✅ Ratusan quiz & latihan soal\n✅ Bonus kelas online 2 bulan\n✅ Bonus e-book, modul & video pembelajaran\nKlik Daftar Sekarang / link bio untuk ambil promonya!\nSorry, we're having trouble playing this video.\nLearn more\nENGLISHWITHMOVIES.COM\nbahasainggris.darifilm\nGet offer"
+    },
+    {
+     "id_iklan": "708201161637491",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=708201161637491",
+     "pengiklan": "Kampung Inggris Pare - Choice English Center",
+     "halaman_pengiklan": "https://www.facebook.com/kampungkursusdiparekediri/",
+     "mulai": "2025-09-19",
+     "hari": 424,
+     "iklan_sama": 1,
+     "tujuan": [
+      "http://wa.me/6285233237633"
+     ],
+     "tombol": "Send WhatsApp message",
+     "teks": "Only Rp. 99K Kursus Online Kampung Inggris Pare\nAda kelas Dewasa dan kelas anak-anak.\nNggak perlu jauh-jauh ke Pare!\nSekarang, belajar ala Kampung Inggris bisa dari HP-mu.\nOnline, asyik, dan bikin kamu jago English.\nGabung kelas online Kampung Inggris dan rasakan pengalaman belajar interaktif langsung dari pengajar kampung Inggris.\nwa.me/6285233237633\nWHATSAPP\nKursus Online Kampung Inggris\nGabung kelas online Kampung Inggris dan rasakan pengalaman belajar interaktif langsung dari pengajar berpengalaman. Kursus Online Kampung Inggris Pare Ada kelas Dewasa dan kelas anak-anak. Nggak perlu jauh-jauh ke Pare! Sekarang, belajar ala Kampung Inggris bisa dari HP-mu. Online, asyik, dan bik...\nSend WhatsApp message"
+    },
+    {
+     "id_iklan": "917122627502982",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=917122627502982",
+     "pengiklan": "Kampung Inggris Pare - Choice English Center",
+     "halaman_pengiklan": "https://www.facebook.com/kampungkursusdiparekediri/",
+     "mulai": "2026-02-08",
+     "hari": 282,
+     "iklan_sama": 1,
+     "tujuan": [],
+     "tombol": "Send WhatsApp message",
+     "teks": "Bisa pilih Kursus Online atau Kursus Offline di Kampung Inggris Pare\nWHATSAPP\nMari mengobrol bersama kami\nKami menyediakan Kursus Online via zoom Pro dan Kursus Offline di Kampung Inggris Pare dengan biaya yang sangat terjangkau.\nSend WhatsApp message"
+    },
+    {
+     "id_iklan": "1374935077769606",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1374935077769606",
+     "pengiklan": "English for Everyone",
+     "halaman_pengiklan": "https://www.facebook.com/efeindonesia/",
+     "mulai": "2026-03-12",
+     "hari": 250,
+     "iklan_sama": 2,
+     "tujuan": [],
+     "tombol": "KELAS ONLINE BAHASA INGGRIS HANYA 50 RIBU PER BULAN SAMPAI MAHIR",
+     "teks": "KELAS ONLINE BAHASA INGGRIS HANYA 50 RIBU PER BULAN SAMPAI MAHIR"
+    },
+    {
+     "id_iklan": "1004395435293788",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1004395435293788",
+     "pengiklan": "Speaking Partner English",
+     "halaman_pengiklan": "https://www.facebook.com/100076201395375/",
+     "mulai": "2026-05-08",
+     "hari": 193,
+     "iklan_sama": 22,
+     "tujuan": [],
+     "tombol": "Learn more",
+     "teks": "Mau jago Bahasa Inggris tapi sibuk kerja atau kuliah?\nTenang, kamu bisa belajar dari rumah, tanpa ganggu jadwal, dan cukup 49 ribu!\n📘 Dalam 30 Hari Kamu Akan:\n✅ Belajar 100% online & fleksibel\n✅ Dibimbing oleh tutor berpengalaman\n✅ Dapat sertifikat resmi setelah lulus\n✅ Cukup 60 menit/hari\n💡 Cocok untuk pelajar, mahasiswa, pekerja, bahkan ibu rumah tangga!\nKlik \"Pelajari Selengkapnya\" sebelum promo habis!\nSorry, we're having trouble playing this video.\nLearn more"
+    },
+    {
+     "id_iklan": "1055314840748768",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1055314840748768",
+     "pengiklan": "PT. Lima Prima Solusindo",
+     "halaman_pengiklan": "https://www.facebook.com/limaprimasolusindo5/",
+     "mulai": "2026-09-07",
+     "hari": 71,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://instagram.com/limaprimasolusindo"
+     ],
+     "tombol": "Visit Instagram profile",
+     "teks": "Baru lulus SMA/SMK dan pengen cepat kerja? 🎓\nDi Lima Prima Solusindo, kamu bisa ikut Kelas Online Ahli K3 Umum BNSP yang bisa diikuti mulai dari lulusan SMA/SMK.\n🌏 Sertifikat resmi BNSP yang diakui secara nasional bahkan hingga ASEAN.\n💻 Kelas 100% online selama 4 hari, jadi bisa ikut dari mana aja tanpa perlu datang ke lokasi.\nYang akan kamu dapatkan:\n✅ Sertifikat Ahli K3 Umum resmi BNSP\n✅ Kartu Kompetensi Profesional\n✅ E-Modul & E-Book UU K3 Gratis\n✅ Dibimbing langsung oleh instruktur berpengalaman\n💰 Mulai dari 3 jutaan aja!\n🎁 Ada diskon khusus untuk alumni LPS.\nSertifikasi ini bisa jadi nilai tambah saat melamar kerja dan membantu membuka peluang di berbagai industri.\n⚠️ Kuota batch terbaru terbatas.\n👉 Chat admin sekarang dan cek jadwal terdekat sebelum slotnya penuh!\n#AhliK3Umum #SertifikasiBNSP #FreshGraduate #PelatihanK3\nSorry, we're having trouble playing this video.\nLearn more\nINSTAGRAM.COM\nPT. Lima Prima Solusindo\nVisit Instagram profile"
+    },
+    {
+     "id_iklan": "1373074304637334",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1373074304637334",
+     "pengiklan": "Pupulingual",
+     "halaman_pengiklan": "https://www.facebook.com/pupulingual/",
+     "mulai": "2026-10-18",
+     "hari": 30,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://nihongo.pupulingual.com/"
+     ],
+     "tombol": "Learn More",
+     "teks": "PUPULINGUAL FAST TRACK\n🔥 CUKUP 6 BULAN: DARI 0 → JLPT N2 🇯🇵\n📅 11 Januari – Juni 2027\n🎯 Persiapan JLPT Juli 2027\nBelum pernah belajar bahasa Jepang? Bisa mulai dari nol dan lanjut sampai target N2 hanya dalam ±6 bulan melalui program Pupulingual Fast Track 0→N2.\nProgram dibagi menjadi 2 tahap:\n🔰 FAST TRACK 0 → N4\n0️⃣ 11–15 Januari\n5️⃣ N5: 18 Jan–19 Feb\n4️⃣ N4: 22 Feb–26 Mar\n🚀 FAST TRACK N3 → N2\n3️⃣ N3: 5 Apr–7 Mei\n2️⃣ N2: 10 Mei–25 Jun\nProgram bisa diikuti secara terpisah sesuai level yang dibutuhkan, atau diambil sekaligus 0→N2 dengan promo bundling yang lebih hemat\n💳 Tersedia pembayaran cicilan\n🇯🇵 KENAPA TARGET N4 & N2?\n🔰 N4 — Bekal menuju Tokutei Ginou\nUntuk kamu yang ingin bekerja di Jepang melalui jalur keterampilan seperti restoran, hotel, kaigo, pertanian, manufaktur, konstruksi, dan bidang lainnya.*\n💼 N2 — Bekal menuju Gijinkoku / kerja profesional\nUntuk kamu yang ingin mengejar pekerjaan profesional seperti IT, engineering, office work, interpreter, sales, marketing, hospitality, dan berbagai karier profesional lainnya\nN4 → membuka jalan menuju kerja keterampilan di Jepang\nN2 → membuka peluang lebih luas untuk kerja profesional & studi\n✨ KENAPA FAST TRACK?\n✅ Cukup ±6 bulan dari 0 sampai N2\n✅ Materi lengkap & terstruktur untuk persiapan JLPT\n✅ Pembelajaran intensif dengan target yang jelas\n✅ Online via Zoom + tersedia rekaman kelas\n✅ Cocok untuk pekerja & mahasiswa\n✅ Bisa ikut terpisah atau bundling lebih hemat\n✅ Garansi sesuai syarat & ketentuan\n📌 Penjelasan lengkap program, jadwal, benefit & pendaftaran:\n🔗 Link di bio atau nihongo.pupulingual.com\n📩 INFO PROMO & PENDAFTARAN\nDM Instagram @pupulingual\nYuk raih mimpimu dengan bahasa Jepang 🙂\nぷぷる日本語と、夢の先へ❗️\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More\nNIHONGO.PUPULINGUAL.COM\n(PUBLIC) BUNDLING FAST TRACK B6&7 0-N2\nLearn More"
+    },
+    {
+     "id_iklan": "1779000069996538",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1779000069996538",
+     "pengiklan": "Eleven Languages Course Bali",
+     "halaman_pengiklan": "https://www.facebook.com/balielc/",
+     "mulai": "2026-10-20",
+     "hari": 28,
+     "iklan_sama": 1,
+     "tujuan": [
+      "http://fb.me/"
+     ],
+     "tombol": "Learn more",
+     "teks": "Bisa bahasa Inggris, tapi pas disuruh ngomong malah gugup? 😭\nTenang, kamu nggak sendirian! Saatnya upgrade skill bahasa kamu dengan latihan speaking yang lebih interaktif di ELC Bali.\n✨ Belajar bareng tutor profesional\n✨ Fokus latihan berbicara\n✨ Bisa pilih kelas online atau offline\n✨ Kesempatan belajar 7 bahasa asing lainnya!\nJangan cuma paham teorinya, yuk mulai berani ngomong!\n💬 Chat mimin untuk konsultasi lebih lanjut yak..\nSorry, we're having trouble playing this video.\nLearn more\nFB.ME\nNgerti English, Tapi Susah Ngomong?\nUpgrade skill speaking kamu bareng ELC Bali. Belajar lebih interaktif dan berani ngobrol!\nLearn more"
+    },
+    {
+     "id_iklan": "1297848555587711",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1297848555587711",
+     "pengiklan": "Kelas.Work",
+     "halaman_pengiklan": "https://www.facebook.com/kelasworkbykelascom/",
+     "mulai": "2026-03-20",
+     "hari": 242,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://kelas.work/classes/mahir-ms-office-dari-a-z/2"
+     ],
+     "tombol": "Learn More",
+     "teks": "Kamu lagi persiapan lamar kerja atau ikut CPNS tapi belum punya Sertifikat kompetensi Microsoft Office?😱😱\nNah, pas bangett~ Buat yang mau belajar Microsoft Office, nih MinKe ada rekomendasi kelasnya!\nMateri lengkap akses unlimited cuma 49k, mulai dari belajar:\n✅Microsoft Word\n✅Microsoft Excel\n✅Microsoft PowerPoint\nSetelah belajar, kamu bisa dapat sertifikat kompetensi Ms. Office jugaa yang bisa dimasukkan CV untuk lamar ke perusahaan atau daftar CPNS loh🤩\nTunggu apalagi, yuk daftar kelasnya sekarang! Klik Learn More!\nPromo 80% Cuma Bayar 49k\nKelas Ms. Office bersertifikat (bisa untuk lamar kerja, daftar CPNS atau PPPK)\nLearn More"
+    },
+    {
+     "id_iklan": "1432148218625517",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1432148218625517",
+     "pengiklan": "Kampung Inggris EM",
+     "halaman_pengiklan": "https://www.facebook.com/kampunginggrism/",
+     "mulai": "2026-01-10",
+     "hari": 311,
+     "iklan_sama": 2,
+     "tujuan": [
+      "http://instagram.com/kampunginggrism"
+     ],
+     "tombol": "Learn more",
+     "teks": "Si kecil jago gini siapa yang gak mau, iya gak bun? 😄\nBingung mau ajarin anak, tapi kemampuan kita terbatas? tenangg, Ikutan kelas kita aja kuy dijamin bakal nemu banyak partner belajar dan tutor-tutornya kece! 😎\nKetik MAU di kolom komentar ya!\nBelajar dari nol sampai cas-cis-cus tersedia kelas online/offline📚\n✨LearningWithExperts✨\n#englishteacher #vocabulary #learnenglish #englishlearner #bahasainggris #belajarbareng #belajarbahasainggris #kampunginggris #publicspeaking #fyp #foryoupage\nSorry, we're having trouble playing this video.\nLearn more"
+    },
+    {
+     "id_iklan": "1400619492282450",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1400619492282450",
+     "pengiklan": "Kelas Online Mr.BOB",
+     "halaman_pengiklan": "https://www.facebook.com/61557959905617/",
+     "mulai": "2026-09-30",
+     "hari": 48,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://www.kelasonlinemrbob.com/fb/",
+      "https://kelasonlinemrbob.com/fb"
+     ],
+     "tombol": "See details",
+     "teks": "Jadwal padat bukan alasan untuk bisa level up skill bahasa Inggrismu!\n✨ Kelas Online Mr. Bob hadir untuk dongkrak skill bahasa Inggrismu ✨\n🗣️Praktek speaking tiap hari bareng tutor berpengalaman\n🕰️ Bebas pilih jam belajar sesuai keinginan\n📖 Bebas request Materi Belajar\n👩🏻‍🏫 Tutor yang asyik dan kompeten di bidangnya\n📚 Free Module & E-certificate\nKUOTA TERBATAS, amankan seatmu sekarang!\nhttps://www.kelasonlinemrbob.com/fb/\nSorry, we're having trouble playing this video.\nLearn more\nKELASONLINEMRBOB.COM\nLes Private Bahasa Inggris - Bisa Request Jam & Materi Belajar\nSee details"
+    },
+    {
+     "id_iklan": "1616116246048676",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1616116246048676",
+     "pengiklan": "Kursusbakingonline",
+     "halaman_pengiklan": "https://www.facebook.com/Kursusonlinebaking/",
+     "mulai": "2026-01-10",
+     "hari": 311,
+     "iklan_sama": 1,
+     "tujuan": [],
+     "tombol": "Send WhatsApp message",
+     "teks": "KELAS ONLINE ES PISANG IJO SPESIAL\nBikin es pisang ijo spesial, dengan kulit pisang ijo yang empuk dan enak, vla santan yang sangat lembut dan lezat, serta sirup merah home made rasa pisang yang khas.\nDi kelas online ini, kamu akan belajar membuat:\n✅ Kulit pisang ijo (pakai endapan pandan suji atau pasta pandan)\n✅ Vla santan gurih lembut\n✅ Sirup merah homemade rasa pisang\n✅ Topping sagu mutiara\n✅ Teknik penyajian & pengemasan\n✅ Cara menghitung harga jual biar cuan maksimal!\n🎥 Dilengkapi video detail & modul PDF\n👩‍🍳 Bisa konsultasi dan dibimbing sampai bisa\nResep ini sudah terbukti laris, disukai banyak orang, dan punya ciri khas tersendiri, terutama pada vla santan yang super lembut dan kaya rasa.\nRasanya nggak kalah, bahkan bisa diadu dengan es pisang ijo terkenal di pasaran!\n💬Komentar \"MAU\" untuk dapatkan info pendaftaran!\nUntuk pendaftarannya hubungi admin via whatsapp 087815665822 (Mas Ghozali) atau klik link di bio\n#espisangijomakassar #espisangijo #espisangijoenak #peluangusaha #peluangbisnis #kursusonline #kelasonline #bisnisdarirumah #bakingclass #belajarbaking #kursusmasak #breadpreneur #breadpreneurindonesia #makassarfood #makassarkuliner #papuafood #pisangijo #kursusespisangijo #jakartafoodies #surabayafood\nSorry, we're having trouble playing this video.\nLearn more\nAPI.WHATSAPP.COM\nKursusbakingonline\nSend WhatsApp message"
+    },
+    {
+     "id_iklan": "1840136910488775",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1840136910488775",
+     "pengiklan": "bahasainggris.darifilm",
+     "halaman_pengiklan": "https://www.facebook.com/61563256790168/",
+     "mulai": "2026-09-17",
+     "hari": 61,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://englishwithmovies.com/kursus"
+     ],
+     "tombol": "Get offer",
+     "teks": "Dibimbing Mentor Sampai Mahir Bahasa Inggris , Hanya 99rb ✨\nBelajar lebih lengkap & terarah:\n✅ Materi lengkap dari dasar sampai mahir\n✅ Dibimbing mentor berpengalaman\n✅ Akses aplikasi belajar dan praktek lengkap\n✅ Belajar lebih natural dari film & series\n✅ Ratusan quiz & latihan soal\n✅ Bonus kelas online 2 bulan\n✅ Bonus e-book, modul & video pembelajaran\nKlik Daftar Sekarang / link bio untuk ambil promonya!\nSorry, we're having trouble playing this video.\nLearn more\nENGLISHWITHMOVIES.COM\nbahasainggris.darifilm\nGet offer"
+    },
+    {
+     "id_iklan": "1332033678994006",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1332033678994006",
+     "pengiklan": "Speakgurus",
+     "halaman_pengiklan": "https://www.facebook.com/100065102824716/",
+     "mulai": "2026-06-16",
+     "hari": 154,
+     "iklan_sama": 1,
+     "tujuan": [],
+     "tombol": "Send WhatsApp message",
+     "teks": "Bahasa Inggris menghambat karir kamu? Kamu punya target kerja di perusahaan global?\nGabung kelas online speaking bersama speakguru:\n1. Guru berpengalaman dan tersertifikasi\n2. Kelas premium maksimal 5 orang\n3. Kelas dilakukan online sehingga bisa dilakukan dimanapun\n4. Ada program khusus IELTS, interview, dan kelas bareng temen kantor atau kuliah\nHarga mulai dari Rp. 250.000,- !!\nTag teman kamu, ajak kelas bareng minggu depan!!\nWHATSAPP\nChat Program Consultant Kami Sekarang\nSend WhatsApp message"
+    },
+    {
+     "id_iklan": "1402265145306211",
+     "tautan_iklan": "https://www.facebook.com/ads/library/?id=1402265145306211",
+     "pengiklan": "Skill Academy",
+     "halaman_pengiklan": "https://www.facebook.com/skillacademy.id/",
+     "mulai": "2026-09-03",
+     "hari": 75,
+     "iklan_sama": 1,
+     "tujuan": [
+      "https://skillacademy.com/topic/rekomendasi-untuk-upgrade-skill?utm_source=facebook&utm_medium=paidsocial&utm_campaign=%7B%7Badset.name%7D%7D&utm_content=%7B%7Bad.name%7D%7D"
+     ],
+     "tombol": "Learn More",
+     "teks": "❌ Gugup saat bicara di depan banyak orang?\n✅ Saatnya belajar Teknik NLP & tampil lebih percaya diri!\nMulai kelas online bersama Ongky Hojanto sekarang hanya Rp180.000 🎤\nDapatkan:\n✅ 33 materi\n✅ E-Sertifikat dari Lembaga Terpecaya\n✅ Kuis dan Latihan Soal untuk Uji Kemampuan\n✅ Kelas Flexibel\n✅ Bimbingan Expert Terpercaya\nBeli kelasnya sekarang 🔥\nMulai Belajar Sekarang-->\nLearn More"
+    }
+   ]
+  }
+ ],
+ "browser": "chrome"
+}

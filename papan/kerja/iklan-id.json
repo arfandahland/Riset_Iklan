@@ -1,0 +1,79 @@
+{
+ "diambil": "2026-11-17T12:28",
+ "umur_dihitung_sampai": "2026-11-17",
+ "negara": "ID",
+ "gulir": 4,
+ "pencarian": [
+  {
+   "jenis": "frasa",
+   "cari": "prompt chatgpt",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22prompt%20chatgpt%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  },
+  {
+   "jenis": "frasa",
+   "cari": "jualan online sepi",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22jualan%20online%20sepi%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  },
+  {
+   "jenis": "frasa",
+   "cari": "template konten",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22template%20konten%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  },
+  {
+   "jenis": "frasa",
+   "cari": "aplikasi AI",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22aplikasi%20AI%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  },
+  {
+   "jenis": "frasa",
+   "cari": "bikin konten pakai AI",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22bikin%20konten%20pakai%20AI%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  },
+  {
+   "jenis": "frasa",
+   "cari": "admin olshop",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22admin%20olshop%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  },
+  {
+   "jenis": "frasa",
+   "cari": "caption jualan",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=%22caption%20jualan%22&search_type=keyword_exact_phrase&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  }
+ ],
+ "browser": "chrome"
+}

@@ -1,0 +1,39 @@
+{
+ "diambil": "2026-11-17T12:30",
+ "umur_dihitung_sampai": "2026-11-17",
+ "negara": "ID",
+ "gulir": 4,
+ "pencarian": [
+  {
+   "jenis": "frasa",
+   "cari": "prompt chatgpt",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=prompt%20chatgpt&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  },
+  {
+   "jenis": "frasa",
+   "cari": "aplikasi AI",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=aplikasi%20AI&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  },
+  {
+   "jenis": "frasa",
+   "cari": "jualan online",
+   "alamat": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ID&media_type=all&q=jualan%20online&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+   "jumlah_hasil": null,
+   "kartu_terbaca": 0,
+   "catatan": "tidak ada iklan untuk pencarian ini",
+   "pengiklan": [],
+   "iklan": []
+  }
+ ],
+ "browser": "chrome"
+}
